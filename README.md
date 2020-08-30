@@ -1,4 +1,6 @@
 # LeetCode-Questions
-Completed Questions with detailed answers
 
-Also contain a python refresher
+* Code
+* Code walkthroughs
+
+Also contains a python refresher
