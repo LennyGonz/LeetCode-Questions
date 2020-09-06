@@ -26,3 +26,9 @@ Palindrome Number | [Code](Code/palindromeNumber.py) | [Walk-Through](PDFs/Palin
 Problem 4
 
 Longest Substring with Repeating Characters | [Code](Code/longest_substring.py) | [Walk-Through](PDFs/Longest%20Substring%20without%20Repeating%20Characters.pdf)
+
+<hr>
+
+Problem 5
+
+Add Two Numbers | [Code](Code/longest_substring.py) | [Walk-through](PDFs/Add%20Two%20Numbers.pdf)
