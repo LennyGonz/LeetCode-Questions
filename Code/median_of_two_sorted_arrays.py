@@ -1,8 +1,14 @@
+'''
+Time Complexity: O(log(n+m))
+Space Complexity: O(log(n+m))
+'''
+
 def median(A, B):
   m, n = len(A), len(B)
   print("m:",m,"|","n:",n)
   if m > n:
     A, B, m, n = B, A, n, m
+    print("A:",A,"||","B",B,"||","m:",m,"||","n:",n)
   if n == 0:
     raise ValueError
   
