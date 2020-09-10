@@ -25,6 +25,12 @@ Longest Substring without Repeating Characters | [Code](Code/longest_substring.p
 
 <hr>
 
+Problem 4
+
+Median Of Two Sorted Arrays | [Code](Code/median_of_two_sorted_arrays.py) | [Walk-Through](https://www.youtube.com/watch?v=LPFhl65R7ww)
+
+<hr>
+
 Problem 9
 
 Palindrome Number | [Code](Code/palindromeNumber.py) | [Walk-Through](PDFs/Palindrome%20Number.pdf)
