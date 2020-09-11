@@ -15,7 +15,9 @@ def median(input1, input2):
   if length_of_input2 == 0:
     raise ValueError
   
-  imin, imax, half_len = 0, length_of_input1, (length_of_input1 + length_of_input2 + 1) // 2
+  imin = 0
+  imax = length_of_input1
+  half_len = (length_of_input1 + length_of_input2 + 1) // 2
 
   while imin <= imax:
     input1_partition = (imin + imax) // 2
@@ -23,7 +25,7 @@ def median(input1, input2):
 
     if input1_partition < length_of_input1 and input2[input2_partition - 1] > input1[input1_partition]:
       # input1_partition is too small, must increase it
-      imin = i + 1
+      imin = input1_partition + 1
 
     elif input1_partition > 0 and input1[input1_partition-1] > input2[input2_partition]:
       # input1_partition is too big, must decrease it
@@ -52,8 +54,9 @@ def median(input1, input2):
       else:
         min_of_right = min(input1[input1_partition], input2[input2_partition])
       
+      print(max_of_left, min_of_right)
       return (max_of_left + min_of_right) / 2.0
 
-input1 = [1,3]
-input2 = [2,4]
+input1 = [2]
+input2 = [1,3]
 print(median(input1, input2))
