@@ -31,6 +31,12 @@ Median Of Two Sorted Arrays | [Code](Code/median_of_two_sorted_arrays.py) | [Wal
 
 <hr>
 
+Problem 5
+
+Longest Palindromic Substring | [Code] | [Walk-Through]
+
+<hr>
+
 Problem 9
 
 Palindrome Number | [Code](Code/palindromeNumber.py) | [Walk-Through](PDFs/Palindrome%20Number.pdf)
