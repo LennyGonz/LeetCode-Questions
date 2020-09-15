@@ -13,10 +13,7 @@ def median(input1, input2):
   length_of_input1, length_of_input2 = len(input1), len(input2)
   print("length_of_input1:",length_of_input1,"|","length_of_input2:",length_of_input2)
   if length_of_input1 > length_of_input2:
-    input1 = input2
-    input2 = input1
-    length_of_input1 = length_of_input2
-    length_of_input2 = length_of_input1 
+    input1, input2, length_of_input1, length_of_input2 = input2, input1, length_of_input2, length_of_input1
     print("input1:",input1,"||","input2",input2,"||","length_of_input1:",length_of_input1,"||","length_of_input2:",length_of_input2)
   if length_of_input2 == 0:
     raise ValueError
@@ -66,6 +63,6 @@ def median(input1, input2):
       print("max_of_light",max_of_left, "||", "min_of_right",min_of_right, "||", "return=",((max_of_left+min_of_right)/2))
       return (max_of_left + min_of_right) / 2.0
 
-input1 = [1,3,5,6]
-input2 = [2,4]
+input1 = [1,3]
+input2 = [2]
 print(median(input1, input2))
