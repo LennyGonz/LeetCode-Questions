@@ -43,6 +43,12 @@ Palindrome Number | [Code](Code/palindromeNumber.py) | [Walk-Through](PDFs/Palin
 
 <hr>
 
+Problem 46
+
+Permutations | [Code](Code/permutations.py) | [Walk-Through]
+
+<hr>
+
 Problem 929
 
 Unique Email Address | [Code](Code/unique_email_address.py) | [Walk-Through](PDFs/Unique%20Email%20Address.pdf)
