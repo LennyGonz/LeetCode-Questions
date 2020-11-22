@@ -23,7 +23,7 @@ def lengthOfLongestSubstring(s):
 
 #tmmzuxta cause we didnt update start
 #abcabcbb
-print(lengthOfLongestSubstring("tmmzuxta"))
+print(lengthOfLongestSubstring("abcabcbb"))
 
 
 #####################################################################################
