@@ -21,7 +21,9 @@ Add Two Numbers | [Code](Code/longest_substring.py) | [Walk-Through](PDFs/Add%20
 
 Problem 3
 
-Longest Substring without Repeating Characters | [Code](Code/longest_substring.py) | [Walk-Through](PDFs/Longest%20Substring%20without%20Repeating%20Characters.pdf)
+Longest Substring without Repeating Characters | [Code](Code/longest_substring_2.py) | [Walk-Through](PDFs/Longest%20Substring%20without%20Repeating%20Characters%20V2.pdf)
+
+Longest Substring without Repeating Characters 2nd Version | [Code](Code/longest_substring.py) | [Walk-Through](PDFs/Longest%20Substring%20without%20Repeating%20Characters.pdf)
 
 <hr>
 
