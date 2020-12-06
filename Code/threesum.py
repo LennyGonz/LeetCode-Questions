@@ -4,36 +4,40 @@ def threeSum(nums):
 
   length = len(nums)
 
-  for i in range(length-2):
-    if i > 0 and nums[i] == nums[i-1]:
+  for index in range(length - 2):
+    print('++++')
+    print("nums[index]", nums[index])
+    print('++++')
+    if index > 0 and nums[index] == nums[index - 1]:
+      print('Inside the initial if','nums[index]',nums[index], '||','nums[index-1]',nums[index-1])
       continue
 
-    l = i + 1
-    r = length - 1
+    left = index + 1
+    right = length - 1
 
-    while l < r:
-      total = nums[i] + nums[l] + nums[r]
+    while left < right:
+      total = nums[index] + nums[left] + nums[right]
 
       if total < 0:
-        l = l + 1
+        left = left + 1
       
       elif total > 0:
-        r = r - 1
+        right = right - 1
 
       else:
-        res.append([nums[i],nums[l],nums[r]])
+        res.append([nums[index],nums[left],nums[right]])
 
         # suppose you are getting duplicate triplets
-        while l < r and nums[l] == nums[l+1]:
-          l = l + 1
+        while left < right and nums[left] == nums[left+1]:
+          left = left + 1
         
-        while l < r and nums[r] == nums[r-1]:
-          r = r - 1
+        while left < right and nums[right] == nums[right-1]:
+          right = right - 1
         
-        l = l + 1
-        r = r - 1
+        left = left + 1
+        right = right - 1
 
   return res
 
-input1 = [-1,0,1,2,-1,4]
+input1 = [-1,0,1,2,-1,-4]
 print(threeSum(input1))
