@@ -34,9 +34,14 @@ def threeSum(nums):
         while left < right and nums[right] == nums[right-1]:
           right = right - 1
         
+        print('left before:', left)
         left = left + 1
-        right = right - 1
+        print('left after:', left)
 
+        print('right before:', right)
+        right = right - 1
+        print('right affter', right)
+        
   return res
 
 input1 = [-1,0,1,2,-1,-4]
