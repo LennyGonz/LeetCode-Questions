@@ -1,62 +1,56 @@
+'''
+Run Time: O(n*n)
+Space: O(n)
+'''
 def threeSum(nums):
-  nums.sort()
   result = []
-  lenOfNums = len(nums)
-  print('lenOfNums',lenOfNums)
-
-  for index in range(lenOfNums):
-    print("index:", index)
-    ## why does this matter nums[index] == nums[index - 1] ??
-    if index > 0 and nums[index] == nums[index - 1]:
-      print("nums[index]:", nums[index], "||", 'nums[index-1]', nums[index-1]);
+  nums.sort()
+  length = len(nums)
+    
+  # we need at least 3 elements to continue (index, left, right)
+  for index in range(length - 2):
+      
+    # if nums[i] == nums[i-1] we did the calculations already - skip the redundancy 
+    if index > 0 and nums[index] == nums[index-1]:
       continue
     
-    head = index + 1
-    print("head = index + 1 -->", head)
+    left = index + 1
+    right = length - 1
     
-    end = lenOfNums - 1
-    print("end = lenOfNums -  1 -->", end)
-
-    print('++++++++++++')
-
-    # this condition for a while loop -> makes sure we stop irterating once our pointers cross
-    # seems like head = head of the array & end = end of the array and we meet in the middle???
-    while head < end:
-      if nums[index] + nums[head] + nums[end] == 0:
-        print("if nums[index]",nums[index],"nums[head]",nums[head],'nums[end]',nums[end])
-        result.append([nums[index], nums[head], nums[end]])
-        head += 1
-        print("head:", head)
-
-        while head < end and nums[head] == nums[head - 1]:
-          head += 1
-          print("head inside the while", head)
-        end -= 1
-        print("end", end)
-
-        while head < end and nums[end] == nums[end+1]:
-          end -= 1
-        
-        print("------------")
+    # once our pointers cross we've calculated all possible combinations
+    while left < right:
+      total_sum = nums[index] + nums[left] + nums[right]
       
-      elif nums[index] + nums[head] + nums[end] < 0:
-        print("elif nums[index]",nums[index],"+nums[head]",nums[head],'nums[end]',nums[end], "< 0")
-        head += 1
-        while head < end and nums[head] == nums[head - 1]:
-          print("elif - while head",head, "<","end", end, 'and nums[head]', nums[head], "== nums[end]", nums[end])
-          head += 1
-          print('updated head:',head)
-        print("------------")
+      # if our total sum is below 0 increase our left pointer
+      if total_sum < 0:
+          left = left + 1
+      
+      # if our total sum is greater than 0 decrease our right pointer
+      elif total_sum > 0:
+          right = right - 1
+        
       else:
-        print("else")
-        end -= 1
-        print("end")
-        while head < end and nums[end] == nums[end + 1]:
-          print("else - while head",head, "< end", end, "and nums[end]", nums[end], '== nums[end+1]', nums[end+1])
-          end -= 1
-          print("updated end", end)
+          # if total_sum = 0 add it to our result list
+          result.append([nums[index],nums[left],nums[right]])
+          
+          # we need to have unique triplets so if the current nums[element] is the same as the next one of course
+          # nums[i] + nums[left] + nums[right] = 0 bc it'll be the same triplet so we must increase left twice before restarting the loop
+          while left < right and nums[left] == nums[left+1]:
+              left = left + 1
+          
+          # same logic as above, if nums[right] == nums[right-1] then of course nums[i] + nums[left] + nums[right] = 0
+          # so to avoid getting the same triplet we must reduce right twice
+          while left < right and nums[right] == nums[right-1]:
+              right = right - 1
+          
+          # if nums[left] == nums[left+1] or nums[right] == nums[right-1] here is where we increase/decrease the pointer for the 2nd time
+          # otherwise we proceed as we normally would
+          left = left + 1
+          right = right - 1
 
   return result
 
-input1 = [-1, 0, 1, 2, -1, -4]
-print(threeSum(input1))
+
+input1 = [-1, 0, 1, 2, -1, -4] #[[-1,-1,2],[-1,0,1]]
+input2 = [-2,0,0,2,2] #[[-2,0,2],[-2,0,2]] -- this uses the while statements inside the else statement
+print(threeSum(input2))
