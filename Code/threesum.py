@@ -28,9 +28,11 @@ def threeSum(nums):
         res.append([nums[index],nums[left],nums[right]])
 
         # suppose you are getting duplicate triplets
+        # these 2 while loops make sure that the value of left is not being repeated -- if it is we skip it
         while left < right and nums[left] == nums[left+1]:
           left = left + 1
         
+        # if the value of right is being repeated -- we skip it
         while left < right and nums[right] == nums[right-1]:
           right = right - 1
         
