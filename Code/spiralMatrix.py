@@ -21,5 +21,16 @@ def spiralMatrix(matrix):
       for i in range(columnend - 1, columnbegin - 1, -1):
         res.append(matrix[rowend-1][i])
     
-    if (column)
+    if (columnbegin != columnend - 1):
+      for j in range(rowend - 2, rowbegin, -1):
+        res.append(matrix[j][columnbegin])
+  
+    rowbegin += 1
+    rowend -= 1
+    columnbegin += 1
+    columnend -= 1
+  
+  return res
     
+m1 = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+print(spiralMatrix(m1))
