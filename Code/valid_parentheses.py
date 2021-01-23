@@ -26,3 +26,5 @@ input1 = '([{}])'
 print(is_valid(input1))
 input2 = '((([{}])'
 print(is_valid(input2))
+input3 = '(()'
+print(is_valid(input3))
