@@ -57,6 +57,18 @@ Permutations | [Code](Code/permutations.py) | [Walk-Through]
 
 <hr>
 
+Problem 141
+
+Linked List Cycle | [Code] | [Walk-Through]
+
+<hr>
+
+Problem 206
+
+Reverse Linked List | [Code] | [Walk-Through]
+
+<hr>
+
 Problem 929
 
 Unique Email Address | [Code](Code/unique_email_address.py) | [Walk-Through](PDFs/Unique%20Email%20Address.pdf)
