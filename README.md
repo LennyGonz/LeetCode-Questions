@@ -39,6 +39,12 @@ Longest Palindromic Substring | [Code] | [Walk-Through]
 
 <hr>
 
+Problem 6
+
+ZigZag Conversion | [Code] | [Walk-Through]
+
+<hr>
+
 Problem 9
 
 Palindrome Number | [Code](Code/palindromeNumber.py) | [Walk-Through](PDFs/Palindrome%20Number.pdf)
