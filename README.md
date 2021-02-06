@@ -74,3 +74,5 @@ Problem 929
 Unique Email Address | [Code](Code/unique_email_address.py) | [Walk-Through](PDFs/Unique%20Email%20Address.pdf)
 
 <hr>
+
+Lenny Gonzalez
