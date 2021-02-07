@@ -57,6 +57,10 @@ Permutations | [Code](Code/permutations.py) | [Walk-Through]
 
 <hr>
 
+Problem 50
+
+<hr>
+
 Problem 141
 
 Linked List Cycle | [Code] | [Walk-Through]
