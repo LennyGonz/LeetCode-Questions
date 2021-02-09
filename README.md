@@ -63,7 +63,7 @@ Problem 50
 
 Problem 141
 
-Linked List Cycle | [Code] | [Walk-Through]
+Linked List Cycle | [Code](Code/detect_linkedlist_cycle.py) | [Walk-Through](PDFs/Linked%20List%20Cycle.pdf)
 
 <hr>
 
