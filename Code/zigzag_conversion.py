@@ -38,7 +38,7 @@ def convert(string, numRows):
   row_indx = 1
   going_up = True
 
-  for char in s:
+  for char in string:
     row_arr[row_indx - 1] += char
     if row_indx == numRows:
       going_up = False
@@ -52,3 +52,7 @@ def convert(string, numRows):
       row_indx -= 1
   
   return "".join(row_arr)
+
+string1 = "PAYPALISHIRING"
+int1 = 3
+print(convert(string1, int1))
