@@ -29,3 +29,26 @@ Y    A    H  R
 P         I
 '''
 
+
+def convert(string, numRows):
+  if numRows == 1:
+    return string
+
+  row_arr = [""] * numRows
+  row_indx = 1
+  going_up = True
+
+  for char in s:
+    row_arr[row_indx - 1] += char
+    if row_indx == numRows:
+      going_up = False
+    
+    elif row_indx == 1:
+      going_up = True
+
+    if going_up:
+      row_indx += 1
+    else:
+      row_indx -= 1
+  
+  return "".join(row_arr)
