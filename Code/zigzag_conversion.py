@@ -7,6 +7,12 @@ A P L S I I G
 Y   I   R
 
 And then read line by line: "PAHNAPLSIIGYIR"
+It's a zig-zag moition... in this example the number of rows to create the zigzag illusion is 3
+So 3 letters down
+then white space, letter, white space
+next 3 letters down...
+
+we're creating a zigzag illusion
 
 Write the code that will take a string make this conversion given a number of rows:
 
