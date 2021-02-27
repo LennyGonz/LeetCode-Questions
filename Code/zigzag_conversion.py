@@ -68,4 +68,5 @@ def convert(string, numRows):
 
 
 input1 = 'PAYPALISHIRING'
-print(convert(input1, 4))
+numrows = 3
+print(convert(input1, numrows))
