@@ -39,7 +39,22 @@ def convert(string, numRows):
   if numRows == 1:
     return string
 
+  # we initialize every "row" with an empty string bc at every iteration we need the ability to append an extra character
   row_arr = [""] * numRows
+  
+  # numrows = 3
+  #################
+  # ['P', '', ''] - iteration 1
+  #################
+  #################
+  # ['P', 'A', ''] - iteration 2
+  #################
+  #################
+  # ['P', 'A', 'Y'] - iteration 3
+  #################
+  #################
+  # ['P', 'AP', 'Y'] - iteration 4
+  #################
   row_index = 1
   going_up = True
 
