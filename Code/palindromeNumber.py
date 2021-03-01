@@ -1,12 +1,13 @@
-def is_Palindrome(num):
-  number, reversed_number = num, 0
+def is_Palindrome(number):
+  num = number
+  reversed_num = 0
 
-  while number > 0:
-    last_digit = number % 10
-    reversed_number = (reversed_number * 10) + last_digit
-    number = int(number / 10)
+  while num > 0:
+    last_digit = num % 10
+    reversed_num = (reversed_num * 10) + last_digit
+    num = int(num / 10)
   
-  return num == reversed_number
+  return number == reversed_num
 
 ex1 = 121
 print(is_Palindrome(ex1))
