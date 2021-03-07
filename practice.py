@@ -52,12 +52,15 @@ def add_to_trie(s, trie):
   if character not in trie:
     trie[character] = dict()
   
-  print("trie before the recursion",trie)
+  print("trie before the recursion", trie)
+  print("s[1:]", s[1:])
+  print("character",character)
+  print("trie[character]",trie[character])
   trie[character] = add_to_trie(s[1:], trie[character])
   
   print("done with word trie:", trie)
   return trie
-
+trie[character]
 def get_dictionary_trie(dictionary):
   trie = dict()
   for word in dictionary:
@@ -70,3 +73,59 @@ def get_dictionary_trie(dictionary):
   return trie
 
 print(get_dictionary_trie(['dog','deer','deal']))
+
+####################################################
+'''
+This problem was asked by Uber.
+
+Given an array of integers, return a new array such that each element at index i of the new array is the product of all the numbers in the original array except the one at i.
+
+For example, if our input was [1, 2, 3, 4, 5], the expected output would be [120, 60, 40, 30, 24]. If our input was [3, 2, 1], the expected output would be [2, 3, 6].
+
+Follow-up: what if you can't use division?
+'''
+
+
+def multiplyArray(numlist):
+  right_prod_array = list()
+  cumulative_product = 1
+
+  for num in numlist:
+    cumulative_product *= num
+    right_prod_array.append(cumulative_product)
+  print("right prod array - cumulativeProduct", cumulative_product)
+  print("right product array", right_prod_array)
+  
+  cumulative_product = 1
+  left_prod_array = list()
+  for num in numlist[::-1]:
+    print("printing backwards", num)
+    cumulative_product *= num
+    left_prod_array.append(cumulative_product)
+  print("left prod array - cumulativeProduct", cumulative_product)
+
+  left_prod_array = left_prod_array[::-1]
+  print('left_prod_array[::-1]:', left_prod_array)
+
+  output_array = list()
+
+  for i in range(len(numlist)):
+    print("i",i)
+    num = None
+    print("num:",num)
+    
+    if i == 0:
+      num = left_prod_array[i + 1]
+    
+    elif i == len(numlist) - 1:
+      num = right_prod_array[i - 1]
+    
+    else:
+      num = right_prod_array[i - 1] * left_prod_array[i + 1]
+
+    print("num being added", num)
+    output_array.append(num)
+  
+  return output_array
+
+print(multiplyArray([1,2,3,4,5]))
