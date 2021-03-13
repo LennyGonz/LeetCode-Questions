@@ -132,3 +132,5 @@ Give the mapping a = 1, b = 2, ... z = 26, and an encoded message, count the num
 
 For example, the message `'111'` would give 3, since it could be decoded as 'aaa', 'ka', 'ak'
 You can assume that the messages are decodable. For example, '001' is not allowed
+
+<hr>
