@@ -35,7 +35,6 @@ So we need to ask, what other information do we need to solve this question?
 It turns out if we tagged with each subresult node their depths, we could get the final solution by picking the higher depth leaf and then incrementing it:
 
 ```python
-
 def deepest(node):
   if node and not node.left and not node.right:
     return (node, 1) # leaf and its depth
