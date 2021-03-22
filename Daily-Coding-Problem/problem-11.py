@@ -55,5 +55,3 @@ def get_autocomplete_suggestions(s, dictionary):
   return completions
 
 print(get_autocomplete_suggestions('de', ['dog', 'deer', 'deal']))
-
-
