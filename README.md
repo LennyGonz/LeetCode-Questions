@@ -180,7 +180,7 @@ As always, feel free to shoot us an email if there's anything we can help with.
 
 <hr>
 
-problem 11
+problem 11 [Medium]
 
 Implement an autocomplete system. That is, given a query string `s` and a set of all possible query strings, return all strings in the set that have `s` as a prefix
 
@@ -193,7 +193,7 @@ As always, feel free to shoot us an email if there's anything we can help with
 
 <hr>
 
-problem 12
+problem 12 [Hard]
 
 There exists a staircase with N steps, and you can climb up either 1 or 2 steps at a time.
 Given N, write a function that returns the number of unique ways you can climb the staircase.
@@ -212,7 +212,7 @@ For example, if `X = {1, 3, 5}`, you could climb 1, 3, or 5 steps at a time.
 
 <hr>
 
-problem 13
+problem 13 [Hard]
 
 Given an integer k and a string s, find the length of the longest substring that contains at most k distinct characters.
 
@@ -220,7 +220,7 @@ For example, given s = "abcba" and k = 2, the longest substring with k distinct 
 
 <hr>
 
-problem 14
+problem 14 [Medium]
 
 The area of a circle is defined as πr^2. Estimate π to 3 decimal places using a Monte Carlo method.
 
@@ -228,7 +228,7 @@ Hint: The basic equation of a circle is x2 + y2 = r2.
 
 <hr>
 
-problem 15
+problem 15 [Medium]
 
 Given a stream of elements too large to store in memory, pick a random element from the stream with uniform probability.
 
@@ -236,7 +236,7 @@ We will be sending the solution tomorrow, along with tomorrow's question. As alw
 
 <hr>
 
-problem 16
+problem 16 [Easy]
 
 You run an e-commerce website and want to record the last `N order` ids in a log. 
 
@@ -248,7 +248,7 @@ You should be as efficient with time and space as possible.
 
 <hr>
 
-problem 17
+problem 17 [Hard]
 
 Suppose we represent our file system by a string in the following manner:
 
@@ -291,7 +291,7 @@ The name of a directory or sub-directory will not contain a period.
 
 <hr>
 
-problem 18
+problem 18 [Hard]
 
 Given an array of integers and a number k, where 1 <= k <= length of the array, compute the maximum values of each subarray of length k.
 
@@ -306,7 +306,7 @@ Do this in O(n) time and O(k) space. You can modify the input array in-place and
 
 <hr>
 
-problem 19
+problem 19 [Medium]
 
 A builder is looking to build a row of N houses that can be of K different colors. 
 
