@@ -42,7 +42,7 @@ Unique Email Address | [Code](Code/unique_email_address.py) | [Walk-Through](PDF
 
 # Daily Coding Challenge
 
-Problem 1
+Problem 1 [Easy]
 
 Given a list of numbers, return whether any two sums to k.
 
@@ -54,7 +54,7 @@ Bonus: Can you do this in one pass?
 
 <hr>
 
-Problem 2
+Problem 2 [Hard]
 
 Given an array of integers, return a new array such that each element at index i of the new array is the product of all the numbers in the original array except the one at i
 
@@ -68,7 +68,7 @@ If our input was `[3,2,1]`, the expected output would be `[2,3,6]`
 
 <hr>
 
-Problem 3
+Problem 3 [Medium]
 
 Given the root to a binary tree, implement `serialize(root)`, which serializes the tree into a string, and `deserializes(s)`, which deserializes the string back into the tree.
 
@@ -91,7 +91,7 @@ assert (deserialize(node)).left.left.val == 'left.left'
 
 <hr>
 
-problem 4
+problem 4 [Hard]
 
 Given an array of integers, find the first missing positive integer in linear time and constant space.
 In other words, find the lowest positive integer that does not exist in the array.
@@ -104,7 +104,7 @@ You can modify the input array in-place
 
 <hr>
 
-problem 5
+problem 5 [Medium]
 
 *Throwback to Scheme/Lisp*
 
@@ -122,7 +122,7 @@ Implement `car` and `cdr`
 
 <hr>
 
-problem 6
+problem 6 [Hard]
 
 An XOR linked list is a more memory efficient doubly linked list. Instead of each node holding next and prev fields, it holds a field named both, which is an XOR of the next node and the previous node. Implement an XOR linked list; it has an add(element) which adds the element to the end, and a get(index) which returns the node at index.
 
@@ -130,7 +130,7 @@ If using a language that has no pointers (such as Python), you can assume you ha
 
 <hr>
 
-problem 7
+problem 7 [Medium]
 
 Give the mapping a = 1, b = 2, c = 3, d = 4, e = 5 ... z = 26, and an encoded message, count the number of ways it can be decoded
 
@@ -139,7 +139,7 @@ You can assume that the messages are decodable. For example, '001' is not allowe
 
 <hr>
 
-problem 8
+problem 8 [Easy]
 
 A unival tree (which stands for "universal value") is a tree where all nodes under it have the same value
 
@@ -159,7 +159,7 @@ For example, the following tree has 5 unival subtrees:
 
 <hr>
 
-problem 9
+problem 9 [Hard]
 
 Given a list of integers, write a function that returns the largest sum of non-adjacent numbers
 Numbers can be `0` or negative.
@@ -171,7 +171,7 @@ Follow-up: Can you do this in `O(n)` time and constant space?
 
 <hr>
 
-problem 10
+problem 10 [Medium]
 
 Implement a job scheduler which takes in function `f` and an integer `n`, and calls `f` after `n` milliseconds
 
