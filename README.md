@@ -316,7 +316,7 @@ Given an N by K matrix where the nth row and kth column represents the cost to b
 
 <hr>
 
-problem 20
+problem 20 [Easy]
 
 Given two singly linked lists that intersect at some point, find the intersecting node. The lists are non-cyclical.
 
@@ -328,7 +328,7 @@ Do this in O(M + N) time (where M and N are the lengths of the lists) and consta
 
 <hr>
 
-problem 21
+problem 21 [Easy]
 
 Given an array of time intervals (start, end) for classroom lectures (possibly overlapping), find the minimum number of rooms required.
 
@@ -336,7 +336,7 @@ For example, given [(30, 75), (0, 50), (60, 150)], you should return 2.
 
 <hr>
 
-problem 22
+problem 22 [Medium]
 
 Given a dictionary of words and a string made up of those words (no spaces), return the original sentence in a list. 
 
@@ -349,7 +349,7 @@ return either ['bed', 'bath', 'and', 'beyond] or ['bedbath', 'and', 'beyond'].
 
 <hr>
 
-problem 23
+problem 23 [Easy]
 
 You are given an M by N matrix consisting of booleans that represents a board. Each True boolean represents a wall. Each False boolean represents a tile you can walk on.
 
@@ -376,7 +376,7 @@ since we would need to go through (1, 2) because there is a wall everywhere else
 
 <hr>
 
-problem 24
+problem 24 [Medium]
 
 Implement locking in a binary tree. A binary tree node can be locked or unlocked only if all of its descendants or ancestors are not locked.
 
@@ -392,7 +392,7 @@ Each method should run in O(h), where h is the height of the tree.
 
 <hr>
 
-problem 25
+problem 25 [Hard]
 
 Implement regular expression matching with the following special characters:
 
@@ -405,5 +405,165 @@ For example, given the regular expression `"ra."` and the string `"ray"`, your f
 The same regular expression on the string "raymond" should return `false`.
 
 Given the regular expression `".*at"` and the string `"chat"`, your function should return true. The same regular expression on the string "chats" should return false.
+
+<hr>
+
+problem 26 [Medium]
+
+Given a singly linked list and an integer k, remove the kth last element from the list. k is guaranteed to be smaller than the length of the list.
+
+The list is very long, so making more than one pass is prohibitively expensive.
+
+Do this in constant space and in one pass.
+
+<hr>
+
+problem 27 [Easy]
+
+Given a string of round, curly, and square open and closing brackets, return whether the brackets are balanced (well-formed).
+
+For example, given the string "([])[]({})", you should return true.
+
+Given the string "([)]" or "((()", you should return false.
+
+<hr>
+
+problem 28 [Medium]
+
+Write an algorithm to justify text. Given a sequence of words and an integer line length k, return a list of strings which represents each line, fully justified.
+
+More specifically, you should have as many words as possible in each line. There should be at least one space between each word. Pad extra spaces when necessary so that each line has exactly length k. Spaces should be distributed as equally as possible, with the extra spaces, if any, distributed starting from the left.
+
+If you can only fit one word on a line, then you should pad the right-hand side with spaces.
+
+Each word is guaranteed not to be longer than k.
+
+For example, given the list of words ["the", "quick", "brown", "fox", "jumps", "over", "the", "lazy", "dog"] and k = 16, you should return the following:
+
+```
+["the  quick brown", # 1 extra space on the left
+"fox  jumps  over", # 2 extra spaces distributed evenly
+"the   lazy   dog"] # 4 extra spaces distributed evenly
+```
+
+<hr>
+
+problem 29 [Easy]
+
+Run-length encoding is a fast and simple method of encoding strings. 
+The basic idea is to represent repeated successive characters as a single count and character. 
+
+For example, the string `"AAAABBBCCDAA"` would be encoded as `"4A3B2C1D2A"`.
+
+Implement run-length encoding and decoding. You can assume the string to be encoded have no digits and consists solely of alphabetic characters. 
+You can assume the string to be decoded is valid.
+
+<hr>
+
+problem 30 [Medium]
+
+You are given an array of non-negative integers that represents a two-dimensional elevation map where each element is unit-width wall and the integer is the height. 
+Suppose it will rain and all spots between two walls get filled up.
+
+Compute how many units of water remain trapped on the map in O(N) time and O(1) space.
+
+For example, given the input [2, 1, 2], we can hold 1 unit of water in the middle.
+
+Given the input [3, 0, 1, 3, 0, 5], we can hold 3 units in the first index, 2 in the second, 
+and 3 in the fourth index (we cannot hold 5 since it would run off to the left), so we can trap 8 units of water.
+
+<hr>
+
+problem 31 [Easy]
+
+The edit distance between two strings refers to the minimum number of character insertions, deletions, and substitutions required to change one string to the other. 
+For example, the edit distance between “kitten” and “sitting” is three: substitute the “k” for “s”, substitute the “e” for “i”, and append a “g”.
+
+Given two strings, compute the edit distance between them.
+
+<hr>
+
+problem 32 [Hard]
+
+Suppose you are given a table of currency exchange rates, represented as a 2D array.
+
+Determine whether there is a possible arbitrage: that is, 
+
+whether there is some sequence of trades you can make, starting with some amount A of any currency, so that you can end up with some amount greater than A of that currency.
+
+There are no transaction costs and you can trade fractional quantities.
+
+<hr>
+
+problem 33 [Easy]
+
+Compute the running median of a sequence of numbers. That is, given a stream of numbers, print out the median of the list so far on each new element.
+
+Recall that the median of an even-numbered list is the average of the two middle numbers.
+
+For example, given the sequence `[2, 1, 5, 7, 2, 0, 5]`, your algorithm should print out:
+
+```
+2
+1.5
+2
+3.5
+2
+2
+2
+```
+
+<hr>
+
+problem 34 [Medium]
+
+Given a string, find the palindrome that can be made by inserting the fewest number of characters as possible anywhere in the word. 
+
+If there is more than one palindrome of minimum length that can be made, return the lexicographically earliest one (the first one alphabetically).
+
+For example, given the string "race", you should return "ecarace", 
+
+since we can add three letters to it (which is the smallest amount to make a palindrome). 
+
+There are seven other palindromes that can be made from "race" by adding three letters, but "ecarace" comes first alphabetically.
+
+As another example, given the string "google", you should return "elgoogle".
+
+<hr>
+
+problem 35 [Hard]
+
+Given an array of strictly the characters 'R', 'G', and 'B', segregate the values of the array so that all the Rs come first, the Gs come second, and the Bs come last. 
+You can only swap elements of the array.
+
+Do this in linear time and in-place.
+
+For example, given the array ['G', 'B', 'R', 'R', 'B', 'R', 'G'], it should become ['R', 'R', 'R', 'G', 'G', 'B', 'B'].
+
+<hr>
+
+problem 36 [Medium]
+
+Given the root to a binary search tree, find the second largest node in the tree.
+
+<hr>
+
+problem 37 [Easy]
+
+The power set of a set is the set of all its subsets. Write a function that, given a set, generates its power set.
+
+For example, given the set `{1, 2, 3}`, it should return `{{}, {1}, {2}, {3}, {1, 2}, {1, 3}, {2, 3}, {1, 2, 3}}`.
+
+You may also use a list or array to represent a set.
+
+<hr>
+
+problem 38 [Hard]
+
+You have an N by N board.
+
+Write a function that, given N, returns the number of possible arrangements of the board where N queens can be placed on the board without threatening each other,
+
+i.e. no two queens share the same row, column, or diagonal.
 
 <hr>
