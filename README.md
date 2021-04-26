@@ -707,3 +707,46 @@ Given the array [-5, -1, -8, -9], the maximum sum would be 0, since we would not
 Do this in O(N) time.
 
 <hr>
+
+problem 50 [Easy]
+
+Suppose an arithmetic expression is given as a binary tree. Each leaf is an integer and each internal node is one of '+', '−', '∗', or '/'.
+
+Given the root to such a tree, write a function to evaluate it.
+
+For example, given the following tree:
+
+```
+    *
+   / \
+  +    +
+ / \  / \
+3  2  4  5
+```
+
+You should return 45, as it is (3 + 2) * (4 + 5).
+
+<hr>
+
+problem 51 [Medium]
+
+Given a function that generates perfectly random numbers between 1 and k (inclusive), where k is an input.
+
+Write a function that shuffles a deck of cards represented as an array using only swaps.
+
+It should run in O(N) time.
+
+Hint: Make sure each one of the 52! permutations of the deck is equally likely.
+
+<hr>
+
+problem 52 [Hard]
+
+Implement an LRU (Least Recently Used) cache. It should be able to be initialized with a cache size `n`, and contain the following methods:
+
+- `set(key, value)`: sets `key` to `value`. If there are already `n` items in the cache and we are adding a new item, then it should also remove the least recently used item
+- `get(key)`: gets the value at `key`. If no such key exists, return null
+
+Each operation should run in O(1) time
+
+<hr>
