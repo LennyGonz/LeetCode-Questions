@@ -750,3 +750,29 @@ Implement an LRU (Least Recently Used) cache. It should be able to be initialize
 Each operation should run in O(1) time
 
 <hr>
+
+problem 53 [Medium]
+
+Implement a queue using two stacks. 
+Recall that a queue is a FIFO (first-in, first-out) data structure with the following methods: enqueue, which inserts an element into the queue, and dequeue, which removes it.
+
+<hr>
+
+problem 54 [Hard]
+
+Sudoku is a puzzle where you're given a partially-filled 9 by 9 grid with digits.
+
+The objective is to fill the grid with the constraint that every row, column, and box (3 by 3 subgrid) must contain all of the digits from 1 to 9.
+
+Implement an efficient sudoku solver.
+
+<hr>
+
+problem 55 [Easy]
+
+Implement a URL shortener with the following methods:
+
+- `shorten(url)`, which shortens the url into a six-character alphanumeric string, such as zLg6wl.
+- `restore(short)`, which expands the shortened string into the original url. If no such shortened string exists, return null.
+
+Hint: What if we enter the same URL twice?
