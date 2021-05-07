@@ -776,3 +776,55 @@ Implement a URL shortener with the following methods:
 - `restore(short)`, which expands the shortened string into the original url. If no such shortened string exists, return null.
 
 Hint: What if we enter the same URL twice?
+
+<hr>
+
+problem 56 [Medium]
+
+Given an undirected graph represented as an adjacency matrix and an integer k, 
+
+write a function to determine whether each vertex in the graph can be colored such that no two adjacent vertices share the same color using at most k colors.
+
+<hr>
+
+problem 57 [Medium]
+
+Given a string s and an integer k, break up the string into multiple lines such that each line has a length of k or less.
+You must break it up so that words don't break across lines. 
+Each line has to have the maximum possible amount of words. If there's no way to break the text up, then return null.
+
+You can assume that there are no spaces at the ends of the string and that there is exactly one space between each word.
+
+For example, given the string "the quick brown fox jumps over the lazy dog" and k = 10,
+you should return: ["the quick", "brown fox", "jumps over", "the lazy", "dog"]. No string in the list has a length of more than 10.
+
+<hr>
+
+problem 58 [Medium]
+
+An sorted array of integers was rotated an unknown number of times.
+
+Given such an array, find the index of the element in the array in faster than linear time. If the element doesn't exist in the array, return null.
+
+For example, given the array [13, 18, 25, 2, 8, 10] and the element 8, return 4 (the index of 8 in the array).
+
+You can assume all the integers in the array are unique.
+
+<hr>
+
+problem 59 [Hard]
+
+Implement a file syncing algorithm for two computers over a low-bandwidth network. What if we know the files in the two computers are mostly the same?
+
+<hr>
+
+problem 60 [Medium]
+
+Given a multiset of integers, return whether it can be partitioned into two subsets whose sums are the same.
+
+For example, given the multiset {15, 5, 20, 10, 35, 15, 10}, it would return true, since we can split it up into {15, 5, 10, 15, 10} and {20, 35}, which both add up to 55.
+
+Given the multiset {15, 5, 20, 10, 35}, it would return false, since we can't split it up into two subsets that add up to the same sum.
+
+<hr>
+
