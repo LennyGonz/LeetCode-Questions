@@ -828,3 +828,50 @@ Given the multiset {15, 5, 20, 10, 35}, it would return false, since we can't sp
 
 <hr>
 
+problem 61 [Medium]
+
+Implement integer exponentiation. That is, implement the pow(x, y) function, where x and y are integers and returns x^y.
+
+Do this faster than the naive method of repeated multiplication.
+
+For example, pow(2, 10) should return 1024.
+
+<hr>
+
+problem 62 [Medium]
+
+There is an N by M matrix of zeroes. Given N and M, write a function to count the number of ways of starting at the top-left corner and getting to the bottom-right corner. 
+You can only move right or down.
+
+For example, given a 2 by 2 matrix, you should return 2, since there are two ways to get to the bottom-right:
+
+Right, then down
+Down, then right
+Given a 5 by 5 matrix, there are 70 ways to get to the bottom-right.
+
+<hr>
+
+problem 63 [Easy]
+
+Given a 2D matrix of characters and a target word, write a function that returns whether the word can be found in the matrix by going left-to-right, or up-to-down.
+
+For example, given the following matrix:
+
+```
+[['F', 'A', 'C', 'I'],
+ ['O', 'B', 'Q', 'P'],
+ ['A', 'N', 'O', 'B'],
+ ['M', 'A', 'S', 'S']]
+```
+
+and the target word 'FOAM', you should return true, since it's the leftmost column. Similarly, given the target word 'MASS', you should return true, since it's the last row.
+
+<hr>
+
+Problem 64 [Hard]
+
+A knight's tour is a sequence of moves by a knight on a chessboard such that all squares are visited once.
+
+Given N, write a function to return the number of knight's tours on an N by N chessboard.
+
+<hr>
