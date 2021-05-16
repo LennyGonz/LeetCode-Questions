@@ -875,3 +875,100 @@ A knight's tour is a sequence of moves by a knight on a chessboard such that all
 Given N, write a function to return the number of knight's tours on an N by N chessboard.
 
 <hr>
+
+problem 65 [Easy]
+
+Given a N by M matrix of numbers, print out the matrix in a clockwise spiral.
+
+For example, given the following matrix:
+```
+[[1,  2,  3,  4,  5],
+ [6,  7,  8,  9,  10],
+ [11, 12, 13, 14, 15],
+ [16, 17, 18, 19, 20]]
+```
+You should print out the following:
+```
+1
+2
+3
+4
+5
+10
+15
+20
+19
+18
+17
+16
+11
+6
+7
+8
+9
+14
+13
+12
+```
+
+<hr>
+
+problem 66 [Medium]
+
+Assume you have access to a function `toss_biased()` which returns 0 or 1 with a probability that's not 50-50 (but also not 0-100 or 100-0).
+You do not know the bias of the coin.
+
+Write a function to simulate an unbiased coin toss.
+
+<hr>
+
+problem 67 [Hard]
+
+Implement an LFU (Least Frequently Used) cache. It should be able to be initialized with a cache size `n`, and contain the following methods:
+
+- `set(key, value)`: sets `key` to `value`. If there are already `n` items in the cache and we are adding a new item, then it should also remove the least frequently used item. If there is a tie, then the least recently used key should be removed.
+- `get(key)`: gets the value at key. If no such key exists, return null.
+
+**Each operation should run in O(1) time**
+
+<hr>
+
+problem 68 [Medium]
+
+On our special chessboard, two bishops attack each other if they share the same diagonal.
+This includes bishops that have another bishop located between them, i.e. bishops can attack through pieces.
+
+You are given N bishops, represented as (row, column) tuples on a M by M chessboard.
+Write a function to count the number of pairs of bishops that attack each other.
+The ordering of the pair doesn't matter: (1, 2) is considered the same as (2, 1).
+
+For example, given M = 5 and the list of bishops:
+
+- (0, 0)
+- (1, 2)
+- (2, 2)
+- (4, 0)
+
+The board would look like this:
+
+```
+[b 0 0 0 0]
+[0 0 b 0 0]
+[0 0 b 0 0]
+[0 0 0 0 0]
+[b 0 0 0 0]
+```
+
+You should return 2, since bishops 1 and 3 attack each other, as well as bishops 3 and 4
+
+<hr>
+
+problem 69 [Easy]
+
+Given a list of integers, return the largest product that can be made by multiplying any three integers.
+
+For example, if the list is `[-10, -10, 5, 2]`, we should return `500`, since that's `-10 * -10 * 5`.
+
+You can assume the list has at least three integers.
+
+<hr>
