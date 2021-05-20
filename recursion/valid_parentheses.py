@@ -1,0 +1,2 @@
+def validParentheses(str):
+  pass
