@@ -60,7 +60,9 @@ def add_to_trie(s, trie):
   
   print("done with word trie:", trie)
   return trie
-trie[character]
+
+#trie[character]
+
 def get_dictionary_trie(dictionary):
   trie = dict()
   for word in dictionary:
@@ -129,3 +131,98 @@ def multiplyArray(numlist):
   return output_array
 
 print(multiplyArray([1,2,3,4,5]))
+
+# mapping = {'2': 'abc', '3': 'def', '4':'ghi', '5':'jkl', '6':'mno', '7': 'pqrs', '8':'tuv', '9': 'wxyz'}
+
+# add two numbers
+def add(l1, l2):
+  res = l1.val + l2.val
+  digit = res % 10
+  carry = res // 10
+  answer = ListNode(digit)
+
+  if any((l1.next, l2.next, carry)):
+    l1 = l1.next if l1.next else ListNode(0)
+    l2 = l2.next if l2.next else ListNode(0)
+
+    l1.val += carry
+    answer.next = add(l1, l2)
+  
+  return answer
+
+# inorder traversal
+def in(root):
+  res = []
+  helper(root, res)
+  return res
+
+def helper(root, res):
+  if root:
+    helper(root.left, res)
+    res.append(root.val)
+    helper(root.right, res)
+
+# letter Combinations
+def letterCombination(digit):
+  mapping = {'2': 'abc', '3': 'def', '4':'ghi', '5':'jkl', '6':'mno', '7': 'pqrs', '8':'tuv', '9': 'wxyz'}
+
+  if digit == "":
+    return []
+  
+  if len(digit) == 1:
+    return list(mapping[digit])
+  
+  prev = letterCombination(digit[:-1])
+  additional = mapping[-1]
+
+  return [s1 + s2 for s1 in prev for s2 in additional]
+
+# preorder traversal
+def pre(root):
+  res = []
+  helper(root, res)
+  return res
+
+def helper(root, res):
+  if root:
+    helper(root.left, res)
+    helper(root.right, res)
+    res.append(root.val)
+
+# postorder traversal
+def po(root):
+  res = []
+  helper(root, res)
+  return res
+
+def helper(root, res):
+  if root:
+    res.append(root.val)
+    helper(root.left, res)
+    helper(root.right, res)
+
+
+# reverse string
+def reverseString(str):
+  # base case - bring it down to an empty string
+  if len(str) == 0:
+    return ""
+  else:
+    return reverseString(str[1:]) + str[0]
+
+print(reverseString("hello"))
+
+# sum of all xor totals input=[1,3]
+def sumXOR(nums):
+  res = 0
+  def helper():
+    nonlocal res
+    if index >= len(nums):
+      res += running_xor
+    else:
+      helper(nums, index+1, nums[index]^running_xor)
+      helper(nums, index+1, running_xor)
+  
+  helper(nums, 0, 0)
+
+  return res
