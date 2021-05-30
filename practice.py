@@ -41,101 +41,101 @@
 # print(get_suggestions(['cat','car','cer'], 'ae'))
 
 
-def add_to_trie(s, trie):
-  if not s:
-    return trie
-  print("****")
-  print("string:", s)
-  print("trie at the beginning", trie)
-  character = s[0]
-  print("char",character)
-  if character not in trie:
-    trie[character] = dict()
+# def add_to_trie(s, trie):
+#   if not s:
+#     return trie
+#   print("****")
+#   print("string:", s)
+#   print("trie at the beginning", trie)
+#   character = s[0]
+#   print("char",character)
+#   if character not in trie:
+#     trie[character] = dict()
   
-  print("trie before the recursion", trie)
-  print("s[1:]", s[1:])
-  print("character",character)
-  print("trie[character]",trie[character])
-  trie[character] = add_to_trie(s[1:], trie[character])
+#   print("trie before the recursion", trie)
+#   print("s[1:]", s[1:])
+#   print("character",character)
+#   print("trie[character]",trie[character])
+#   trie[character] = add_to_trie(s[1:], trie[character])
   
-  print("done with word trie:", trie)
-  return trie
+#   print("done with word trie:", trie)
+#   return trie
 
-#trie[character]
+# #trie[character]
 
-def get_dictionary_trie(dictionary):
-  trie = dict()
-  for word in dictionary:
-    trie = add_to_trie(word, trie)
-    print("trie inside of get_dictionary_trie", trie)
+# def get_dictionary_trie(dictionary):
+#   trie = dict()
+#   for word in dictionary:
+#     trie = add_to_trie(word, trie)
+#     print("trie inside of get_dictionary_trie", trie)
   
-  print("this gets returned \n", trie)
+#   print("this gets returned \n", trie)
 
-  print()
-  return trie
+#   print()
+#   return trie
 
-print(get_dictionary_trie(['dog','deer','deal']))
+# print(get_dictionary_trie(['dog','deer','deal']))
 
-####################################################
-'''
-This problem was asked by Uber.
+# ####################################################
+# '''
+# This problem was asked by Uber.
 
-Given an array of integers, return a new array such that each element at index i of the new array is the product of all the numbers in the original array except the one at i.
+# Given an array of integers, return a new array such that each element at index i of the new array is the product of all the numbers in the original array except the one at i.
 
-For example, if our input was [1, 2, 3, 4, 5], the expected output would be [120, 60, 40, 30, 24]. If our input was [3, 2, 1], the expected output would be [2, 3, 6].
+# For example, if our input was [1, 2, 3, 4, 5], the expected output would be [120, 60, 40, 30, 24]. If our input was [3, 2, 1], the expected output would be [2, 3, 6].
 
-Follow-up: what if you can't use division?
-'''
+# Follow-up: what if you can't use division?
+# '''
 
 
-def multiplyArray(numlist):
-  right_prod_array = list()
-  cumulative_product = 1
+# def multiplyArray(numlist):
+#   right_prod_array = list()
+#   cumulative_product = 1
 
-  for num in numlist:
-    cumulative_product *= num
-    right_prod_array.append(cumulative_product)
-  print("right prod array - cumulativeProduct", cumulative_product)
-  print("right product array", right_prod_array)
+#   for num in numlist:
+#     cumulative_product *= num
+#     right_prod_array.append(cumulative_product)
+#   print("right prod array - cumulativeProduct", cumulative_product)
+#   print("right product array", right_prod_array)
   
-  cumulative_product = 1
-  left_prod_array = list()
-  for num in numlist[::-1]:
-    print("printing backwards", num)
-    cumulative_product *= num
-    left_prod_array.append(cumulative_product)
-  print("left prod array - cumulativeProduct", cumulative_product)
+#   cumulative_product = 1
+#   left_prod_array = list()
+#   for num in numlist[::-1]:
+#     print("printing backwards", num)
+#     cumulative_product *= num
+#     left_prod_array.append(cumulative_product)
+#   print("left prod array - cumulativeProduct", cumulative_product)
 
-  left_prod_array = left_prod_array[::-1]
-  print('left_prod_array[::-1]:', left_prod_array)
+#   left_prod_array = left_prod_array[::-1]
+#   print('left_prod_array[::-1]:', left_prod_array)
 
-  output_array = list()
+#   output_array = list()
 
-  for i in range(len(numlist)):
-    print("i",i)
-    num = None
-    print("num:",num)
+#   for i in range(len(numlist)):
+#     print("i",i)
+#     num = None
+#     print("num:",num)
     
-    if i == 0:
-      num = left_prod_array[i + 1]
+#     if i == 0:
+#       num = left_prod_array[i + 1]
     
-    elif i == len(numlist) - 1:
-      num = right_prod_array[i - 1]
+#     elif i == len(numlist) - 1:
+#       num = right_prod_array[i - 1]
     
-    else:
-      num = right_prod_array[i - 1] * left_prod_array[i + 1]
+#     else:
+#       num = right_prod_array[i - 1] * left_prod_array[i + 1]
 
-    print("num being added", num)
-    output_array.append(num)
+#     print("num being added", num)
+#     output_array.append(num)
   
-  return output_array
+#   return output_array
 
-print(multiplyArray([1,2,3,4,5]))
+# print(multiplyArray([1,2,3,4,5]))
 
 # mapping = {'2': 'abc', '3': 'def', '4':'ghi', '5':'jkl', '6':'mno', '7': 'pqrs', '8':'tuv', '9': 'wxyz'}
 
 # add two numbers
-def add(l1, l2):
+def addTwo(l1, l2):
   res = l1.val + l2.val
   digit = res % 10
   carry = res // 10
@@ -144,38 +144,26 @@ def add(l1, l2):
   if any((l1.next, l2.next, carry)):
     l1 = l1.next if l1.next else ListNode(0)
     l2 = l2.next if l2.next else ListNode(0)
-
     l1.val += carry
-    answer.next = add(l1, l2)
+    answer.next = addTwo(l1, l2)
   
-  return answer
-
-# inorder traversal
-def in(root):
-  res = []
-  helper(root, res)
   return res
 
-def helper(root, res):
-  if root:
-    helper(root.left, res)
-    res.append(root.val)
-    helper(root.right, res)
+# inorder traversal
 
 # letter Combinations
-def letterCombination(digit):
+def combo(digit):
   mapping = {'2': 'abc', '3': 'def', '4':'ghi', '5':'jkl', '6':'mno', '7': 'pqrs', '8':'tuv', '9': 'wxyz'}
-
-  if digit == "":
+  if len(digit) == 0:
     return []
   
   if len(digit) == 1:
     return list(mapping[digit])
   
-  prev = letterCombination(digit[:-1])
-  additional = mapping[-1]
+  prev = combo(digit[:-1])
+  additional = mapping[digit[-1]]
 
-  return [s1 + s2 for s1 in prev for s2 in additional]
+  return [s + c for s in prev for c in additional]
 
 # preorder traversal
 def pre(root):
@@ -190,7 +178,7 @@ def helper(root, res):
     res.append(root.val)
 
 # postorder traversal
-def po(root):
+def post(root):
   res = []
   helper(root, res)
   return res
@@ -201,28 +189,36 @@ def helper(root, res):
     helper(root.left, res)
     helper(root.right, res)
 
-
 # reverse string
-def reverseString(str):
-  # base case - bring it down to an empty string
+def rev(str):
   if len(str) == 0:
     return ""
   else:
-    return reverseString(str[1:]) + str[0]
+    return rev(str[1:]) + str[0]
 
-print(reverseString("hello"))
+print(rev("hello"))
 
 # sum of all xor totals input=[1,3]
-def sumXOR(nums):
-  res = 0
-  def helper():
-    nonlocal res
-    if index >= len(nums):
-      res += running_xor
-    else:
-      helper(nums, index+1, nums[index]^running_xor)
-      helper(nums, index+1, running_xor)
-  
-  helper(nums, 0, 0)
 
-  return res
+def factorial(num):
+  res = 1
+  return fac(num, res)
+  
+def fac(num, res):
+  if num == 1:
+    return res
+  else:
+    res *= num
+    return fac(num-1, res)
+
+print(factorial(3))
+
+def factor(num):
+  if num == 1:
+    return 1
+  
+  else:
+    return num * factor(num - 1)
+
+print(factor(5))
+
