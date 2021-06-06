@@ -1111,3 +1111,19 @@ The input list is not necessarily ordered in any way.
 For example, given [(1, 3), (5, 8), (4, 10), (20, 25)], you should return [(1, 3), (4, 10), (20, 25)].
 
 <hr>
+
+problem 78 [Medium]
+
+Given k sorted singly linked lists, write a function to merge all the lists into one sorted singly linked list.
+
+<hr>
+
+problem 79 [Medium]
+
+Given an array of integers, write a function to determine whether the array could become non-decreasing by modifying at most 1 element.
+
+For example, given the array `[10, 5, 7]`, you should return true, since we can modify the `10` into a `1` to make the array non-decreasing.
+
+Given the array `[10, 5, 1]`, you should return `false`, since we can't modify any one element to get a non-decreasing array.
+
+<hr>
