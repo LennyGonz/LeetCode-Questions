@@ -1026,3 +1026,88 @@ Given the head of a singly linked list, reverse it in-place.
 <hr>
 
 problem 74 [Medium]
+
+Suppose you have a multiplication table that is N by N. That is, a 2D array where the value at the `i`-th row and `j`-th column is `(i + 1) * (j + 1)` (if 0-indexed) or `i * j` (if 1-indexed).
+
+Given integers N and X, write a function that returns the number of times X appears as a value in an N by N multiplication table.
+
+For example, given N = 6 and X = 12, you should return 4, since the multiplication table looks like this:
+
+```
+| 1 | 2 | 3 | 4 | 5 | 6 |
+
+| 2 | 4 | 6 | 8 | 10 | 12 |
+
+| 3 | 6 | 9 | 12 | 15 | 18 |
+
+| 4 | 8 | 12 | 16 | 20 | 24 |
+
+| 5 | 10 | 15 | 20 | 25 | 30 |
+
+| 6 | 12 | 18 | 24 | 30 | 36 |
+```
+
+And there are 4 12's in the table.
+
+<hr>
+
+problem 75 [Hard]
+
+Given an array of numbers, find the length of the longest increasing subsequence in the array. The subsequence does not necessarily have to be contiguous.
+
+For example, given the array [0, 8, 4, 12, 2, 10, 6, 14, 1, 9, 5, 13, 3, 11, 7, 15], the longest increasing subsequence has length 6: it is 0, 2, 6, 9, 11, 15.
+
+<hr>
+
+problem 76 [Medium]
+
+You are given an N by M 2D matrix of lowercase letters. Determine the minimum number of columns that can be removed to ensure that each row is ordered from top to bottom lexicographically. 
+That is, the letter at each column is lexicographically later as you go down each row. It does not matter whether each row itself is ordered lexicographically.
+
+For example, given the following table:
+
+```
+cba
+daf
+ghi
+```
+
+This is not ordered because of the a in the center. We can remove the second column to make it ordered:
+
+```
+ca
+df
+gi
+```
+
+So your function should return 1, since we only needed to remove 1 column.
+
+As another example, given the following table:
+
+```
+abcdef
+```
+
+Your function should return 0, since the rows are already ordered (there's only one row).
+
+As another example, given the following table:
+
+```
+zyx
+wvu
+tsr
+```
+
+Your function should return 3, since we would need to remove all the columns to order it.
+
+<hr>
+
+problem 77 [Easy]
+
+Given a list of possibly overlapping intervals, return a new list of intervals where all overlapping intervals have been merged.
+
+The input list is not necessarily ordered in any way.
+
+For example, given [(1, 3), (5, 8), (4, 10), (20, 25)], you should return [(1, 3), (4, 10), (20, 25)].
+
+<hr>
