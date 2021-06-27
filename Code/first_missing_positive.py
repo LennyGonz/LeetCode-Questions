@@ -8,7 +8,7 @@ def firstMissingPositive(nums):
   for num in nums:
     num = abs(num)
     if num <= len(nums) and nums[num - 1] >= 0:
-      nums[num - 1] *= 1
+      nums[num - 1] *= -1
 
   #final step for getting the answer
   for index in range(len(nums)):
