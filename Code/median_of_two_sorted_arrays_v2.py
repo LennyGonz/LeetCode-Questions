@@ -35,8 +35,7 @@ class Solution(object):
                 return min(getVal(longArray, rightLong), getVal(shortArray, rightShort))
             
             else:
-                return (max(getVal(shortArray, leftShort), getVal(longArray, leftLong)) +
-                       min(getVal(shortArray, rightShort), getVal(longArray, rightLong))) / 2.0
+                return (max(getVal(shortArray, leftShort), getVal(longArray, leftLong)) + min(getVal(shortArray, rightShort), getVal(longArray, rightLong))) / 2.0
         
         shortArray = nums1
         longArray = nums2
