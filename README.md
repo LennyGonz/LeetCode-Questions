@@ -1246,3 +1246,23 @@ is considered valid.
 
 <hr>
 
+problem 88 [Medium]
+
+Implement division of two positive integers without using the division, multiplication, or modulus operators. Return the quotient as an integer, ignoring the remainder.
+
+We will be sending the solution tomorrow, along with tomorrow's question. As always, feel free to shoot us an email if there's anything we can help with.
+
+<hr>
+
+problem 89 [Medium]
+
+A binary search tree is a tree with two children, left and right
+
+And satisfies the constraint that the key in the left child must be less than or equal to the root and the key in the right child must be greater than or equal to the root.
+
+<hr>
+
+problem 90 [Medium]
+
+Given an integer n and a list of integers l, 
+Write a function that randomly generates a number from 0 to n-1 that isn't in l (uniform).
