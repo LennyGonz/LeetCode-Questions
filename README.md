@@ -1266,3 +1266,39 @@ problem 90 [Medium]
 
 Given an integer n and a list of integers l, 
 Write a function that randomly generates a number from 0 to n-1 that isn't in l (uniform).
+
+<hr>
+
+problem 91 [Easy]
+
+What does the below code snippet print out? How can we fix the anonymous functions to behave as we'd expect?
+
+```python
+functions = []
+for i in range(10):
+  functions.append(lambda : i)
+
+for f in functions:
+  print(f())
+```
+
+<hr>
+
+problem 92 [Hard]
+
+We're given a hashmap associating each `courseId` key with a list of `courseIds` values, which represents that the prerequisites of `courseId` are `courseIds`. 
+Return a sorted ordering of courses such that we can finish all courses.
+
+Return null if there is no such ordering.
+
+For example, given {'CSC300': ['CSC100', 'CSC200'], 'CSC200': ['CSC100'], 'CSC100': []}, should return ['CSC100', 'CSC200', 'CSCS300'].
+
+<hr>
+
+problem 93 [Hard]
+
+Given a tree, find the largest tree/subtree that is a BST.
+
+Given a tree, return the size of the largest tree/subtree that is a BST.
+
+<hr>
