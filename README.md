@@ -1302,3 +1302,27 @@ Given a tree, find the largest tree/subtree that is a BST.
 Given a tree, return the size of the largest tree/subtree that is a BST.
 
 <hr>
+
+problem 94 [Easy]
+
+Given a binary tree of integers, find the maximum path sum between two nodes. The path must go through at least one node, and does not need to go through the root.
+
+<hr>
+
+problem 95 [Hard]
+
+Given a number represented by a list of digits, find the next greater permutation of a number, in terms of lexicographic ordering.
+
+If there is not greater permutation possible, return the permutation with the lowest value/ordering.
+
+For example, the list `[1,2,3]` should return `[1,3,2]`. The list `[1,3,2]` should return `[2,1,3]`. The list `[3,2,1]` should return `[1,2,3]`.
+
+Can you perform the operation without allocating extra memory (disregarding the input memory)?
+
+<hr>
+
+problem 96 [Easy]
+
+Given a number in the form of a list of digits, return all possible permutations.
+
+For example, given `[1,2,3]`, return `[[1,2,3],[1,3,2],[2,1,3],[2,3,1],[3,1,2],[3,2,1]]`.
