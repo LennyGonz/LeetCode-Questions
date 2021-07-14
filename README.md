@@ -1326,3 +1326,60 @@ problem 96 [Easy]
 Given a number in the form of a list of digits, return all possible permutations.
 
 For example, given `[1,2,3]`, return `[[1,2,3],[1,3,2],[2,1,3],[2,3,1],[3,1,2],[3,2,1]]`.
+
+<hr>
+
+problem 97 [Medium]
+
+Write a map implementation with a get function that lets you retrieve the value of a key at a particular time.
+
+It should contain the following methods:
+
+set(key, value, time): sets key to value for t = time.
+get(key, time): gets the key at t = time.
+The map should work like this. If we set a key at a particular time, it will maintain that value forever or until it gets set at a later time. In other words, when we get a key at a time, it should return the value that was set for that key set at the most recent time.
+
+Consider the following examples:
+
+```
+d.set(1, 1, 0) # set key 1 to value 1 at time 0
+d.set(1, 2, 2) # set key 1 to value 2 at time 2
+d.get(1, 1) # get key 1 at time 1 should be 1
+d.get(1, 3) # get key 1 at time 3 should be 2
+```
+
+```
+d.set(1, 1, 5) # set key 1 to value 1 at time 5
+d.get(1, 0) # get key 1 at time 0 should be null
+d.get(1, 10) # get key 1 at time 10 should be 1
+```
+
+```
+d.set(1, 1, 0) # set key 1 to value 1 at time 0
+d.set(1, 2, 0) # set key 1 to value 2 at time 0
+d.get(1, 0) # get key 1 at time 0 should be 2
+```
+
+<hr>
+
+problem 98 [Easy]
+
+Given a 2D board of characters and a word, find if the word exists in the grid.
+
+The word can be constructed from letters of sequentially adjacent cell, where "adjacent" cells are those horizontally or vertically neighboring. The same letter cell may not be used more than once.
+
+For example, given the following board:
+
+```
+[
+  ['A','B','C','E'],
+  ['S','F','C','S'],
+  ['A','D','E','E']
+]
+```
+
+`exists(board, "ABCCED") returns true`
+`exists(board, "SEE") returns true`
+`exists(board, "ABCB") returns false`
+
+<hr>
