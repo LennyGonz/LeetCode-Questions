@@ -1383,3 +1383,5 @@ For example, given the following board:
 `exists(board, "ABCB") returns false`
 
 <hr>
+
+problem 99
