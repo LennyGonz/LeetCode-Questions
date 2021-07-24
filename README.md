@@ -1477,3 +1477,75 @@ Given a function f, and N return a debounced f of N milliseconds.
 That is, as long as the debounced f continues to be invoked, f itself will not be called for N milliseconds.
 
 <hr>
+
+problem 106 [Medium]
+
+Given an integer list where each number represents the number of hops you can make, determine whether you can reach to the last index starting at index 0.
+
+For example, `[2, 0, 1, 0]` returns `True` while `[1, 1, 0, 1]` returns `False`.
+
+<hr>
+
+problem 107 [Easy]
+
+Print the nodes in a binary tree level-wise. For example, the following should print 1, 2, 3, 4, 5.
+
+```
+  1
+ / \
+2   3
+   / \
+  4   5
+```
+
+<hr>
+
+problem 108 [Easy]
+
+Given two strings A and B, return whether or not A can be shifted some number of times to get B.
+
+For example, if A is abcde and B is cdeab, return true. If A is abc and B is acb, return false.
+
+<hr>
+
+problem 109 [Medium]
+
+Given an unsigned 8-bit integer, swap its even and odd bits. The 1st and 2nd bit should be swapped, the 3rd and 4th bit should be swapped, and so on.
+
+For example, 10101010 should be 01010101. 11100010 should be 11010001.
+
+Bonus: Can you do this in one line?
+
+<hr>
+
+problem 110 [Medium]
+
+Given a binary tree, return all paths from the root to leaves.
+
+For example, given the tree:
+
+```
+   1
+  / \
+ 2   3
+    / \
+   4   5
+```
+
+Return `[[1, 2], [1, 3, 4], [1, 3, 5]]`
+
+<hr>
+
+problem 111 [Hard]
+
+Given a word W and a string S, find all starting indices in S which are anagrams of W.
+
+For example, given that W is "ab", and S is "abxaba", return 0, 3, and 4.
+
+<hr>
+
+problem 112 [Hard]
+
+<hr>
+
+problem 113 [Medium]
