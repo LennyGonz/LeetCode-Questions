@@ -1575,3 +1575,85 @@ Given two non-empty binary trees s and t, check whether tree t has exactly the s
 A subtree of s is a tree consists of a node in s and all of this node's descendants. The tree s could also be considered as a subtree of itself.
 
 <hr>
+
+problem 116 [Medium]
+
+Generate a finite, but an arbitrarily large binary tree quickly in O(1).
+
+That is, `generate()` should return a tree whose size is unbounded but finite.
+
+<hr>
+
+problem 117 [Easy]
+
+Given a binary tree, return the level of the tree with minimum sum.
+
+<hr>
+
+problem 118 [Easy]
+
+Given a sorted list of integers, square the elements and give the output in sorted order.
+
+For example, given [-9, -2, 0, 2, 3], return [0, 4, 4, 9, 81]
+
+<hr>
+
+problem 119 [Medium]
+
+Given a set of closed intervals, find the smallest set of numbers that covers all the intervals. If there are multiple smallest sets, return any of them.
+
+For example, given the intervals [0, 3], [2, 6], [3, 4], [6, 9], one set of numbers that covers all these intervals is {3, 6}.
+
+<hr>
+
+problem 120 [Medium]
+
+Implement the singleton pattern with a twist. First, instead of storing one instance, store two instances. 
+And in every even call of `getInstance()`, return the first instance and in every odd call of `getInstance()`, return the second instance.
+
+<hr>
+
+problem 121 [Hard]
+
+Given a string which we can delete at most k, return whether you can make a palindrome.
+
+For example, given 'waterrfetawx' and a k of 2, you could delete f and x to get 'waterretaw'
+
+<hr>
+
+problem 122 [Medium]
+
+You are given a 2-d matrix where each cell represents number of coins in that cell. 
+
+Assuming we start at matrix[0][0], and can only move right or down, find the maximum number of coins you can collect by the bottom right corner.
+
+For example, in this matrix
+
+```
+0 3 1 1
+2 0 0 4
+1 5 3 1
+```
+
+The most we can collect is 0 + 2 + 1 + 5 + 3 + 1 = 12 coins.
+
+<hr>
+
+problem 123 [Hard]
+
+Given a string, return whether it represents a number. 
+
+Here are the different kinds of numbers:
+
+- "10", a positive integer
+- "-10", a negative integer
+- "10.1", a positive real number
+- "-10.1", a negative real number
+- "1e5", a number in scientific notation
+
+And here are examples of non-numbers:
+
+- "a"
+- "x 1"
+- "a -2"
+- "-"
