@@ -1546,6 +1546,32 @@ For example, given that W is "ab", and S is "abxaba", return 0, 3, and 4.
 
 problem 112 [Hard]
 
+Given a binary tree, find the lowest common ancestor (LCA) of two given nodes in the tree. Assume that each node in the tree also has a pointer to its parent.
+
+According to the definition of LCA on Wikipedia: 
+“The lowest common ancestor is defined between two nodes v and w as the lowest node in T that has both v and w as descendants (where we allow a node to be a descendant of itself).”
+
 <hr>
 
 problem 113 [Medium]
+
+Given a string of words delimited by spaces, reverse the words in string. For example, given "hello world here", return "here world hello"
+
+Follow-up: given a mutable string representation, can you perform this operation in-place?
+
+<hr>
+
+problem 114 [Hard]
+
+Given a string and a set of delimiters, reverse the words in the string while maintaining the relative order of the delimiters. For example, given "hello/world:here", return "here/world:hello"
+
+Follow-up: Does your solution work for the following cases: "hello/world:here/", "hello//world:here"
+
+<hr>
+
+problem 115 [Hard]
+
+Given two non-empty binary trees s and t, check whether tree t has exactly the same structure and node values with a subtree of s.
+A subtree of s is a tree consists of a node in s and all of this node's descendants. The tree s could also be considered as a subtree of itself.
+
+<hr>
