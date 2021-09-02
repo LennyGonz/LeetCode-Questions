@@ -1855,4 +1855,45 @@ A bit array is a space efficient array that holds a value of 1 or 0 at each inde
 
 <hr>
 
+problem 138 [Hard] [Google]
 
+Find the minimum number of coins required to make n cents.
+
+You can use standard American denominations, that is, 1¢, 5¢, 10¢, and 25¢.
+
+For example, given n = 16, return 3 since we can make it with a 10¢, a 5¢, and a 1¢.
+
+<hr>
+
+problem 139 [Medium] [Google]
+
+Given an iterator with methods next() and hasNext(), create a wrapper iterator, PeekableInterface, which also implements peek(). peek shows the next element that would be returned on next().
+
+Here is the interface:
+
+```py
+class PeekableInterface(object):
+  def __init__(self, iterator):
+    pass
+
+  def peek(self):
+    pass
+
+  def next(self):
+    pass
+
+  def hasNext(self):
+    pass
+```
+
+<hr>
+
+problem 140 [Medium] [Facebook]
+
+Given an array of integers in which two elements appear exactly once and all other elements appear exactly twice, find the two elements that appear only once.
+
+For example, given the array `[2, 4, 6, 8, 10, 2, 6, 10]`, return `4` and `8`. The order does not matter.
+
+Follow-up: Can you do this in linear time and constant space?
+
+<hr>
