@@ -1765,3 +1765,94 @@ problem 131 [Medium] [Snapchat]
 Given the head to a singly linked list, where each node also has a “random” pointer that points to anywhere in the linked list, deep clone the list.
 
 <hr>
+
+problem 132 [Easy] [Riot Games]
+
+Design and implement a HitCounter class that keeps track of requests (or hits). It should support the following operations:
+
+- `record(timestamp)`: records a hit that happened at timestamp
+- `total()`: returns the total number of hits recorded
+- `range(lower, upper)`: returns the number of hits that occurred between timestamps lower and upper (inclusive)
+
+Follow-up: What if our system has limited memory?
+
+<hr>
+
+problem 133 [Medium] [Amazon]
+
+Given a node in a binary search tree, return the next bigger element, also known as the inorder successor.
+
+For example, the inorder successor of 22 is 30.
+
+```
+   10
+  /  \
+ 5    30
+     /  \
+   22    35
+```
+
+You can assume each node has a parent pointer.
+
+<hr>
+
+problem 134 [Easy] [Facebook]
+
+You have a large array with most of the elements as zero.
+
+Use a more space-efficient data structure, SparseArray, that implements the same interface:
+
+- `init(arr, size)`: initialize with the original large array and size.
+- `set(i, val)`: updates index at i with val.
+- `get(i)`: gets the value at index i.
+
+<hr>
+
+problem 135 [Easy] [Apple]
+
+Given a binary tree, find a minimum path sum from root to a leaf.
+
+For example, the minimum path in this tree is [10, 5, 1, -1], which has sum 15.
+
+```
+  10
+ /  \
+5    5
+ \     \
+   2    1
+       /
+     -1
+```
+
+<hr>
+
+problem 136 [Medium] [Google]
+
+Given an N by M matrix consisting only of 1's and 0's, find the largest rectangle containing only 1's and return its area.
+
+For example, given the following matrix:
+
+```
+[[1, 0, 0, 0],
+ [1, 0, 1, 1],
+ [1, 0, 1, 1],
+ [0, 1, 0, 0]]
+```
+
+Return 4.
+
+<hr>
+
+problem 137 [Medium] [Amazon]
+
+Implement a bit array.
+
+A bit array is a space efficient array that holds a value of 1 or 0 at each index.
+
+- `init(size)`: initialize the array with size
+- `set(i, val)`: updates index at i with val where val is either 1 or 0.
+- `get(i)`: gets the value at index i.
+
+<hr>
+
+
