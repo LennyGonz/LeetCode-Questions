@@ -1897,3 +1897,61 @@ For example, given the array `[2, 4, 6, 8, 10, 2, 6, 10]`, return `4` and `8`. T
 Follow-up: Can you do this in linear time and constant space?
 
 <hr>
+
+problem 141 [Hard] [Microsoft]
+
+Implement 3 stacks using a single list:
+
+```python
+class Stack:
+  def __init__(self):
+    self.list = []
+
+  def pop(self, stack_number):
+    pass
+
+  def push(self, item, stack_number):
+    pass
+```
+
+<hr>
+
+problem 142 [Hard] [Google]
+
+You're given a string consisting solely of `(`, `)`, and `*`. `*` can represent either a `(`, `)`, or an empty string. Determine whether the parentheses are balanced.
+
+For example, `(()*` and `(*)` are balanced. `)*(` is not balanced.
+
+<hr>
+
+problem 143 [Medium] [Amazon]
+
+Given a pivot x, and a list lst, partition the list into three parts.
+
+- The first part contains all elements in lst that are less than x
+- The second part contains all elements in lst that are equal to x
+- The third part contains all elements in lst that are larger than x
+
+Ordering within a part can be arbitrary.
+
+For example, given `x = 10` and `lst = [9, 12, 3, 5, 14, 10, 10]`, one partition may be `[9, 3, 5, 10, 10, 12, 14]`.
+
+<hr>
+
+problem 144 [Medium] [Google]
+
+Given an array of numbers and an index `i`, return the index of the nearest larger number of the number at index `i`, where distance is measured in array indices.
+
+For example, given `[4, 1, 3, 5, 6]` and index `0`, you should return `3`.
+
+If two distances to larger numbers are the equal, then return any one of them. If the array at i doesn't have a nearest larger integer, then return null.
+
+Follow-up: If you can preprocess the array, can you do this in constant time?
+
+<hr>
+
+problem 145 [Easy] [Google]
+
+Given the head of a singly linked list, swap every two nodes and return its head.
+
+For example, given `1 -> 2 -> 3 -> 4`, return `2 -> 1 -> 4 -> 3`.
