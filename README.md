@@ -1992,3 +1992,31 @@ problem 147 [Hard]
 Given a list, sort it using this method: `reverse(lst, i, j)`, which reverses `lst` from `i` to `j`.
 
 <hr>
+
+problem 148 [Medium] [Apple]
+
+![Gray code](https://en.wikipedia.org/wiki/Gray_code) is a binary code where each successive value differ in only one bit, as well as when wrapping around.
+
+Gray code is common in hardware so that we don't see temporary spurious values during transitions.
+
+Given a number of bits `n`, generate a possible gray code for it.
+
+For example, for `n = 2`, one gray code would be `[00, 01, 11, 10]`
+
+<hr>
+
+problem 149 [Hard] [Goldman Sachs]
+
+Given a list of numbers `L`, implement a method `sum(i, j)` which returns the sum from the sublist `L[i:j]` (including `i`, excluding `j`).
+
+For example, given `L = [1, 2, 3, 4, 5]`, `sum(1, 3)` should return `sum([2, 3])`, which is `5`.
+
+You can assume that you can do some pre-processing. sum() should be optimized over the pre-processing step
+
+<hr>
+
+problem 150 [Hard] [Linkedin]
+
+Given a list of points, a central point, and an integer `k`, find the nearest `k` points from the central point.
+
+For example, given the list of points `[(0, 0), (5, 4), (3, 1)]`, the central point `(1, 2)`, and k = 2, return `[(0, 0), (3, 1)]`.
