@@ -2020,3 +2020,269 @@ problem 150 [Hard] [Linkedin]
 Given a list of points, a central point, and an integer `k`, find the nearest `k` points from the central point.
 
 For example, given the list of points `[(0, 0), (5, 4), (3, 1)]`, the central point `(1, 2)`, and k = 2, return `[(0, 0), (3, 1)]`.
+
+<hr>
+
+problem 151 [Medium]
+
+Given a 2-D matrix representing an image, a location of a pixel in the screen and a color C, replace the color of the given pixel and all adjacent same colored pixels with C.
+
+For example, given the following matrix, and location pixel of (2, 2), and 'G' for green:
+
+```
+B B W
+W W W
+W W W
+B B B
+```
+
+Becomes:
+
+```
+B B G
+G G G
+G G G
+B B B
+```
+
+<br>
+
+probelm 152 [Medium] [TripleByte]
+
+You are given `n` numbers as well as `n` probabilities that sum up to 1. Write a function to generate one of the numbers with its corresponding probability.
+
+For example, given the numbers `[1, 2, 3, 4]` and probabilities `[0.1, 0.5, 0.2, 0.2]`, your function should return `1` 10% of the time, `2` 50% of the time, and `3` and `4` 20% of the time.
+
+You can generate random numbers between 0 and 1 uniformly.
+
+<br>
+
+problem 153 [Hard]
+
+Find an efficient algorithm to find the smallest distance (measured in number of words) between any two given words in a string.
+
+For example, given words "hello", and "world" and a text content of "dog cat hello cat dog dog hello cat world", return 1 because there's only one word "cat" in between the two words.
+
+<br>
+
+problem 154 [Easy] [Amazon]
+
+Implement a stack API using only a heap. A stack implements the following methods:
+
+- `push(item)`, which adds an element to the stack
+- `pop()`, which removes and returns the most recently added element (or throws an error if there is nothing on the stack)
+
+Recall that a heap has the following operations:
+
+- push(item), which adds a new key to the heap
+- pop(), which removes and returns the max value of the heap
+
+<br>
+
+problem 155 [Medium] [MongoDB]
+
+Given a list of elements, find the majority element, which appears more than half the time (`> floor(len(lst) / 2.0)`).
+
+You can assume that such element exists.
+
+For example, given `[1, 2, 1, 1, 3, 4, 0]`, return `1`.
+
+<br>
+
+problem 156 [Medium] [Facebook]
+
+Given a positive integer `n`, find the smallest number of squared integers which sum to `n`.
+
+For example, given `n = 13`, return `2` since `13 = 3^2 + 2^2 = 9 + 4`.
+
+Given `n = 27`, return `3` since `27 = 3^2 + 3^2 + 3^2 = 9 + 9 + 9`.
+
+<br>
+
+problem 157 [Easy] [Amazon]
+
+Given a string, determine whether any permutation of it is a palindrome.
+
+For example, `carrace` should return true, since it can be rearranged to form `racecar`, which is a palindrome. `daily` should return false, since there's no rearrangement that can form a palindrome.
+
+<hr>
+
+problem 158 [Medium] [Slack]
+
+You are given an N by M matrix of `0`s and `1`s. Starting from the top left corner, how many ways are there to reach the bottom right corner?
+
+You can only move right and down. `0` represents an empty space while `1` represents a wall you cannot walk through.
+
+For example, given the following matrix:
+
+```
+[[0, 0, 1],
+ [0, 0, 1],
+ [1, 0, 0]]
+```
+
+Return two, as there are only two ways to get to the bottom right:
+
+- Right, down, down, right
+- Down, right, down, right
+
+The top left corner and bottom right corner will always be `0`.
+
+<br>
+
+problem 159 [Easy] [Google]
+
+Given a string, return the first recurring character in it, or null if there is no recurring character.
+
+For example, given the string "acbbac", return "b". Given the string "abcdef", return null.
+
+<br>
+
+problem 160 [Hard] [Uber]
+
+Given a tree where each edge has a weight, compute the length of the longest path in the tree.
+
+For example, given the following tree:
+
+```
+   a
+  /|\
+ b c d
+    / \
+   e   f
+  / \
+ g   h
+```
+
+and the weights: `a-b: 3, a-c: 5, a-d: 8, d-e: 2, d-f: 4, e-g: 1, e-h: 1`, the longest path would be `c -> a -> d -> f`s, with a length of 17.
+
+The path does not have to pass through the root, and each node can have any amount of children.
+
+<br>
+
+problem 161 [Easy] [Facebook]
+
+Given a 32-bit integer, return the number with its bits reversed.
+
+For example, given the binary number
+
+`1111 0000 1111 0000 1111 0000 1111 0000`, return `0000 1111 0000 1111 0000 1111 0000 1111`
+
+
+<br>
+
+problem 162 [Medium] [Square]
+
+Given a list of words, return the shortest unique prefix of each word. For example, given the list:
+
+- dog
+- cat
+- apple
+- apricot
+- fish
+
+Return the list:
+
+- d
+- c
+- app
+- apr
+- f
+
+<br>
+
+problem 163 [Hard] [Jane Street]
+
+Given an arithmetic expression in Reverse Polish Notation, write a program to evaluate it.
+
+The expression is given as a list of numbers and operands. For example: `[5, 3, '+']` should return `5 + 3 = 8`.
+
+For example:
+
+`[15, 7, 1, 1, '+', '-', '/', 3, '*', 2, 1, 1, '+', '+', '-']` should return `5`, since it is equivalent to `((15 / (7 - (1 + 1))) * 3) - (2 + (1 + 1)) = 5`.
+
+<hr>
+
+problem 164 [Medium] [Google]
+
+You are given an array of length `n + 1` whose elements belong to the set `{1, 2, ..., n}`. By the pigeonhole principle, there must be a duplicate. Find it in linear time and space.
+
+<hr>
+
+problem 165 [Medium] [Google]
+
+Given an array of integers, return a new array where each element in the new array is the number of smaller elements to the right of that element in the original input array.
+
+For example, given the array `[3, 4, 9, 6, 1]`, return `[1, 1, 2, 1, 0]`, since:
+
+- There is 1 smaller element to the right of 3
+- There is 1 smaller element to the right of 4
+- There are 2 smaller elements to the right of 9
+- There is 1 smaller element to the right of 6
+- There are no smaller elements to the right of 1
+
+<hr>
+
+problem 166 [Medium] [Uber]
+
+Implement a 2D iterator class. It will be initialized with an array of arrays, and should implement the following methods:
+
+- `next()`: returns the next element in the array of arrays. If there are no more elements, raise an exception.
+- `has_next()`: returns whether or not the iterator still has elements left.
+
+For example, given the input `[[1, 2], [3], [], [4, 5, 6]]`, calling `next()` repeatedly should output 1, 2, 3, 4, 5, 6.
+
+Do not use `flatten` or otherwise clone the arrays. Some of the arrays can be empty.
+
+<hr>
+
+problem 167 [Hard] [Airbnb]
+
+Given a list of words, find all pairs of unique indices such that the concatenation of the two words is a palindrome.
+
+For example, given the list `["code", "edoc", "da", "d"]`, return `[(0, 1), (1, 0), (2, 3)]`.
+
+<hr>
+
+problem 168 [Medium] [Facebook]
+
+Given an N by N matrix, rotate it by 90 degrees clockwise.
+
+For example, given the following matrix:
+
+```
+[[1, 2, 3],
+ [4, 5, 6],
+ [7, 8, 9]]
+```
+
+you should return:
+
+```
+[[7, 4, 1],
+ [8, 5, 2],
+ [9, 6, 3]]
+```
+
+Follow-up: What if you couldn't use any extra space?
+
+<hr>
+
+problem 169 [Medium] [Google]
+
+Given a linked list, sort it in O(n log n) time and constant space.
+
+For example, the linked list `4 -> 1 -> -3 -> 99` should become `-3 -> 1 -> 4 -> 99`.
+
+<hr>
+
+problem 170 [Medium] [Facebook]
+
+Given a start word, an end word, and a dictionary of valid words, find the shortest transformation sequence from start to end such that only one letter is changed at each step of the sequence, and each transformed word exists in the dictionary. 
+If there is no possible transformation, return null. Each word in the dictionary have the same length as start and end and is lowercase.
+
+For example, given start = "dog", end = "cat", and dictionary = {"dot", "dop", "dat", "cat"}, return ["dog", "dot", "dat", "cat"].
+
+Given start = "dog", end = "cat", and dictionary = {"dot", "tod", "dat", "dar"}, return null as there is no possible transformation from dog to cat.
+
+<hr>
