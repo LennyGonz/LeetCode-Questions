@@ -2314,3 +2314,78 @@ Given s = "barfoobazbitbyte" and words = ["dog", "cat"], return [] since there a
 The order of the indices does not matter.
 
 <hr>
+
+problem 173 [Easy] [Striple]
+
+Write a function to flatten a nested dictionary. Namespace the keys with a period.
+
+For example, given the following dictionary:
+
+```
+{
+  "key": 3,
+  "foo": {
+    "a": 5,
+    "bar": {
+      "baz": 8
+    }
+  }
+}
+```
+
+it should become:
+
+```
+{
+  "key": 3,
+  "foo.a": 5,
+  "foo.bar.baz": 8
+}
+```
+
+<hr>
+
+problem 174 [Medium] [Microsoft]
+
+Describe and give an example of each of the following types of polymorphism:
+
+- Ad-hoc polymorphism
+- Parametric polymorphism
+- Subtype polymorphism
+
+<hr>
+
+problem 175 [Easy] [Google]
+
+You are given a starting state `start`, a list of transition probabilities for a Markov chain, and a number of steps `num_steps`. 
+Run the Markov chain starting from `start` for `num_steps` and compute the number of times we visited each state.
+
+For example, given the starting state `a`, number of steps 5000, and the following transition probabilities:
+
+```
+[
+  ('a', 'a', 0.9),
+  ('a', 'b', 0.075),
+  ('a', 'c', 0.025),
+  ('b', 'a', 0.15),
+  ('b', 'b', 0.8),
+  ('b', 'c', 0.05),
+  ('c', 'a', 0.25),
+  ('c', 'b', 0.25),
+  ('c', 'c', 0.5)
+]
+```
+
+One instance of running this Markov chain might produce `{ 'a': 3012, 'b': 1656, 'c': 332 }`.
+
+<hr>
+
+problem 176 [Easy] [Bloomberg]
+
+Determine whether there exists a one-to-one character mapping from one string `s1` to another `s2`.
+
+For example, given `s1 = abc` and `s2 = bcd`, return true since we can map `a` to `b`, `b` to `c`, and `c` to `d`.
+
+Given `s1 = foo` and `s2 = bar`, return `false` since the `o` cannot map to two characters.
+
+<hr>
