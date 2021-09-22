@@ -2389,3 +2389,112 @@ For example, given `s1 = abc` and `s2 = bcd`, return true since we can map `a` t
 Given `s1 = foo` and `s2 = bar`, return `false` since the `o` cannot map to two characters.
 
 <hr>
+
+problem 177 [Easy] [Airbnb]
+
+Given a linked list and a positive integer `k`, rotate the list to the right by `k` places.
+
+For example, given the linked list `7 -> 7 -> 3 -> 5` and `k = 2`, it should become `3 -> 5 -> 7 -> 7`.
+
+Given the linked list `1 -> 2 -> 3 -> 4 -> 5` and `k = 3`, it should become `3 -> 4 -> 5 -> 1 -> 2`
+
+<hr>
+
+problem 178 [Hard] [Two Sigma]
+
+Alice wants to join her school's Probability Student Club. Membership dues are computed via one of two simple probabilistic games.
+
+The first game: roll a die repeatedly. Stop rolling once you get a five followed by a six. Your number of rolls is the amount you pay, in dollars.
+
+The second game: same, except that the stopping condition is a five followed by a five.
+
+Which of the two games should Alice elect to play? Does it even matter? Write a program to simulate the two games and calculate their expected value.
+
+<hr>
+
+problem 179 [Medium] [Google]
+
+Given the sequence of keys visited by a postorder traversal of a binary search tree, reconstruct the tree.
+
+For example, given the sequence `2, 4, 3, 8, 7, 5`, you should construct the following tree:
+
+```
+    5
+   / \
+  3   7
+ / \   \
+2   4   8
+```
+
+<hr>
+
+problem 180 [Medium] [Google]
+
+Given a stack of N elements, interleave the first half of the stack with the second half reversed using only one other queue. This should be done in-place.
+
+Recall that you can only push or pop from a stack, and enqueue or dequeue from a queue.
+
+For example, if the stack is `[1, 2, 3, 4, 5]`, it should become `[1, 5, 2, 4, 3]`. If the stack is `[1, 2, 3, 4]`, it should become `[1, 4, 2, 3]`.
+
+Hint: Try working backwards from the end state.
+
+<hr>
+
+problem 181 [Hard] [Google]
+
+Given a string, split it into as few strings as possible such that each string is a palindrome.
+
+For example, given the input string racecarannakayak, return `["racecar", "anna", "kayak"]`.
+
+Given the input string `abc`, return `["a", "b", "c"]`
+
+<hr>
+
+problem 182 [Medium] [Facebook]
+
+A graph is minimally-connected if it is connected and there is no edge that can be removed while still leaving the graph connected.
+For example, any binary tree is minimally-connected.
+
+Given an undirected graph, check if the graph is minimally-connected. You can choose to represent the graph as either an adjacency matrix or adjacency list.
+
+<hr>
+
+problem 183 [Hard] [Twitch]
+
+Describe what happens when you type a URL into your browser and press Enter.
+
+<hr>
+
+problem 184 [Easy] [Amazon]
+
+Given `n` numbers, find the greatest common denominator between them.
+
+For example, given the numbers `[42, 56, 14]`, return `14`
+
+<hr>
+
+problem 185 [Easy] [Google]
+
+Given two rectangles on a 2D graph, return the area of their intersection. If the rectangles don't intersect, return 0.
+
+For example, given the following rectangles:
+
+```
+{
+  "top_left": (1, 4),
+  "dimensions": (3, 3) # width, height
+}
+```
+
+and
+
+```
+{
+  "top_left": (0, 5),
+  "dimensions": (4, 3) # width, height
+}
+```
+
+return `6`.
+
+<hr>
