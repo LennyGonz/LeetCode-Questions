@@ -222,3 +222,13 @@ def factor(num):
 
 print(factor(5))
 
+# Reverse Words in a string
+def reverseString(phrase):
+  words = phrase.split()
+  res = []
+  for word in range(len(words), 0, -1):
+    res.append(words[word-1])
+
+  return res
+
+print(reverseString("the sky is blue"))
