@@ -1,1 +1,1 @@
-# Solving Data Structure and Algorithms questions in JS
+# Solving Data Structure and Algorithms Questions in JS
