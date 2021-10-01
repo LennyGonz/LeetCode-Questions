@@ -1296,24 +1296,28 @@ d
 
 <hr>
 
-problem 81 [Easy]
+problem 81 [Easy] [Yelp]
 
 Given a mapping of digits to letters (as in a phone number), and a digit string, return all possible letters the number could represent.
 You can assume each valid number in the mapping is a single digit.
 
 For example if `{“2”: [“a”, “b”, “c”], 3: [“d”, “e”, “f”], …}` then `“23”` should return `[“ad”, “ae”, “af”, “bd”, “be”, “bf”, “cd”, “ce”, “cf"]`
 
+[Solution](Daily-Coding-Problem/problem-81.py)
+
 <hr>
 
-problem 82 [Easy]
+problem 82 [Easy] [Microsoft]
 
 Using a `read7()` method that returns 7 characters from a file, implement `readN(n)` which reads `n` characters.
 
 For example, given a file with the content `“Hello world”`, three read7() returns “Hello w”, “orld” and then “”.
 
+[Solution](Daily-Coding-Problem/problem-82.py)
+
 <hr>
 
-problem 83 [Medium]
+problem 83 [Medium] [Google]
 
 Invert a binary tree.
 
@@ -1335,9 +1339,11 @@ should become:
   f e  d
 ```
 
+[Solution](Daily-Coding-Problem/problem-83.py)
+
 <hr>
 
-problem 84 [Medium]
+problem 84 [Medium] [Amazon]
 
 Given a matrix of 1s and 0s, return the number of "islands" in the matrix. 
 A 1 represents land and 0 represents water, so an island is a group of 1s that are neighboring whose perimeter is surrounded by water.
@@ -1353,23 +1359,29 @@ For example, this matrix has 4 islands.
 1 1 0 0 1
 ```
 
+[Solution](Daily-Coding-Problem/problem-84.py)
+
 <hr>
 
-problem 85 [Medium]
+problem 85 [Medium] [Facebook]
 
 Given three 32-bit integers x, y, and b, return x if b is 1 and y if b is 0, using only mathematical or bit operations. You can assume b can only be 1 or 0.
 
+[Solution](Daily-Coding-Problem/problem-85.py)
+
 <hr>
 
-problem 86 [Medium]
+problem 86 [Medium] [Google]
 
 Given a string of parentheses, write a function to compute the minimum number of parentheses to be removed to make the string valid (i.e. each open parenthesis is eventually closed).
 
 For example, given the string "()())()", you should return 1. Given the string ")(", you should return 2, since we must remove all of them.
 
+[Solution](Daily-Coding-Problem/problem-86.py)
+
 <hr>
 
-problem 87 [Hard]
+problem 87 [Hard] [Uber]
 
 This problem was asked by Uber.
 
@@ -1400,32 +1412,40 @@ A N B
 
 is considered valid.
 
+[Solution](Daily-Coding-Problem/problem-87.py)
+
 <hr>
 
-problem 88 [Medium]
+problem 88 [Medium] [ContextLogic]
 
 Implement division of two positive integers without using the division, multiplication, or modulus operators. Return the quotient as an integer, ignoring the remainder.
 
 We will be sending the solution tomorrow, along with tomorrow's question. As always, feel free to shoot us an email if there's anything we can help with.
 
+[Solution](Daily-Coding-Problem/problem-88.py)
+
 <hr>
 
-problem 89 [Medium]
+problem 89 [Medium] [Linkedin]
 
 A binary search tree is a tree with two children, left and right
 
 And satisfies the constraint that the key in the left child must be less than or equal to the root and the key in the right child must be greater than or equal to the root.
 
+[Solution](Daily-Coding-Problem/problem-89.py)
+
 <hr>
 
-problem 90 [Medium]
+problem 90 [Medium] [Google]
 
 Given an integer n and a list of integers l, 
 Write a function that randomly generates a number from 0 to n-1 that isn't in l (uniform).
 
+[Solution](Daily-Coding-Problem/problem-90.py)
+
 <hr>
 
-problem 91 [Easy]
+problem 91 [Easy] [Dropbox]
 
 What does the below code snippet print out? How can we fix the anonymous functions to behave as we'd expect?
 
@@ -1438,9 +1458,11 @@ for f in functions:
   print(f())
 ```
 
+[Solution](Daily-Coding-Problem/problem-91.py)
+
 <hr>
 
-problem 92 [Hard]
+problem 92 [Hard] [Airbnb]
 
 We're given a hashmap associating each `courseId` key with a list of `courseIds` values, which represents that the prerequisites of `courseId` are `courseIds`. 
 Return a sorted ordering of courses such that we can finish all courses.
@@ -1449,23 +1471,29 @@ Return null if there is no such ordering.
 
 For example, given {'CSC300': ['CSC100', 'CSC200'], 'CSC200': ['CSC100'], 'CSC100': []}, should return ['CSC100', 'CSC200', 'CSCS300'].
 
+[Solution](Daily-Coding-Problem/problem-92.py)
+
 <hr>
 
-problem 93 [Hard]
+problem 93 [Hard] [Apple]
 
 Given a tree, find the largest tree/subtree that is a BST.
 
 Given a tree, return the size of the largest tree/subtree that is a BST.
 
+[Solution](Daily-Coding-Problem/problem-93.py)
+
 <hr>
 
-problem 94 [Easy]
+problem 94 [Easy] [Google]
 
 Given a binary tree of integers, find the maximum path sum between two nodes. The path must go through at least one node, and does not need to go through the root.
 
+[Solution](Daily-Coding-Problem/problem-94.py)
+
 <hr>
 
-problem 95 [Hard]
+problem 95 [Hard] [Palantir]
 
 Given a number represented by a list of digits, find the next greater permutation of a number, in terms of lexicographic ordering.
 
@@ -1475,17 +1503,21 @@ For example, the list `[1,2,3]` should return `[1,3,2]`. The list `[1,3,2]` shou
 
 Can you perform the operation without allocating extra memory (disregarding the input memory)?
 
+[Solution](Daily-Coding-Problem/problem-95.py)
+
 <hr>
 
-problem 96 [Easy]
+problem 96 [Easy] [Microsoft]
 
 Given a number in the form of a list of digits, return all possible permutations.
 
 For example, given `[1,2,3]`, return `[[1,2,3],[1,3,2],[2,1,3],[2,3,1],[3,1,2],[3,2,1]]`.
 
+[Solution](Daily-Coding-Problem/problem-96.py)
+
 <hr>
 
-problem 97 [Medium]
+problem 97 [Medium] [Stripe]
 
 Write a map implementation with a get function that lets you retrieve the value of a key at a particular time.
 
@@ -1516,9 +1548,11 @@ d.set(1, 2, 0) # set key 1 to value 2 at time 0
 d.get(1, 0) # get key 1 at time 0 should be 2
 ```
 
+[Solution](Daily-Coding-Problem/problem-97.py)
+
 <hr>
 
-problem 98 [Easy]
+problem 98 [Easy] [Coursera]
 
 Given a 2D board of characters and a word, find if the word exists in the grid.
 
@@ -1538,17 +1572,21 @@ For example, given the following board:
 `exists(board, "SEE") returns true`
 `exists(board, "ABCB") returns false`
 
+[Solution](Daily-Coding-Problem/problem-98.py)
+
 <hr>
 
-problem 99 [Medium]
+problem 99 [Medium] [Microsoft]
 
 Given an unsorted array of integers, find the length of the longest consecutive elements sequence.
 
 For example, given [100, 4, 200, 1, 3, 2], the longest consecutive element sequence is [1, 2, 3, 4]. Return its length: 4.
 
+[Solution](Daily-Coding-Problem/problem-99.py)
+
 <hr>
 
-problem 100 [Easy]
+problem 100 [Easy] [Google]
 
 You are in an infinite 2D grid where you can move in any of the 8 directions:
 
@@ -1572,6 +1610,8 @@ Output: 2
 ```
 
 It takes 1 step to move from (0, 0) to (1, 1). It takes one more step to move from (1, 1) to (1, 2).
+
+[Solution](Daily-Coding-Problem/problem-100.py)
 
 <hr>
 
