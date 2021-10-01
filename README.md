@@ -42,7 +42,7 @@ Unique Email Address | [Code](Code/unique_email_address.py) | [Walk-Through](PDF
 
 # Daily Coding Challenge
 
-Problem 1 [Easy]
+Problem 1 [Easy] [Google]
 
 Given a list of numbers, return whether any two sums to k.
 
@@ -54,7 +54,7 @@ Bonus: Can you do this in one pass?
 
 <hr>
 
-Problem 2 [Hard]
+Problem 2 [Hard] [Uber]
 
 Given an array of integers, return a new array such that each element at index i of the new array is the product of all the numbers in the original array except the one at i
 
@@ -68,7 +68,7 @@ If our input was `[3,2,1]`, the expected output would be `[2,3,6]`
 
 <hr>
 
-Problem 3 [Medium]
+Problem 3 [Medium] [Google]
 
 Given the root to a binary tree, implement `serialize(root)`, which serializes the tree into a string, and `deserializes(s)`, which deserializes the string back into the tree.
 
@@ -89,9 +89,11 @@ node = Node('root', Node('left', Node('left.left')), Node('right'))
 assert (deserialize(node)).left.left.val == 'left.left'
 ```
 
+[Solution](Daily-Coding-Problem/problem-3.py)
+
 <hr>
 
-problem 4 [Hard]
+problem 4 [Hard] [Stripe]
 
 Given an array of integers, find the first missing positive integer in linear time and constant space.
 In other words, find the lowest positive integer that does not exist in the array.
@@ -102,9 +104,11 @@ The input `[1,2,0]` should give `3`
 
 You can modify the input array in-place
 
+[Solution](Daily-Coding-Problem/problem-4.py)
+
 <hr>
 
-problem 5 [Medium]
+problem 5 [Medium] [Jane Street]
 
 *Throwback to Scheme/Lisp*
 
@@ -120,26 +124,32 @@ def cons(a, b):
 
 Implement `car` and `cdr`
 
+[Solution](Daily-Coding-Problem/problem-5.py)
+
 <hr>
 
-problem 6 [Hard]
+problem 6 [Hard] [Google]
 
 An XOR linked list is a more memory efficient doubly linked list. Instead of each node holding next and prev fields, it holds a field named both, which is an XOR of the next node and the previous node. Implement an XOR linked list; it has an add(element) which adds the element to the end, and a get(index) which returns the node at index.
 
 If using a language that has no pointers (such as Python), you can assume you have access to get_pointer and dereference_pointer functions that converts between nodes and memory addresses.
 
+[Solution](Daily-Coding-Problem/problem-6.py)
+
 <hr>
 
-problem 7 [Medium]
+problem 7 [Medium] [Facebook]
 
 Give the mapping a = 1, b = 2, c = 3, d = 4, e = 5 ... z = 26, and an encoded message, count the number of ways it can be decoded
 
 For example, the message `'111'` would give 3, since it could be decoded as 'aaa', 'ka', 'ak'
 You can assume that the messages are decodable. For example, '001' is not allowed
 
+[Solution](Daily-Coding-Problem/problem-7.py)
+
 <hr>
 
-problem 8 [Easy]
+problem 8 [Easy] [Google]
 
 A unival tree (which stands for "universal value") is a tree where all nodes under it have the same value
 
@@ -157,9 +167,11 @@ For example, the following tree has 5 unival subtrees:
  1   1
 ```
 
+[Solution](Daily-Coding-Problem/problem-8.py)
+
 <hr>
 
-problem 9 [Hard]
+problem 9 [Hard] [Airbnb]
 
 Given a list of integers, write a function that returns the largest sum of non-adjacent numbers
 Numbers can be `0` or negative.
@@ -169,18 +181,22 @@ For example, `[2,4,6,2,5]` should return `13`, since we pick `2`, `6`, `5`.
 
 Follow-up: Can you do this in `O(n)` time and constant space?
 
+[Solution](Daily-Coding-Problem/problem-9.py)
+
 <hr>
 
-problem 10 [Medium]
+problem 10 [Medium] [Apple]
 
 Implement a job scheduler which takes in function `f` and an integer `n`, and calls `f` after `n` milliseconds
 
 We will be sending the solution tomorrow, along with tomorrow's question.
 As always, feel free to shoot us an email if there's anything we can help with.
 
+[Solution](Daily-Coding-Problem/problem-10.py)
+
 <hr>
 
-problem 11 [Medium]
+problem 11 [Medium] [Twitter]
 
 Implement an autocomplete system. That is, given a query string `s` and a set of all possible query strings, return all strings in the set that have `s` as a prefix
 
@@ -191,9 +207,11 @@ Hint: Try preprocessing the dictionary into a more efficient data structure to s
 We will be spending the solution tomorrow, along with tomorrow's question.
 As always, feel free to shoot us an email if there's anything we can help with
 
+[Solution](Daily-Coding-Problem/problem-11.py)
+
 <hr>
 
-problem 12 [Hard]
+problem 12 [Hard] [Amazon]
 
 There exists a staircase with N steps, and you can climb up either 1 or 2 steps at a time.
 Given N, write a function that returns the number of unique ways you can climb the staircase.
@@ -210,33 +228,41 @@ For example. if N is 4, then there are 5 unique ways:
 What if, instead of being able to climb 1 or 2 steps at a time, you could climb any number from a st of positive integers X?
 For example, if `X = {1, 3, 5}`, you could climb 1, 3, or 5 steps at a time.
 
+[Solution](Daily-Coding-Problem/problem-12.py)
+
 <hr>
 
-problem 13 [Hard]
+problem 13 [Hard] [Amazon]
 
 Given an integer k and a string s, find the length of the longest substring that contains at most k distinct characters.
 
 For example, given s = "abcba" and k = 2, the longest substring with k distinct characters is "bcb".
 
+[Solution](Daily-Coding-Problem/problem-13.py)
+
 <hr>
 
-problem 14 [Medium]
+problem 14 [Medium] [Google]
 
 The area of a circle is defined as πr^2. Estimate π to 3 decimal places using a Monte Carlo method.
 
 Hint: The basic equation of a circle is x2 + y2 = r2.
 
+[Solution](Daily-Coding-Problem/problem-14.py)
+
 <hr>
 
-problem 15 [Medium]
+problem 15 [Medium] [Facebook]
 
 Given a stream of elements too large to store in memory, pick a random element from the stream with uniform probability.
 
 We will be sending the solution tomorrow, along with tomorrow's question. As always, feel free to shoot us an email if there's anything we can help with.
 
+[Solution](Daily-Coding-Problem/problem-15.py)
+
 <hr>
 
-problem 16 [Easy]
+problem 16 [Easy] [Twitter]
 
 You run an e-commerce website and want to record the last `N order` ids in a log. 
 
@@ -246,9 +272,11 @@ Implement a data structure to accomplish this, with the following API:
 - `get_last(i)`: gets the ith last element from the log. i is guaranteed to be smaller than or equal to N.
 You should be as efficient with time and space as possible.
 
+[Solution](Daily-Coding-Problem/problem-16.py)
+
 <hr>
 
-problem 17 [Hard]
+problem 17 [Hard] [Google]
 
 Suppose we represent our file system by a string in the following manner:
 
@@ -289,9 +317,11 @@ The name of a file contains at least a period and an extension.
 
 The name of a directory or sub-directory will not contain a period.
 
+[Solution](Daily-Coding-Problem/problem-17.py)
+
 <hr>
 
-problem 18 [Hard]
+problem 18 [Hard] [Google]
 
 Given an array of integers and a number k, where 1 <= k <= length of the array, compute the maximum values of each subarray of length k.
 
@@ -304,9 +334,11 @@ For example, given array = [10, 5, 2, 7, 8, 7] and k = 3, we should get: [10, 7,
 
 Do this in O(n) time and O(k) space. You can modify the input array in-place and you do not need to store the results. You can simply print them out as you compute them.
 
+[Solution](Daily-Coding-Problem/problem-18.py)
+
 <hr>
 
-problem 19 [Medium]
+problem 19 [Medium] [Facebook]
 
 A builder is looking to build a row of N houses that can be of K different colors. 
 
@@ -314,9 +346,11 @@ He has a goal of minimizing cost while ensuring that no two neighboring houses a
 
 Given an N by K matrix where the nth row and kth column represents the cost to build the nth house with kth color, return the minimum cost which achieves this goal.
 
+[Solution](Daily-Coding-Problem/problem-19.py)
+
 <hr>
 
-problem 20 [Easy]
+problem 20 [Easy] [Google]
 
 Given two singly linked lists that intersect at some point, find the intersecting node. The lists are non-cyclical.
 
@@ -326,17 +360,21 @@ In this example, assume nodes with the same value are the exact same node object
 
 Do this in O(M + N) time (where M and N are the lengths of the lists) and constant space.
 
+[Solution](Daily-Coding-Problem/problem-20.py)
+
 <hr>
 
-problem 21 [Easy]
+problem 21 [Easy] [Snapchat]
 
 Given an array of time intervals (start, end) for classroom lectures (possibly overlapping), find the minimum number of rooms required.
 
 For example, given [(30, 75), (0, 50), (60, 150)], you should return 2.
 
+[Solution](Daily-Coding-Problem/problem-21.py)
+
 <hr>
 
-problem 22 [Medium]
+problem 22 [Medium] [Microsoft]
 
 Given a dictionary of words and a string made up of those words (no spaces), return the original sentence in a list. 
 
@@ -347,9 +385,11 @@ For example, given the set of words 'quick', 'brown', 'the', 'fox', and the stri
 Given the set of words 'bed', 'bath', 'bedbath', 'and', 'beyond', and the string "bedbathandbeyond", 
 return either ['bed', 'bath', 'and', 'beyond] or ['bedbath', 'and', 'beyond'].
 
+[Solution](Daily-Coding-Problem/problem-22.py)
+
 <hr>
 
-problem 23 [Easy]
+problem 23 [Easy] [Google]
 
 You are given an M by N matrix consisting of booleans that represents a board. Each True boolean represents a wall. Each False boolean represents a tile you can walk on.
 
@@ -374,9 +414,11 @@ and start = (3, 0) (bottom left) and end = (0, 0) (top left),
 the minimum number of steps required to reach the end is 7, 
 since we would need to go through (1, 2) because there is a wall everywhere else on the second row.
 
+[Solution](Daily-Coding-Problem/problem-23.py)
+
 <hr>
 
-problem 24 [Medium]
+problem 24 [Medium] [Google]
 
 Implement locking in a binary tree. A binary tree node can be locked or unlocked only if all of its descendants or ancestors are not locked.
 
@@ -390,9 +432,11 @@ You may augment the node to add parent pointers or any other property you would 
 You may assume the class is used in a single-threaded program, so there is no need for actual locks or mutexes. 
 Each method should run in O(h), where h is the height of the tree.
 
+[Solution](Daily-Coding-Problem/problem-24.py)
+
 <hr>
 
-problem 25 [Hard]
+problem 25 [Hard] [Facebook]
 
 Implement regular expression matching with the following special characters:
 
@@ -406,9 +450,11 @@ The same regular expression on the string "raymond" should return `false`.
 
 Given the regular expression `".*at"` and the string `"chat"`, your function should return true. The same regular expression on the string "chats" should return false.
 
+[Solution](Daily-Coding-Problem/problem-25.py)
+
 <hr>
 
-problem 26 [Medium]
+problem 26 [Medium] [Google]
 
 Given a singly linked list and an integer k, remove the kth last element from the list. k is guaranteed to be smaller than the length of the list.
 
@@ -416,9 +462,11 @@ The list is very long, so making more than one pass is prohibitively expensive.
 
 Do this in constant space and in one pass.
 
+[Solution](Daily-Coding-Problem/problem-26.py)
+
 <hr>
 
-problem 27 [Easy]
+problem 27 [Easy] [Facebook]
 
 Given a string of round, curly, and square open and closing brackets, return whether the brackets are balanced (well-formed).
 
@@ -426,9 +474,11 @@ For example, given the string "([])[]({})", you should return true.
 
 Given the string "([)]" or "((()", you should return false.
 
+[Solution](Daily-Coding-Problem/problem-27.py)
+
 <hr>
 
-problem 28 [Medium]
+problem 28 [Medium] [Palantir]
 
 Write an algorithm to justify text. Given a sequence of words and an integer line length k, return a list of strings which represents each line, fully justified.
 
@@ -446,9 +496,11 @@ For example, given the list of words ["the", "quick", "brown", "fox", "jumps", "
 "the   lazy   dog"] # 4 extra spaces distributed evenly
 ```
 
+[Solution](Daily-Coding-Problem/problem-28.py)
+
 <hr>
 
-problem 29 [Easy]
+problem 29 [Easy] [Amazon]
 
 Run-length encoding is a fast and simple method of encoding strings. 
 The basic idea is to represent repeated successive characters as a single count and character. 
@@ -457,6 +509,8 @@ For example, the string `"AAAABBBCCDAA"` would be encoded as `"4A3B2C1D2A"`.
 
 Implement run-length encoding and decoding. You can assume the string to be encoded have no digits and consists solely of alphabetic characters. 
 You can assume the string to be decoded is valid.
+
+[Solution](Daily-Coding-Problem/problem-29.py)
 
 <hr>
 
@@ -2496,5 +2550,79 @@ and
 ```
 
 return `6`.
+
+<hr>
+
+problem 186 [Hard] [Microsoft]
+
+Given an array of positive integers, divide the array into two subsets such that the difference between the sum of the subsets is as small as possible.
+
+For example, given `[5, 10, 15, 20, 25]`, return the sets `{10, 25}` and `{5, 15, 20}`, which has a difference of 5, which is the smallest possible difference.
+
+<hr>
+
+problem 187 [Easy] [Google]
+
+You are given given a list of rectangles represented by min and max x- and y-coordinates.
+Compute whether or not a pair of rectangles overlap each other. If one rectangle completely covers another, it is considered overlapping.
+
+```
+{
+  "top_left": (1, 4),
+  "dimensions": (3, 3) # width, height
+},
+{
+  "top_left": (-1, 3),
+  "dimensions": (2, 1)
+},
+{
+  "top_left": (0, 5),
+  "dimensions": (4, 3)
+}
+```
+
+return `true` as the first and third rectangle overlap each other.
+
+<hr>
+
+problem 188 [Medium] [Google]
+
+What will this code print out?
+
+```python
+def make_functions():
+  flist = []
+
+  for i in [1, 2, 3]:
+    def print_i():
+      print(i)
+    flist.append(print_i)
+
+  return flist
+
+functions = make_functions()
+for f in functions:
+  f()
+```
+
+How can we make it print out what we apparently want?
+
+<hr>
+
+problem 189 [Easy] [Google]
+
+Given an array of elements, return the length of the longest subarray where all its elements are distinct.
+
+For example, given the array `[5, 1, 3, 5, 2, 3, 4, 1]`, return 5 as the longest subarray of distinct elements is `[5, 2, 3, 4, 1]`
+
+<hr>
+
+problem 190 [Medium] [Facebook]
+
+Given a circular array, compute its maximum subarray sum in O(n) time. A subarray can be empty, and in this case the sum is 0.
+
+For example, given `[8, -1, 3, 4]`, return `15` as we choose the numbers `3`, `4`, and `8` where the 8 is obtained from wrapping around.
+
+Given `[-4, 5, 1, 0]`, return `6` as we choose the numbers `5` and `1`.
 
 <hr>
