@@ -108,7 +108,7 @@ You can modify the input array in-place
 
 <hr>
 
-problem 5 [Medium] [Jane Street]
+problem 5 [Medium] [Jane_Street]
 
 *Throwback to Scheme/Lisp*
 
@@ -541,7 +541,7 @@ Given two strings, compute the edit distance between them.
 
 <hr>
 
-problem 32 [Hard] [Jane Street]
+problem 32 [Hard] [Jane_Street]
 
 Suppose you are given a table of currency exchange rates, represented as a 2D array.
 
@@ -1615,7 +1615,7 @@ It takes 1 step to move from (0, 0) to (1, 1). It takes one more step to move fr
 
 <hr>
 
-problem 101 [Easy]
+problem 101 [Easy] [Alibaba]
 
 Given an even number (greater than 2), return two prime numbers whose sum will be equal to the given number.
 
@@ -1638,17 +1638,21 @@ If [a, b] is one solution with a <= b, and [c, d] is another solution with c <= 
 
 If a < c OR a==c AND b < d.
 
+[Solution](Daily-Coding-Problem/problem-101.py)
+
 <hr>
 
-problem 102 [Medium]
+problem 102 [Medium] [Lyft]
 
 Given a list of integers and a number K, return which contiguous elements of the list sum to K.
 
 For example, if the list is [1, 2, 3, 4, 5] and K is 9, then it should return [2, 3, 4], since 2 + 3 + 4 = 9.
 
+[Solution](Daily-Coding-Problem/problem-102.py)
+
 <hr>
 
-problem 103 [Medium]
+problem 103 [Medium] [Square]
 
 Given a string and a set of characters, return the shortest substring containing all the characters in the set.
 
@@ -1656,33 +1660,41 @@ For example, given the string "figehaeci" and the set of characters {a, e, i}, y
 
 If there is no substring containing all the characters in the set, return null.
 
+[Solution](Daily-Coding-Problem/problem-103.py)
+
 <hr>
 
-problem 104 [Easy]
+problem 104 [Easy] [Google]
 
 Determine whether a doubly linked list is a palindrome. What if it’s singly linked?
 
 For example, 1 -> 4 -> 3 -> 4 -> 1 returns True while 1 -> 4 returns False.
 
+[Solution](Daily-Coding-Problem/problem-104.py)
+
 <hr>
 
-problem 105 [Easy]
+problem 105 [Easy] [Facebook]
 
 Given a function f, and N return a debounced f of N milliseconds.
 
 That is, as long as the debounced f continues to be invoked, f itself will not be called for N milliseconds.
 
+[Solution](Daily-Coding-Problem/problem-105.py)
+
 <hr>
 
-problem 106 [Medium]
+problem 106 [Medium] [Pinterest]
 
 Given an integer list where each number represents the number of hops you can make, determine whether you can reach to the last index starting at index 0.
 
 For example, `[2, 0, 1, 0]` returns `True` while `[1, 1, 0, 1]` returns `False`.
 
+[Solution](Daily-Coding-Problem/problem-106.py)
+
 <hr>
 
-problem 107 [Easy]
+problem 107 [Easy] [Microsoft]
 
 Print the nodes in a binary tree level-wise. For example, the following should print 1, 2, 3, 4, 5.
 
@@ -1694,17 +1706,21 @@ Print the nodes in a binary tree level-wise. For example, the following should p
   4   5
 ```
 
+[Solution](Daily-Coding-Problem/problem-107.py)
+
 <hr>
 
-problem 108 [Easy]
+problem 108 [Easy] [Google]
 
 Given two strings A and B, return whether or not A can be shifted some number of times to get B.
 
 For example, if A is abcde and B is cdeab, return true. If A is abc and B is acb, return false.
 
+[Solution](Daily-Coding-Problem/problem-108.py)
+
 <hr>
 
-problem 109 [Medium]
+problem 109 [Medium] [Cisco]
 
 Given an unsigned 8-bit integer, swap its even and odd bits. The 1st and 2nd bit should be swapped, the 3rd and 4th bit should be swapped, and so on.
 
@@ -1712,9 +1728,11 @@ For example, 10101010 should be 01010101. 11100010 should be 11010001.
 
 Bonus: Can you do this in one line?
 
+[Solution](Daily-Coding-Problem/problem-109.py)
+
 <hr>
 
-problem 110 [Medium]
+problem 110 [Medium] [Facebook]
 
 Given a binary tree, return all paths from the root to leaves.
 
@@ -1730,94 +1748,118 @@ For example, given the tree:
 
 Return `[[1, 2], [1, 3, 4], [1, 3, 5]]`
 
+[Solution](Daily-Coding-Problem/problem-110.py)
+
 <hr>
 
-problem 111 [Hard]
+problem 111 [Hard] [Google]
 
 Given a word W and a string S, find all starting indices in S which are anagrams of W.
 
 For example, given that W is "ab", and S is "abxaba", return 0, 3, and 4.
 
+[Solution](Daily-Coding-Problem/problem-111.py)
+
 <hr>
 
-problem 112 [Hard]
+problem 112 [Hard] [Twitter]
 
 Given a binary tree, find the lowest common ancestor (LCA) of two given nodes in the tree. Assume that each node in the tree also has a pointer to its parent.
 
 According to the definition of LCA on Wikipedia: 
 “The lowest common ancestor is defined between two nodes v and w as the lowest node in T that has both v and w as descendants (where we allow a node to be a descendant of itself).”
 
+[Solution](Daily-Coding-Problem/problem-112.py)
+
 <hr>
 
-problem 113 [Medium]
+problem 113 [Medium] [Google]
 
 Given a string of words delimited by spaces, reverse the words in string. For example, given "hello world here", return "here world hello"
 
 Follow-up: given a mutable string representation, can you perform this operation in-place?
 
+[Solution](Daily-Coding-Problem/problem-113.py)
+
 <hr>
 
-problem 114 [Hard]
+problem 114 [Hard] [Facebook]
 
 Given a string and a set of delimiters, reverse the words in the string while maintaining the relative order of the delimiters. For example, given "hello/world:here", return "here/world:hello"
 
 Follow-up: Does your solution work for the following cases: "hello/world:here/", "hello//world:here"
 
+[Solution](Daily-Coding-Problem/problem-114.py)
+
 <hr>
 
-problem 115 [Hard]
+problem 115 [Hard] [Google]
 
 Given two non-empty binary trees s and t, check whether tree t has exactly the same structure and node values with a subtree of s.
 A subtree of s is a tree consists of a node in s and all of this node's descendants. The tree s could also be considered as a subtree of itself.
 
+[Solution](Daily-Coding-Problem/problem-115.py)
+
 <hr>
 
-problem 116 [Medium]
+problem 116 [Medium] [Jane_Street]
 
 Generate a finite, but an arbitrarily large binary tree quickly in O(1).
 
 That is, `generate()` should return a tree whose size is unbounded but finite.
 
+[Solution](Daily-Coding-Problem/problem-116.py)
+
 <hr>
 
-problem 117 [Easy]
+problem 117 [Easy] [Facebook]
 
 Given a binary tree, return the level of the tree with minimum sum.
 
+[Solution](Daily-Coding-Problem/problem-117.py)
+
 <hr>
 
-problem 118 [Easy]
+problem 118 [Easy] [Google]
 
 Given a sorted list of integers, square the elements and give the output in sorted order.
 
 For example, given [-9, -2, 0, 2, 3], return [0, 4, 4, 9, 81]
 
+[Solution](Daily-Coding-Problem/problem-118.py)
+
 <hr>
 
-problem 119 [Medium]
+problem 119 [Medium] [Google]
 
 Given a set of closed intervals, find the smallest set of numbers that covers all the intervals. If there are multiple smallest sets, return any of them.
 
 For example, given the intervals [0, 3], [2, 6], [3, 4], [6, 9], one set of numbers that covers all these intervals is {3, 6}.
 
+[Solution](Daily-Coding-Problem/problem-119.py)
+
 <hr>
 
-problem 120 [Medium]
+problem 120 [Medium] [Microsoft]
 
 Implement the singleton pattern with a twist. First, instead of storing one instance, store two instances. 
 And in every even call of `getInstance()`, return the first instance and in every odd call of `getInstance()`, return the second instance.
 
+[Solution](Daily-Coding-Problem/problem-120.py)
+
 <hr>
 
-problem 121 [Hard]
+problem 121 [Hard] [Google]
 
 Given a string which we can delete at most k, return whether you can make a palindrome.
 
 For example, given 'waterrfetawx' and a k of 2, you could delete f and x to get 'waterretaw'
 
+[Solution](Daily-Coding-Problem/problem-121.py)
+
 <hr>
 
-problem 122 [Medium]
+problem 122 [Medium] [Zillow]
 
 You are given a 2-d matrix where each cell represents number of coins in that cell. 
 
@@ -1833,9 +1875,11 @@ For example, in this matrix
 
 The most we can collect is 0 + 2 + 1 + 5 + 3 + 1 = 12 coins.
 
+[Solution](Daily-Coding-Problem/problem-122.py)
+
 <hr>
 
-problem 123 [Hard]
+problem 123 [Hard] [Linkedin]
 
 Given a string, return whether it represents a number. 
 
@@ -1854,6 +1898,8 @@ And here are examples of non-numbers:
 - "a -2"
 - "-"
 
+[Solution](Daily-Coding-Problem/problem-123.py)
+
 <hr>
 
 problem 124 [Easy] [Microsoft]
@@ -1863,6 +1909,8 @@ Any that come up tails you set aside. The ones that come up heads you flip again
 How many rounds do you expect to play before only one coin remains?
 
 Write a function that, given n, returns the number of rounds you'd expect to play until one coin remains.
+
+[Solution](Daily-Coding-Problem/problem-124.py)
 
 <hr>
 
@@ -1882,6 +1930,8 @@ For example, given the following tree and K of 20
 
 Return the nodes 5 and 15.
 
+[Solution](Daily-Coding-Problem/problem-125.py)
+
 <hr>
 
 problem 126 [Medium] [Facebook]
@@ -1889,6 +1939,8 @@ problem 126 [Medium] [Facebook]
 Write a function that rotates a list by k elements. 
 For example, `[1, 2, 3, 4, 5, 6]` rotated by two becomes `[3, 4, 5, 6, 1, 2]`. 
 Try solving this without creating a copy of the list. How many swap or move operations do you need?
+
+[Solution](Daily-Coding-Problem/problem-126.py)
 
 <hr>
 
@@ -1908,6 +1960,8 @@ For example, given
 `5 -> 2`
 
 return 124 (99 + 25) as: `4 -> 2 -> 1`
+
+[Solution](Daily-Coding-Problem/problem-127.py)
 
 <hr>
 
@@ -1938,11 +1992,15 @@ Move 2 to 3
 Move 1 to 3
 ```
 
+[Solution](Daily-Coding-Problem/problem-128.py)
+
 <hr>
 
 problem 129 [Medium]
 
 Given a real number n, find the square root of n. For example, given n = 9, return 3.
+
+[Solution](Daily-Coding-Problem/problem-129.py)
 
 <hr>
 
@@ -1954,11 +2012,15 @@ You must buy the stock before you can sell it, and you must sell the stock befor
 
 For example, given k = 2 and the array [5, 2, 4, 0, 1], you should return 3.
 
+[Solution](Daily-Coding-Problem/problem-130.py)
+
 <hr>
 
 problem 131 [Medium] [Snapchat]
 
 Given the head to a singly linked list, where each node also has a “random” pointer that points to anywhere in the linked list, deep clone the list.
+
+[Solution](Daily-Coding-Problem/problem-131.py)
 
 <hr>
 
@@ -1971,6 +2033,8 @@ Design and implement a HitCounter class that keeps track of requests (or hits). 
 - `range(lower, upper)`: returns the number of hits that occurred between timestamps lower and upper (inclusive)
 
 Follow-up: What if our system has limited memory?
+
+[Solution](Daily-Coding-Problem/problem-132.py)
 
 <hr>
 
@@ -1990,6 +2054,8 @@ For example, the inorder successor of 22 is 30.
 
 You can assume each node has a parent pointer.
 
+[Solution](Daily-Coding-Problem/problem-133.py)
+
 <hr>
 
 problem 134 [Easy] [Facebook]
@@ -2001,6 +2067,8 @@ Use a more space-efficient data structure, SparseArray, that implements the same
 - `init(arr, size)`: initialize with the original large array and size.
 - `set(i, val)`: updates index at i with val.
 - `get(i)`: gets the value at index i.
+
+[Solution](Daily-Coding-Problem/problem-134.py)
 
 <hr>
 
@@ -2020,6 +2088,8 @@ For example, the minimum path in this tree is [10, 5, 1, -1], which has sum 15.
      -1
 ```
 
+[Solution](Daily-Coding-Problem/problem-135.py)
+
 <hr>
 
 problem 136 [Medium] [Google]
@@ -2037,6 +2107,8 @@ For example, given the following matrix:
 
 Return 4.
 
+[Solution](Daily-Coding-Problem/problem-136.py)
+
 <hr>
 
 problem 137 [Medium] [Amazon]
@@ -2049,6 +2121,8 @@ A bit array is a space efficient array that holds a value of 1 or 0 at each inde
 - `set(i, val)`: updates index at i with val where val is either 1 or 0.
 - `get(i)`: gets the value at index i.
 
+[Solution](Daily-Coding-Problem/problem-137.py)
+
 <hr>
 
 problem 138 [Hard] [Google]
@@ -2058,6 +2132,8 @@ Find the minimum number of coins required to make n cents.
 You can use standard American denominations, that is, 1¢, 5¢, 10¢, and 25¢.
 
 For example, given n = 16, return 3 since we can make it with a 10¢, a 5¢, and a 1¢.
+
+[Solution](Daily-Coding-Problem/problem-138.py)
 
 <hr>
 
@@ -2082,6 +2158,8 @@ class PeekableInterface(object):
     pass
 ```
 
+[Solution](Daily-Coding-Problem/problem-139.py)
+
 <hr>
 
 problem 140 [Medium] [Facebook]
@@ -2091,6 +2169,8 @@ Given an array of integers in which two elements appear exactly once and all oth
 For example, given the array `[2, 4, 6, 8, 10, 2, 6, 10]`, return `4` and `8`. The order does not matter.
 
 Follow-up: Can you do this in linear time and constant space?
+
+[Solution](Daily-Coding-Problem/problem-140.py)
 
 <hr>
 
@@ -2110,6 +2190,8 @@ class Stack:
     pass
 ```
 
+[Solution](Daily-Coding-Problem/problem-141.py)
+
 <hr>
 
 problem 142 [Hard] [Google]
@@ -2117,6 +2199,8 @@ problem 142 [Hard] [Google]
 You're given a string consisting solely of `(`, `)`, and `*`. `*` can represent either a `(`, `)`, or an empty string. Determine whether the parentheses are balanced.
 
 For example, `(()*` and `(*)` are balanced. `)*(` is not balanced.
+
+[Solution](Daily-Coding-Problem/problem-142.py)
 
 <hr>
 
@@ -2132,6 +2216,8 @@ Ordering within a part can be arbitrary.
 
 For example, given `x = 10` and `lst = [9, 12, 3, 5, 14, 10, 10]`, one partition may be `[9, 3, 5, 10, 10, 12, 14]`.
 
+[Solution](Daily-Coding-Problem/problem-142.py)
+
 <hr>
 
 problem 144 [Medium] [Google]
@@ -2144,6 +2230,8 @@ If two distances to larger numbers are the equal, then return any one of them. I
 
 Follow-up: If you can preprocess the array, can you do this in constant time?
 
+[Solution](Daily-Coding-Problem/problem-144.py)
+
 <hr>
 
 problem 145 [Easy] [Google]
@@ -2151,6 +2239,8 @@ problem 145 [Easy] [Google]
 Given the head of a singly linked list, swap every two nodes and return its head.
 
 For example, given `1 -> 2 -> 3 -> 4`, return `2 -> 1 -> 4 -> 3`.
+
+[Solution](Daily-Coding-Problem/problem-145.py)
 
 <hr>
 
@@ -2181,11 +2271,15 @@ should be pruned to:
 
 We do not remove the tree at the root or its left child because it still has a 1 as a descendant.
 
+[Solution](Daily-Coding-Problem/problem-146.py)
+
 <hr>
 
 problem 147 [Hard]
 
 Given a list, sort it using this method: `reverse(lst, i, j)`, which reverses `lst` from `i` to `j`.
+
+[Solution](Daily-Coding-Problem/problem-147.py)
 
 <hr>
 
@@ -2199,6 +2293,8 @@ Given a number of bits `n`, generate a possible gray code for it.
 
 For example, for `n = 2`, one gray code would be `[00, 01, 11, 10]`
 
+[Solution](Daily-Coding-Problem/problem-148.py)
+
 <hr>
 
 problem 149 [Hard] [Goldman Sachs]
@@ -2209,6 +2305,8 @@ For example, given `L = [1, 2, 3, 4, 5]`, `sum(1, 3)` should return `sum([2, 3])
 
 You can assume that you can do some pre-processing. sum() should be optimized over the pre-processing step
 
+[Solution](Daily-Coding-Problem/problem-149.py)
+
 <hr>
 
 problem 150 [Hard] [Linkedin]
@@ -2216,6 +2314,8 @@ problem 150 [Hard] [Linkedin]
 Given a list of points, a central point, and an integer `k`, find the nearest `k` points from the central point.
 
 For example, given the list of points `[(0, 0), (5, 4), (3, 1)]`, the central point `(1, 2)`, and k = 2, return `[(0, 0), (3, 1)]`.
+
+[Solution](Daily-Coding-Problem/problem-150.py)
 
 <hr>
 
@@ -2241,6 +2341,8 @@ G G G
 B B B
 ```
 
+[Solution](Daily-Coding-Problem/problem-151.py)
+
 <br>
 
 probelm 152 [Medium] [TripleByte]
@@ -2251,6 +2353,8 @@ For example, given the numbers `[1, 2, 3, 4]` and probabilities `[0.1, 0.5, 0.2,
 
 You can generate random numbers between 0 and 1 uniformly.
 
+[Solution](Daily-Coding-Problem/problem-152.py)
+
 <br>
 
 problem 153 [Hard]
@@ -2258,6 +2362,8 @@ problem 153 [Hard]
 Find an efficient algorithm to find the smallest distance (measured in number of words) between any two given words in a string.
 
 For example, given words "hello", and "world" and a text content of "dog cat hello cat dog dog hello cat world", return 1 because there's only one word "cat" in between the two words.
+
+[Solution](Daily-Coding-Problem/problem-153.py)
 
 <br>
 
@@ -2273,6 +2379,8 @@ Recall that a heap has the following operations:
 - push(item), which adds a new key to the heap
 - pop(), which removes and returns the max value of the heap
 
+[Solution](Daily-Coding-Problem/problem-154.py)
+
 <br>
 
 problem 155 [Medium] [MongoDB]
@@ -2282,6 +2390,8 @@ Given a list of elements, find the majority element, which appears more than hal
 You can assume that such element exists.
 
 For example, given `[1, 2, 1, 1, 3, 4, 0]`, return `1`.
+
+[Solution](Daily-Coding-Problem/problem-155.py)
 
 <br>
 
@@ -2293,6 +2403,8 @@ For example, given `n = 13`, return `2` since `13 = 3^2 + 2^2 = 9 + 4`.
 
 Given `n = 27`, return `3` since `27 = 3^2 + 3^2 + 3^2 = 9 + 9 + 9`.
 
+[Solution](Daily-Coding-Problem/problem-156.py)
+
 <br>
 
 problem 157 [Easy] [Amazon]
@@ -2300,6 +2412,8 @@ problem 157 [Easy] [Amazon]
 Given a string, determine whether any permutation of it is a palindrome.
 
 For example, `carrace` should return true, since it can be rearranged to form `racecar`, which is a palindrome. `daily` should return false, since there's no rearrangement that can form a palindrome.
+
+[Solution](Daily-Coding-Problem/problem-157.py)
 
 <hr>
 
@@ -2324,6 +2438,8 @@ Return two, as there are only two ways to get to the bottom right:
 
 The top left corner and bottom right corner will always be `0`.
 
+[Solution](Daily-Coding-Problem/problem-158.py)
+
 <br>
 
 problem 159 [Easy] [Google]
@@ -2331,6 +2447,8 @@ problem 159 [Easy] [Google]
 Given a string, return the first recurring character in it, or null if there is no recurring character.
 
 For example, given the string "acbbac", return "b". Given the string "abcdef", return null.
+
+[Solution](Daily-Coding-Problem/problem-159.py)
 
 <br>
 
@@ -2353,6 +2471,8 @@ For example, given the following tree:
 and the weights: `a-b: 3, a-c: 5, a-d: 8, d-e: 2, d-f: 4, e-g: 1, e-h: 1`, the longest path would be `c -> a -> d -> f`s, with a length of 17.
 
 The path does not have to pass through the root, and each node can have any amount of children.
+
+[Solution](Daily-Coding-Problem/problem-160.py)
 
 <br>
 
@@ -2387,7 +2507,7 @@ Return the list:
 
 <br>
 
-problem 163 [Hard] [Jane Street]
+problem 163 [Hard] [Jane_Street]
 
 Given an arithmetic expression in Reverse Polish Notation, write a program to evaluate it.
 
