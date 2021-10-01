@@ -514,7 +514,7 @@ You can assume the string to be decoded is valid.
 
 <hr>
 
-problem 30 [Medium]
+problem 30 [Medium] [Facebook]
 
 You are given an array of non-negative integers that represents a two-dimensional elevation map where each element is unit-width wall and the integer is the height. 
 Suppose it will rain and all spots between two walls get filled up.
@@ -526,18 +526,22 @@ For example, given the input [2, 1, 2], we can hold 1 unit of water in the middl
 Given the input [3, 0, 1, 3, 0, 5], we can hold 3 units in the first index, 2 in the second, 
 and 3 in the fourth index (we cannot hold 5 since it would run off to the left), so we can trap 8 units of water.
 
+[Solution](Daily-Coding-Problem/problem-30.py)
+
 <hr>
 
-problem 31 [Easy]
+problem 31 [Easy] [Google]
 
 The edit distance between two strings refers to the minimum number of character insertions, deletions, and substitutions required to change one string to the other. 
 For example, the edit distance between “kitten” and “sitting” is three: substitute the “k” for “s”, substitute the “e” for “i”, and append a “g”.
 
 Given two strings, compute the edit distance between them.
 
+[Solution](Daily-Coding-Problem/problem-31.py)
+
 <hr>
 
-problem 32 [Hard]
+problem 32 [Hard] [Jane Street]
 
 Suppose you are given a table of currency exchange rates, represented as a 2D array.
 
@@ -547,9 +551,11 @@ whether there is some sequence of trades you can make, starting with some amount
 
 There are no transaction costs and you can trade fractional quantities.
 
+[Solution](Daily-Coding-Problem/problem-32.py)
+
 <hr>
 
-problem 33 [Easy]
+problem 33 [Easy] [Microsoft]
 
 Compute the running median of a sequence of numbers. That is, given a stream of numbers, print out the median of the list so far on each new element.
 
@@ -567,9 +573,11 @@ For example, given the sequence `[2, 1, 5, 7, 2, 0, 5]`, your algorithm should p
 2
 ```
 
+[Solution](Daily-Coding-Problem/problem-33.py)
+
 <hr>
 
-problem 34 [Medium]
+problem 34 [Medium] [Quora]
 
 Given a string, find the palindrome that can be made by inserting the fewest number of characters as possible anywhere in the word. 
 
@@ -583,9 +591,11 @@ There are seven other palindromes that can be made from "race" by adding three l
 
 As another example, given the string "google", you should return "elgoogle".
 
+[Solution](Daily-Coding-Problem/problem-34.py)
+
 <hr>
 
-problem 35 [Hard]
+problem 35 [Hard] [Google]
 
 Given an array of strictly the characters 'R', 'G', and 'B', segregate the values of the array so that all the Rs come first, the Gs come second, and the Bs come last. 
 You can only swap elements of the array.
@@ -594,15 +604,19 @@ Do this in linear time and in-place.
 
 For example, given the array ['G', 'B', 'R', 'R', 'B', 'R', 'G'], it should become ['R', 'R', 'R', 'G', 'G', 'B', 'B'].
 
+[Solution](Daily-Coding-Problem/problem-35.py)
+
 <hr>
 
-problem 36 [Medium]
+problem 36 [Medium] [Dropbox]
 
 Given the root to a binary search tree, find the second largest node in the tree.
 
+[Solution](Daily-Coding-Problem/problem-36.py)
+
 <hr>
 
-problem 37 [Easy]
+problem 37 [Easy] [Google]
 
 The power set of a set is the set of all its subsets. Write a function that, given a set, generates its power set.
 
@@ -610,9 +624,11 @@ For example, given the set `{1, 2, 3}`, it should return `{{}, {1}, {2}, {3}, {1
 
 You may also use a list or array to represent a set.
 
+[Solution](Daily-Coding-Problem/problem-37.py)
+
 <hr>
 
-problem 38 [Hard]
+problem 38 [Hard] [Microsoft]
 
 You have an N by N board.
 
@@ -620,9 +636,11 @@ Write a function that, given N, returns the number of possible arrangements of t
 
 i.e. no two queens share the same row, column, or diagonal.
 
+[Solution](Daily-Coding-Problem/problem-38.py)
+
 <hr>
 
-problem 39 [Medium]
+problem 39 [Medium] [Dropbox]
 
 Conway's Game of Life takes place on an infinite two-dimensional board of square cells. 
 Each cell is either dead or alive, and at each tick, the following rules apply:
@@ -639,9 +657,11 @@ Since it's an infinite board, print out only the relevant coordinates, i.e. from
 
 You can represent a live cell with an asterisk (*) and a dead cell with a dot (.)
 
+[Solution](Daily-Coding-Problem/problem-39.py)
+
 <hr>
 
-problem 40 [Hard]
+problem 40 [Hard] [Google]
 
 Given an array of integers where every integer occurs three times except for one integer, which only occurs once, find and return the non-duplicated integer.
 
@@ -649,9 +669,11 @@ For example, given [6, 1, 3, 3, 3, 6, 6], return 1. Given [13, 19, 13, 13], retu
 
 Do this in O(N) time and O(1) space.
 
+[Solution](Daily-Coding-Problem/problem-40.py)
+
 <hr>
 
-problem 41 [Medium]
+problem 41 [Medium] [Facebook]
 
 Given an unordered list of flights taken by someone, each represented as (origin, destination) pairs, and a starting airport, compute the person's itinerary.
 If no such itinerary exists, return null. 
@@ -665,9 +687,11 @@ Given the list of flights [('SFO', 'COM'), ('COM', 'YYZ')] and starting airport 
 Given the list of flights [('A', 'B'), ('A', 'C'), ('B', 'C'), ('C', 'A')] and starting airport 'A',
 you should return the list ['A', 'B', 'C', 'A', 'C'] even though ['A', 'C', 'A', 'B', 'C'] is also a valid itinerary. However, the first one is lexicographically smaller.
 
+[Solution](Daily-Coding-Problem/problem-41.py)
+
 <hr>
 
-problem 42 [Hard]
+problem 42 [Hard] [Google]
 
 Given a list of integers S and a target number k, write a function that returns a subset of S that adds up to k. If such a subset cannot be made, then return null.
 
@@ -675,9 +699,11 @@ Integers can appear more than once in the list. You may assume all numbers in th
 
 For example, given S = [12, 1, 61, 5, 9, 2] and k = 24, return [12, 9, 2, 1] since it sums up to 24.
 
+[Solution](Daily-Coding-Problem/problem-42.py)
+
 <hr>
 
-problem 43 [Easy]
+problem 43 [Easy] [Amazon]
 
 Implement a stack that has the following methods:
 
@@ -687,9 +713,11 @@ Implement a stack that has the following methods:
 
 Each method should run in constant time.
 
+[Solution](Daily-Coding-Problem/problem-43.py)
+
 <hr>
 
-problem 44 [Medium]
+problem 44 [Medium] [Google]
 
 We can determine how "out of order" an array A is by counting the number of inversions it has.
 
@@ -702,23 +730,29 @@ You may assume each element in the array is distinct.
 For example, a sorted list has zero inversions. The array [2, 4, 1, 3, 5] has three inversions: (2, 1), (4, 1), and (4, 3). 
 The array [5, 4, 3, 2, 1] has ten inversions: every distinct pair forms an inversion.
 
+[Solution](Daily-Coding-Problem/problem-44.py)
+
 <hr>
 
-problem 45 [Easy]
+problem 45 [Easy] [Two Sigma]
 
 Using a function rand5() that returns an integer from 1 to 5 (inclusive) with uniform probability, implement a function rand7() that returns an integer from 1 to 7 (inclusive).
 
+[Solution](Daily-Coding-Problem/problem-45.py)
+
 <hr>
 
-problem 46 [Hard]
+problem 46 [Hard] [Amazon]
 
 Given a string, find the longest palindromic contiguous substring. If there are more than one with the maximum length, return any one.
 
 For example, the longest palindromic substring of "aabcdcb" is "bcdcb". The longest palindromic substring of "bananas" is "anana".
 
+[Solution](Daily-Coding-Problem/problem-46.py)
+
 <hr>
 
-problem 47 [Easy]
+problem 47 [Easy] [Facebook]
 
 Given a array of numbers representing the stock prices of a company in chronological order,
 
@@ -726,9 +760,11 @@ write a function that calculates the maximum profit you could have made from buy
 
 For example, given [9, 11, 8, 5, 7, 10], you should return 5, since you could buy the stock at 5 dollars and sell it at 10 dollars.
 
+[Solution](Daily-Coding-Problem/problem-47.py)
+
 <hr>
 
-problem 48 [Medium]
+problem 48 [Medium] [Google]
 
 Given pre-order and in-order traversals of a binary tree, write a function to reconstruct the tree.
 
@@ -748,9 +784,11 @@ You should return the following tree:
  / \ / \
 d  e f  g
 
+[Solution](Daily-Coding-Problem/problem-48.py)
+
 <hr>
 
-problem 49 [Medium]
+problem 49 [Medium] [Amazon]
 
 Given an array of numbers, find the maximum sum of any contiguous subarray of the array.
 
@@ -760,9 +798,11 @@ Given the array [-5, -1, -8, -9], the maximum sum would be 0, since we would not
 
 Do this in O(N) time.
 
+[Solution](Daily-Coding-Problem/problem-49.py)
+
 <hr>
 
-problem 50 [Easy]
+problem 50 [Easy] [Microsoft]
 
 Suppose an arithmetic expression is given as a binary tree. Each leaf is an integer and each internal node is one of '+', '−', '∗', or '/'.
 
@@ -780,9 +820,11 @@ For example, given the following tree:
 
 You should return 45, as it is (3 + 2) * (4 + 5).
 
+[Solution](Daily-Coding-Problem/problem-50.py)
+
 <hr>
 
-problem 51 [Medium]
+problem 51 [Medium] [Facebook]
 
 Given a function that generates perfectly random numbers between 1 and k (inclusive), where k is an input.
 
@@ -792,9 +834,11 @@ It should run in O(N) time.
 
 Hint: Make sure each one of the 52! permutations of the deck is equally likely.
 
+[Solution](Daily-Coding-Problem/problem-51.py)
+
 <hr>
 
-problem 52 [Hard]
+problem 52 [Hard] [Google]
 
 Implement an LRU (Least Recently Used) cache. It should be able to be initialized with a cache size `n`, and contain the following methods:
 
@@ -803,16 +847,20 @@ Implement an LRU (Least Recently Used) cache. It should be able to be initialize
 
 Each operation should run in O(1) time
 
+[Solution](Daily-Coding-Problem/problem-52.py)
+
 <hr>
 
-problem 53 [Medium]
+problem 53 [Medium] [Apple]
 
 Implement a queue using two stacks. 
 Recall that a queue is a FIFO (first-in, first-out) data structure with the following methods: enqueue, which inserts an element into the queue, and dequeue, which removes it.
 
+[Solution](Daily-Coding-Problem/problem-53.py)
+
 <hr>
 
-problem 54 [Hard]
+problem 54 [Hard] [Dropbox]
 
 Sudoku is a puzzle where you're given a partially-filled 9 by 9 grid with digits.
 
@@ -820,9 +868,11 @@ The objective is to fill the grid with the constraint that every row, column, an
 
 Implement an efficient sudoku solver.
 
+[Solution](Daily-Coding-Problem/problem-54.py)
+
 <hr>
 
-problem 55 [Easy]
+problem 55 [Easy] [Microsoft]
 
 Implement a URL shortener with the following methods:
 
@@ -831,17 +881,21 @@ Implement a URL shortener with the following methods:
 
 Hint: What if we enter the same URL twice?
 
+[Solution](Daily-Coding-Problem/problem-55.py)
+
 <hr>
 
-problem 56 [Medium]
+problem 56 [Medium] [Google]
 
 Given an undirected graph represented as an adjacency matrix and an integer k, 
 
 write a function to determine whether each vertex in the graph can be colored such that no two adjacent vertices share the same color using at most k colors.
 
+[Solution](Daily-Coding-Problem/problem-56.py)
+
 <hr>
 
-problem 57 [Medium]
+problem 57 [Medium] [Amazon]
 
 Given a string s and an integer k, break up the string into multiple lines such that each line has a length of k or less.
 You must break it up so that words don't break across lines. 
@@ -852,9 +906,11 @@ You can assume that there are no spaces at the ends of the string and that there
 For example, given the string "the quick brown fox jumps over the lazy dog" and k = 10,
 you should return: ["the quick", "brown fox", "jumps over", "the lazy", "dog"]. No string in the list has a length of more than 10.
 
+[Solution](Daily-Coding-Problem/problem-57.py)
+
 <hr>
 
-problem 58 [Medium]
+problem 58 [Medium] [Amazon]
 
 An sorted array of integers was rotated an unknown number of times.
 
@@ -864,15 +920,19 @@ For example, given the array [13, 18, 25, 2, 8, 10] and the element 8, return 4 
 
 You can assume all the integers in the array are unique.
 
+[Solution](Daily-Coding-Problem/problem-58.py)
+
 <hr>
 
-problem 59 [Hard]
+problem 59 [Hard] [Google]
 
 Implement a file syncing algorithm for two computers over a low-bandwidth network. What if we know the files in the two computers are mostly the same?
 
+[Solution](Daily-Coding-Problem/problem-59.py)
+
 <hr>
 
-problem 60 [Medium]
+problem 60 [Medium] [Facebook]
 
 Given a multiset of integers, return whether it can be partitioned into two subsets whose sums are the same.
 
@@ -880,9 +940,11 @@ For example, given the multiset {15, 5, 20, 10, 35, 15, 10}, it would return tru
 
 Given the multiset {15, 5, 20, 10, 35}, it would return false, since we can't split it up into two subsets that add up to the same sum.
 
+[Solution](Daily-Coding-Problem/problem-60.py)
+
 <hr>
 
-problem 61 [Medium]
+problem 61 [Medium] [Google]
 
 Implement integer exponentiation. That is, implement the pow(x, y) function, where x and y are integers and returns x^y.
 
@@ -890,9 +952,11 @@ Do this faster than the naive method of repeated multiplication.
 
 For example, pow(2, 10) should return 1024.
 
+[Solution](Daily-Coding-Problem/problem-61.py)
+
 <hr>
 
-problem 62 [Medium]
+problem 62 [Medium] [Facebook]
 
 There is an N by M matrix of zeroes. Given N and M, write a function to count the number of ways of starting at the top-left corner and getting to the bottom-right corner. 
 You can only move right or down.
@@ -903,9 +967,11 @@ Right, then down
 Down, then right
 Given a 5 by 5 matrix, there are 70 ways to get to the bottom-right.
 
+[Solution](Daily-Coding-Problem/problem-62.py)
+
 <hr>
 
-problem 63 [Easy]
+problem 63 [Easy] [Microsoft]
 
 Given a 2D matrix of characters and a target word, write a function that returns whether the word can be found in the matrix by going left-to-right, or up-to-down.
 
@@ -920,17 +986,21 @@ For example, given the following matrix:
 
 and the target word 'FOAM', you should return true, since it's the leftmost column. Similarly, given the target word 'MASS', you should return true, since it's the last row.
 
+[Solution](Daily-Coding-Problem/problem-63.py)
+
 <hr>
 
-Problem 64 [Hard]
+Problem 64 [Hard] [Google]
 
 A knight's tour is a sequence of moves by a knight on a chessboard such that all squares are visited once.
 
 Given N, write a function to return the number of knight's tours on an N by N chessboard.
 
+[Solution](Daily-Coding-Problem/problem-64.py)
+
 <hr>
 
-problem 65 [Easy]
+problem 65 [Easy] [Amazon]
 
 Given a N by M matrix of numbers, print out the matrix in a clockwise spiral.
 
@@ -965,18 +1035,22 @@ You should print out the following:
 12
 ```
 
+[Solution](Daily-Coding-Problem/problem-65.py)
+
 <hr>
 
-problem 66 [Medium]
+problem 66 [Medium] [Square]
 
 Assume you have access to a function `toss_biased()` which returns 0 or 1 with a probability that's not 50-50 (but also not 0-100 or 100-0).
 You do not know the bias of the coin.
 
 Write a function to simulate an unbiased coin toss.
 
+[Solution](Daily-Coding-Problem/problem-66.py)
+
 <hr>
 
-problem 67 [Hard]
+problem 67 [Hard] [Google]
 
 Implement an LFU (Least Frequently Used) cache. It should be able to be initialized with a cache size `n`, and contain the following methods:
 
@@ -985,9 +1059,11 @@ Implement an LFU (Least Frequently Used) cache. It should be able to be initiali
 
 **Each operation should run in O(1) time**
 
+[Solution](Daily-Coding-Problem/problem-67.py)
+
 <hr>
 
-problem 68 [Medium]
+problem 68 [Medium] [Google]
 
 On our special chessboard, two bishops attack each other if they share the same diagonal.
 This includes bishops that have another bishop located between them, i.e. bishops can attack through pieces.
@@ -1015,9 +1091,11 @@ The board would look like this:
 
 You should return 2, since bishops 1 and 3 attack each other, as well as bishops 3 and 4
 
+[Solution](Daily-Coding-Problem/problem-68.py)
+
 <hr>
 
-problem 69 [Easy]
+problem 69 [Easy] [Facebook]
 
 Given a list of integers, return the largest product that can be made by multiplying any three integers.
 
@@ -1025,9 +1103,11 @@ For example, if the list is `[-10, -10, 5, 2]`, we should return `500`, since th
 
 You can assume the list has at least three integers.
 
+[Solution](Daily-Coding-Problem/problem-69.py)
+
 <hr>
 
-problem 70 [Easy]
+problem 70 [Easy] [Microsoft]
 
 A number is considered perfect if its digits sum up to exactly 10.
 
@@ -1035,15 +1115,19 @@ Given a positive integer n, return the n-th perfect number.
 
 For example, given 1, you should return 19. Given 2, you should return 28.
 
+[Solution](Daily-Coding-Problem/problem-70.py)
+
 <hr>
 
-problem 71 [Easy]
+problem 71 [Easy] [Two Sigma]
 
 Using a function rand7() that returns an integer from 1 to 7 (inclusive) with uniform probability, implement a function rand5() that returns an integer from 1 to 5 (inclusive)
 
+[Solution](Daily-Coding-Problem/problem-70.py)
+
 <hr>
 
-problem 72 [Hard]
+problem 72 [Hard] [Google]
 
 In a directed graph, each node is assigned an uppercase letter. We define a path's value as the number of most frequently-occurring letter along that path. 
 For example, if a path in the graph goes through "ABACA", the value of the path is 3, since there are 3 occurrences of 'A' on the path.
@@ -1071,15 +1155,19 @@ The following input graph:
 
 Should return null, since we have an infinite loop.
 
+[Solution](Daily-Coding-Problem/problem-72.py)
+
 <hr>
 
-problem 73 [Easy]
+problem 73 [Easy] [Google]
 
 Given the head of a singly linked list, reverse it in-place.
 
+[Solution](Daily-Coding-Problem/problem-73.py)
+
 <hr>
 
-problem 74 [Medium]
+problem 74 [Medium] [Apple]
 
 Suppose you have a multiplication table that is N by N. That is, a 2D array where the value at the `i`-th row and `j`-th column is `(i + 1) * (j + 1)` (if 0-indexed) or `i * j` (if 1-indexed).
 
@@ -1103,17 +1191,21 @@ For example, given N = 6 and X = 12, you should return 4, since the multiplicati
 
 And there are 4 12's in the table.
 
+[Solution](Daily-Coding-Problem/problem-74.py)
+
 <hr>
 
-problem 75 [Hard]
+problem 75 [Hard] [Microsoft]
 
 Given an array of numbers, find the length of the longest increasing subsequence in the array. The subsequence does not necessarily have to be contiguous.
 
 For example, given the array [0, 8, 4, 12, 2, 10, 6, 14, 1, 9, 5, 13, 3, 11, 7, 15], the longest increasing subsequence has length 6: it is 0, 2, 6, 9, 11, 15.
 
+[Solution](Daily-Coding-Problem/problem-75.py)
+
 <hr>
 
-problem 76 [Medium]
+problem 76 [Medium] [Google]
 
 You are given an N by M 2D matrix of lowercase letters. Determine the minimum number of columns that can be removed to ensure that each row is ordered from top to bottom lexicographically. 
 That is, the letter at each column is lexicographically later as you go down each row. It does not matter whether each row itself is ordered lexicographically.
@@ -1154,9 +1246,11 @@ tsr
 
 Your function should return 3, since we would need to remove all the columns to order it.
 
+[Solution](Daily-Coding-Problem/problem-76.py)
+
 <hr>
 
-problem 77 [Easy]
+problem 77 [Easy] [Snapchat]
 
 Given a list of possibly overlapping intervals, return a new list of intervals where all overlapping intervals have been merged.
 
@@ -1164,15 +1258,19 @@ The input list is not necessarily ordered in any way.
 
 For example, given [(1, 3), (5, 8), (4, 10), (20, 25)], you should return [(1, 3), (4, 10), (20, 25)].
 
+[Solution](Daily-Coding-Problem/problem-77.py)
+
 <hr>
 
-problem 78 [Medium]
+problem 78 [Medium] [Google]
 
 Given k sorted singly linked lists, write a function to merge all the lists into one sorted singly linked list.
 
+[Solution](Daily-Coding-Problem/problem-78.py)
+
 <hr>
 
-problem 79 [Medium]
+problem 79 [Medium] [Facebook]
 
 Given an array of integers, write a function to determine whether the array could become non-decreasing by modifying at most 1 element.
 
@@ -1180,9 +1278,11 @@ For example, given the array `[10, 5, 7]`, you should return true, since we can 
 
 Given the array `[10, 5, 1]`, you should return `false`, since we can't modify any one element to get a non-decreasing array.
 
+[Solution](Daily-Coding-Problem/problem-79.py)
+
 <hr>
 
-problem 80 [Easy]
+problem 80 [Easy] [Google]
 
 Given the root of a binary tree, return a deepest node. For example, in the following tree, return d.
 
@@ -1191,6 +1291,8 @@ Given the root of a binary tree, return a deepest node. For example, in the foll
   b   c
  /
 d
+
+[Solution](Daily-Coding-Problem/problem-80.py)
 
 <hr>
 
