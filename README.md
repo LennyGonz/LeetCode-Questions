@@ -19,24 +19,9 @@ Also contains a python refresher
 | 7 | Reverse Integer | [Code](Code/reverse_integer.py) & [Walk-Through] | Easy
 | 8 | String to Integer (atoi) | [Code](Code/string_to_integer.py) & [Walk-Through] | Medium
 | 9 | Palindrome Number | [Code](Code/palindromeNumber.py) & [Walk-Through](PDFs/Palindrome%20Number.pdf) | Easy
-
-<hr>
-
-Problem 46
-
-Permutations | [Code](Code/permutations.py) | [Walk-Through]
-
-<hr>
-
-Problem 141
-
-Linked List Cycle | [Code](Code/detect_linkedlist_cycle.py) | [Walk-Through](PDFs/Linked%20List%20Cycle.pdf)
-
-<hr>
-
-Problem 929
-
-Unique Email Address | [Code](Code/unique_email_address.py) | [Walk-Through](PDFs/Unique%20Email%20Address.pdf)
+| 46 | Permutations | [Code] | [Code](Code/permutations.py) | [Walk-Through] | Medium
+| 141 | Linked List Cycle | [Code](Code/detect_linkedlist_cycle.py) | [Walk-Through](PDFs/Linked%20List%20Cycle.pdf) | Easy
+| 929 | Unique Email Address | [Code](Code/unique_email_address.py) | [Walk-Through](PDFs/Unique%20Email%20Address.pdf) | Easy
 
 <hr>
 
