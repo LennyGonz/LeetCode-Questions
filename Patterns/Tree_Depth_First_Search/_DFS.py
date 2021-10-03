@@ -4,17 +4,12 @@ class Node:
     self.left = left
     self.right = right
 
-# Data structure to store a binary tree node
-
 # Iterative function to perform preorder traversal on the tree
 def preorderIterative(root):
-  # return if the tree is empty
   if root is None:
     return
 
-  # create an empty stack and push the root node
   stack = [root]
-  #stack.append(root)
   path = []
 
   # start from the root node (set current node to the root node)
@@ -22,22 +17,19 @@ def preorderIterative(root):
 
   # loop till stack is empty
   while stack:
-    # if the current node exists, print it and push its right child
-    # to the stack before moving to its left child
+    # if the current node exists, print it and push its right child to the stack before moving to its left child
     if curr:
       path.append(curr.data)
-
 
       if curr.right:
         stack.append(curr.right)
 
       curr = curr.left
-    # if the current node is None, pop a node from the stack
-    # set the current node to the popped node
+    # if the current node is None, pop a node from the stack set the current node to the popped node
     else:
       curr = stack.pop()
   
-  print("Pre-Order: ",path, "& right answer is: 1 2 4 3 5 7 8 6")
+  print("Pre-Order: ",path, "& right answer is: 1 2 4 3 5 7 8")
 
 if __name__ == '__main__':
   """ Construct the following tree
