@@ -3,8 +3,8 @@ def inorderTraversal(root):
   helper(root, res)
   return res
 
-  def helper(root, res):
-    if root:
-      helper(root.left, res)
-      res.append(root.val)
-      helper(root.right, res)
+def helper(root, res):
+  if root:
+    helper(root.left, res)
+    res.append(root.val)
+    helper(root.right, res)
