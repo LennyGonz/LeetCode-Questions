@@ -2947,3 +2947,53 @@ For example, given the following matrix:
 And i1 = 1, j1 = 1, i2 = 3, j2 = 3, return 15 as there are 15 numbers in the matrix smaller than 6 or greater than 23.
 
 <hr>
+
+problem 196 [Easy] [Apple]
+
+Given the root of a binary tree, find the most frequent subtree sum. The subtree sum of a node is the sum of all values under a node, including the node itself.
+
+```
+  5
+ / \
+2  -5
+```
+
+Return `2` as it occurs twice: once as the left leaf, and once as the sum of `2 + 5 - 5`.
+
+<hr>
+
+problem 197 [Easy] [Amazon]
+
+Given an array and a number `k` that's smaller than the length of the array, rotate the array to the right `k` elements in-place.
+
+<hr>
+
+problem 198 [Medium] [Google]
+
+Given a set of distinct positive integers, find the largest subset such that every pair of elements in the subset (i, j) satisfies either i % j = 0 or j % i = 0.
+
+For example, given the set [3, 5, 10, 20, 21], you should return [5, 10, 20]. Given [1, 3, 6, 24], return [1, 3, 6, 24].
+
+<hr>
+
+problem 199 [Hard] [Facebook]
+
+Given a string of parentheses, find the balanced string that can be produced from it using the minimum number of insertions and deletions.
+
+If there are multiple solutions, return any of them.
+
+For example, given "(()", you could return "(())". Given "))()(", you could return "()()()()".
+
+<hr>
+
+problem 200 [Hard] [Microsoft]
+
+Let X be a set of n intervals on the real line. We say that a set of points P "stabs" X if every interval in X contains at least one point in P.
+
+Compute the smallest set of points that stabs X.
+
+For example, given the intervals `[(1, 4), (4, 5), (7, 9), (9, 12)]`, you should return `[4, 9]`.
+
+<hr>
+
+
