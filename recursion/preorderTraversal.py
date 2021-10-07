@@ -5,6 +5,6 @@ def preorderTraversal(root):
 
 def helper(root, res):
   if root:
+    res.append(root.val)
     helper(root.left, res)
     helper(root.right, res)
-    res.append(root.val)
