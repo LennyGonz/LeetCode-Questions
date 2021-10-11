@@ -135,3 +135,72 @@ Given a binary tree where each node can only have a digit (0-9) value, each root
 Trees can also be travered in level-order, where we visit every node on a level before going to a lower lovel.
 
 This search is referred to as BFS, as the search tree is broadened as mich as possible on each depth before going to the next depth
+
+```py
+def bfs(root):
+  q = deque()
+  q.append(root)
+
+  while q:
+    node = q.popleft()
+
+    if node.left:
+      q.append(node.left)
+    
+    if node.right:
+      q.append(node.right)
+    
+    print(node.val)
+```
+
+
+def count_paths(root, S):
+  return count_paths_recursive(root, S, [])
+
+
+def count_paths_recursive(currentNode, S, currentPath):
+  if currentNode is None:
+    return 0
+
+  # add the current node to the path
+  currentPath.append(currentNode.val)
+  pathCount, pathSum = 0, 0
+  # find the sums of all sub-paths in the current path list
+  for i in range(len(currentPath)-1, -1, -1):
+    pathSum += currentPath[i]
+    # if the sum of any sub-path is equal to 'S' we increment our path count.
+    if pathSum == S:
+      pathCount += 1
+
+  # traverse the left sub-tree
+  pathCount += count_paths_recursive(currentNode.left, S, currentPath)
+  # traverse the right sub-tree
+  pathCount += count_paths_recursive(currentNode.right, S, currentPath)
+
+  # remove the current node from the path to backtrack
+  # we need to remove the current node while we are going up the recursive call stack
+  del currentPath[-1]
+
+  return pathCount
+
+def count_paths(root, S):
+  return helper(root, S, [])
+
+def helper(cn, rs, cp):
+  if cn is None:
+    return 0
+  
+  cp.append(cn.val)
+  pathCount = 0
+  pathSum = 0
+
+  for i in range(len(cp)-1, -1, -1):
+    pathSum += cp[i]
+
+    if pathSum == S:
+      pathCount += 1
+  
+  pathCount += helper(cn.left, rs, cp)
+  pathConut += helper(cn.left, rs, cp)
+
+  del currentPath[-1]
