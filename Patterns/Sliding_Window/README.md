@@ -71,7 +71,7 @@ def find_averages_of_subarrays(K, arr):
   result = []
   windowSum = 0.0
   windowStart = 0
-  
+
   for windowEnd in range(len(arr)):
     windowSum += arr[windowEnd]  # add the next element
     # slide the window, we don't need to slide if we've not hit the required window size of 'k'
