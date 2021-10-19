@@ -3055,3 +3055,75 @@ Given an array and a permutation, apply the permutation to the array.
 For example, given the array `["a", "b", "c"]` and the permutation `[2, 1, 0]`, return `["c", "b", "a"]`
 
 <hr>
+
+problem 207 [Medium] [Dropbox]
+
+Given an undirected graph G, check whether it is bipartite.
+Recall that a graph is bipartite if its vertices can be divided into two independent sets, U and V, such that no edge connects vertices of the same set.
+
+<hr>
+
+problem 208 [Medium] [LinkedIn]
+
+Given a linked list of numbers and a pivot `k`, partition the linked list so that all nodes less than `k` come before nodes greater than or equal to `k`.
+
+For example, given the linked list `5 -> 1 -> 8 -> 0 -> 3` and `k = 3`, the solution could be `1 -> 0 -> 5 -> 8 -> 3`.
+
+<hr>
+
+problem 209 [Hard] [Youtube]
+
+Write a program that computes the length of the longest common subsequence of three given strings.
+
+For example, given `"epidemiologist"`, `"refrigeration"`, and `"supercalifragilisticexpialodocious"`, it should `return 5`, since the longest common subsequence is `"eieio"`.
+
+<hr>
+
+problem 210 [Easy] [Apple]
+
+A Collatz sequence in mathematics can be defined as follows. Starting with any positive integer:
+
+- if n is even, the next number in the sequence is n / 2
+- if n is odd, the next number in the sequence is 3n + 1
+
+It is conjectured that every such sequence eventually reaches the number `1`. Test this conjecture.
+
+Bonus: What input `n <= 1000000` gives the longest sequence?
+
+<hr>
+
+problem 211 [Medium] [Microsoft]
+
+Given a string and a pattern, find the starting indices of all occurrences of the pattern in the string.
+
+For example, given the string "abracadabra" and the pattern "abr", you should return [0, 7].
+
+<hr>
+
+problem 212 [Easy] [Dropbox]
+
+Spreadsheets often use this alphabetical encoding for its columns: "A", "B", "C", ..., "AA", "AB", ..., "ZZ", "AAA", "AAB", ....
+
+Given a column number, return its alphabetical column id. For example, given 1, return "A". Given 27, return "AA".
+
+<hr>
+
+problem 213 [Medium] [Snapchat]
+
+Given a string of digits, generate all possible valid IP address combinations.
+
+IP addresses must follow the format A.B.C.D, where A, B, C, and D are numbers between 0 and 255.
+
+Zero-prefixed numbers, such as 01 and 065, are not allowed, except for 0 itself.
+
+For example, given "2542540123", you should return ['254.25.40.123', '254.254.0.123'].
+
+<hr>
+
+problem 214 [Easy] [Stripe]
+
+Given an integer `n`, return the length of the longest consecutive run of `1`s in its binary representation.
+
+For example, given `156`, you should return `3`.
+
+<hr>
