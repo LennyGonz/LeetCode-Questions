@@ -58,3 +58,59 @@ def check_bst(self, node, left, right):
 
     return (check_bst(node.left, left, node.val)
             and check_bst(node.right, node.val, right))
+
+
+class TreeNode:
+  def __init__(self, val=0, left=None, right=None):
+      self.val = val
+      self.left = left
+      self.right = right
+
+def inorder(currentNode, res):
+  if currentNode is None:
+    return
+
+  if currentNode.left is None and currentNode.right is not None:
+    return False
+  
+  inorder(currentNode.left, res)
+  res.append(currentNode.val)
+  inorder(currentNode.right, res)
+
+def validBST(root):
+  if root.left is None and root.right is not None:
+    return False
+  
+  res = []
+
+  inorder(root, res)
+
+  print("Res: ", res)
+
+  return res == sorted(res)
+
+def checkBST(currentNode, left, right):
+  if not currentNode:
+    return True
+#   leftChild.val <= parent.val  leftChild.val >= parent.val
+  if currentNode.val <= left or currentNode.val >= right:
+    return False
+  
+  return (checkBST(currentNode.left, left, currentNode.val) and checkBST(currentNode.right, currentNode.val, right))
+
+def isValidBST(root):
+  return checkBST(root, float("-inf"), float("inf"))
+
+def main():
+
+  root = TreeNode(8)
+  root.left = TreeNode(3)
+  root.right = TreeNode(10)
+  root.left.left = TreeNode(1)
+  root.left.right = TreeNode(6)
+  root.left.right.left = TreeNode(4)
+  
+  print(isValidBST(root))
+
+
+main()
