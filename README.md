@@ -861,7 +861,7 @@ problem 55 [Easy] [Microsoft]
 
 Implement a URL shortener with the following methods:
 
-- `shorten(url)`, which shortens the url into a six-character alphanumeric string, such as zLg6wl.
+- `shorten(url)`, which shortens the url into a six-character alphanumeric string, such as `zLg6wl`.
 - `restore(short)`, which expands the shortened string into the original url. If no such shortened string exists, return null.
 
 Hint: What if we enter the same URL twice?
@@ -1115,6 +1115,7 @@ Using a function rand7() that returns an integer from 1 to 7 (inclusive) with un
 problem 72 [Hard] [Google]
 
 In a directed graph, each node is assigned an uppercase letter. We define a path's value as the number of most frequently-occurring letter along that path. 
+
 For example, if a path in the graph goes through "ABACA", the value of the path is 3, since there are 3 occurrences of 'A' on the path.
 
 Given a graph with n nodes and m directed edges, return the largest value path of the graph. If the largest value is infinite, then return null.
@@ -1269,13 +1270,15 @@ Given the array `[10, 5, 1]`, you should return `false`, since we can't modify a
 
 problem 80 [Easy] [Google]
 
-Given the root of a binary tree, return a deepest node. For example, in the following tree, return d.
+Given the root of a binary tree, return a deepest node. For example, in the following tree, return `d`.
 
+```
     a
    / \
   b   c
  /
 d
+```
 
 [Solution](Daily-Coding-Problem/problem-80.py)
 
@@ -1454,7 +1457,7 @@ Return a sorted ordering of courses such that we can finish all courses.
 
 Return null if there is no such ordering.
 
-For example, given {'CSC300': ['CSC100', 'CSC200'], 'CSC200': ['CSC100'], 'CSC100': []}, should return ['CSC100', 'CSC200', 'CSCS300'].
+For example, given `{'CSC300': ['CSC100', 'CSC200'], 'CSC200': ['CSC100'], 'CSC100': []}`, should return `['CSC100', 'CSC200', 'CSCS300']`.
 
 [Solution](Daily-Coding-Problem/problem-92.py)
 
@@ -1621,7 +1624,7 @@ If [a, b] is one solution with a <= b, and [c, d] is another solution with c <= 
 [a, b] < [c, d]
 ```
 
-If a < c OR a==c AND b < d.
+If `a < c` OR `a==c` AND `b < d`.
 
 [Solution](Daily-Coding-Problem/problem-101.py)
 
@@ -1631,7 +1634,7 @@ problem 102 [Medium] [Lyft]
 
 Given a list of integers and a number K, return which contiguous elements of the list sum to K.
 
-For example, if the list is [1, 2, 3, 4, 5] and K is 9, then it should return [2, 3, 4], since 2 + 3 + 4 = 9.
+For example, if the list is `[1, 2, 3, 4, 5]` and K is 9, then it should return `[2, 3, 4]`, since `2 + 3 + 4 = 9`.
 
 [Solution](Daily-Coding-Problem/problem-102.py)
 
@@ -1653,7 +1656,7 @@ problem 104 [Easy] [Google]
 
 Determine whether a doubly linked list is a palindrome. What if it’s singly linked?
 
-For example, 1 -> 4 -> 3 -> 4 -> 1 returns True while 1 -> 4 returns False.
+For example, `1 -> 4 -> 3 -> 4 -> 1` returns True while `1 -> 4` returns False.
 
 [Solution](Daily-Coding-Problem/problem-104.py)
 
@@ -3127,3 +3130,92 @@ Given an integer `n`, return the length of the longest consecutive run of `1`s i
 For example, given `156`, you should return `3`.
 
 <hr>
+
+problem 215 [Medium] [Yelp]
+
+The horizontal distance of a binary tree node describes how far left or right the node will be when the tree is printed out.
+
+More rigorously, we can define it as follows:
+
+The horizontal distance of the root is 0.
+The horizontal distance of a left child is `hd(parent) - 1`.
+The horizontal distance of a right child is `hd(parent) + 1`.
+For example, for the following tree, `hd(1) = -2`, and `hd(6) = 0`.
+
+```
+             5
+          /     \
+        3         7
+      /  \      /   \
+    1     4    6     9
+   /                /
+  0                8
+```
+
+The bottom view of a tree, then, consists of the lowest node at each horizontal distance. If there are two nodes at the same depth and horizontal distance, either is acceptable.
+
+For this tree, for example, the bottom view could be `[0, 1, 3, 6, 8, 9]`.
+
+Given the root to a binary tree, return its bottom view.
+
+<hr>
+
+problem 216 [Medium] [Facebook]
+
+Given a number in Roman numeral format, convert it to decimal
+
+The values of Roman numerals are as follows:
+
+```
+{
+  'M': 1000,
+  'D': 500,
+  'C': 100,
+  'L': 50,
+  'X': 10,
+  'V': 5,
+  'I': 1
+}
+```
+
+In addition, note that the Roman numeral system uses [subtractive notation](https://en.wikipedia.org/wiki/Roman_numerals) for numbers such as `IV` and `XL`.
+
+For the input `XIV`, for instance, you should return `14`
+
+<hr>
+
+problem 217 [Hard] [Oracle]
+
+We say a number is sparse if there are no adjacent ones in its binary representation.
+
+For example, `21` (10101) is sparse, but `22` (10110) is not. For a given input `N`, find the smallest sparse number greater than or equal to `N`.
+
+Do this in faster than `O(N log N)` time
+
+<hr>
+
+problem 218 [Medium] [Yahoo]
+
+Write an algorithm that computes the reversal of a directed graph.
+
+For example, if a graph consists of `A` -> `B` -> `C`, it should become `A` <- `B` <- `C`.
+
+<hr>
+
+problem 219 [Hard] [Salesforce]
+
+Connect 4 is a game where opponents take turns dropping red or black discs into a 7 x 6 vertically suspended grid.
+
+The game ends either when one player creates a line of four consecutive discs of their color (horizontally, vertically, or diagonally), or when there are no more spots left in the grid.
+
+Design and implement Connect 4
+
+<hr>
+
+problem 220 [Medium] [Square]
+
+In front of you is a row of `N` coins, with values `v1`, `v1`, ..., `vn`.
+
+You are asked to play the following game. You and an opponent take turns choosing either the first or last coin from the row, removing it from the row, and receiving the value of the coin.
+
+Write a program that returns the maximum amount of money you can win with certainty, if you move first, assuming your opponent plays optimally.
