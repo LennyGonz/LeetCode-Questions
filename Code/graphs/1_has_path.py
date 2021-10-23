@@ -41,7 +41,7 @@ def main():
 main()
 '''
 
-def is_path_sum(root: Tree, S)->True:
+def is_path_sum(root, S)->True:
   if root is None:
     return False
 
@@ -53,15 +53,15 @@ def is_path_sum(root: Tree, S)->True:
 
 # DFS with stack
 def hasPathSum2(self, root, sum):
-    if not root:
-        return False
-    stack = [(root, root.val)]
-    while stack:
-        curr, val = stack.pop()
-        if not curr.left and not curr.right and val == sum:
-            return True
-        if curr.right:
-            stack.append((curr.right, val+curr.right.val))
-        if curr.left:
-            stack.append((curr.left, val+curr.left.val))
+  if not root:
     return False
+  stack = [(root, root.val)]
+  while stack:
+    curr, val = stack.pop()
+    if not curr.left and not curr.right and val == sum:
+      return True
+    if curr.right:
+      stack.append((curr.right, val+curr.right.val))
+    if curr.left:
+      stack.append((curr.left, val+curr.left.val))
+  return False
