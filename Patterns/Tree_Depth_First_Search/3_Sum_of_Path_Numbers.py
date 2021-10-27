@@ -1,3 +1,4 @@
+from collections import deque, defaultdict
 '''
 class TreeNode:
   def __init__(self, val, left=None, right=None):
@@ -124,3 +125,30 @@ def cousins(root, x, y):
 
   return results[0][0] != results[1][0] and results [0][1] != results[1][1]
 
+def isCousins(root, x, y):
+  # Concept is to store the level and parent information here while performing BFS and break early once you have both x and y in nodeMap
+  q = deque()
+  nodeMap = defaultdict()
+  #         node, level, parent
+  q.append((root, 0, 0))
+  
+  while q:
+    # if during our traversal we have encountered the cousins in question... WE STOP TRAVERSING
+    # not necessary to traverse the entire tree if we already have what we need
+    if (x in nodeMap) and (y in nodeMap):
+      break
+
+    node, level, parent = q.popleft()
+    # while traversing we need to populate the nodeMap
+    nodeMap[node.val] = [level, parent]
+
+    # traverse the tree
+    if node.left:
+      q.append((node.left, level+1, node.val))
+
+    if node.right:
+      q.append((node.right, level+1, node.val))
+
+  if nodeMap[x][0] == nodeMap[y][0] and nodeMap[x][1] != nodeMap[y][1]:
+    return True
+  return False
