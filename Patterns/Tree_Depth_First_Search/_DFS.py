@@ -74,6 +74,8 @@ def inorderIterative(root):
       path.append(curr.data)
       curr = curr.right
   
+  return path
+  
   print("In-Order: ",path, "& right answer is: 4 2 1 7 5 8 3 6")
 
 if __name__ == '__main__':
