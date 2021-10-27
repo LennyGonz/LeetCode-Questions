@@ -28,16 +28,6 @@ not_a_graph = {
   'F' : []
 }
 
-# def dfs(graph, node):
-#   visited = set()
-#   if node not in visited:
-#     print (node)
-#     visited.add(node)
-#     for neighbour in graph[node]:
-#       dfs(graph, neighbour)
-
-# dfs(graph, 'A')
-
 visited = set() # Set to keep track of visited nodes.
 
 def dfs(visited, graph, node):
