@@ -1,28 +1,28 @@
 def reverselist(head):
-  prevNode = None
+  previousNode = None
   # we need to traverse the array whilst simultanously reversing the list
 
   # while there's a VALID head node keep the loop going
   # if we did while head.next (this would end 1 iteration too early)
-  # while there is a vlaud head keep going
+  # while there is a valid head keep going (once we reach the end of the linkedlist head=None and exit the while-loop)
   while head:
 
     # we need to keep track of the node we're currently on
-    curr = head
+    currentNode = head
 
     # we need to iterate through the linked list - this makes sure we move to the next node
     head = head.next
 
     # this is how we manipulate the pointers
     # we "reverse the pointer" here
-    curr.next = prev
+    currentNode.next = previousNode
 
     # we build the reversed linked list here
-    prev = curr
+    previousNode = currentNode
   
   # we return the head of the reversed linked list 
   # (which was formally the last node of the original lsit)
-  return prev
+  return previousNode
 
 
 
