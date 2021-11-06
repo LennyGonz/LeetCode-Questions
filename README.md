@@ -3219,3 +3219,71 @@ In front of you is a row of `N` coins, with values `v1`, `v1`, ..., `vn`.
 You are asked to play the following game. You and an opponent take turns choosing either the first or last coin from the row, removing it from the row, and receiving the value of the coin.
 
 Write a program that returns the maximum amount of money you can win with certainty, if you move first, assuming your opponent plays optimally.
+
+<hr>
+
+problem 221 [Easy] [Zillow]
+
+Let's define a "sevenish" number to be one which is either a power of `7`, or the sum of unique powers of `7`.
+
+The first few sevenish numbers are `1`, `7`, `8`, `49`, and so on. Create an algorithm to find the `nth` sevenish number.
+
+<hr>
+
+problem 222 [Medium] [Quora]
+
+Given an absolute pathname that may have `.` or `..` as part of it, return the shortest standardized path.
+
+For example, given "/usr/bin/../bin/./scripts/../", return "/usr/bin/".
+
+<hr>
+
+problem 223 [Hard] [Palantir]
+
+Typically, an implementation of in-order traversal of a binary tree has `O(h)` space complexity, where h is the height of the tree.
+
+Write a program to compute the in-order traversal of a binary tree using `O(1)` space.
+
+<hr>
+
+problem 224 [Easy] [Amazon]
+
+Given a sorted array, find the smallest positive integer that is not the sum of a subset of the array.
+
+For example, for the input `[1, 2, 3, 10]`, you should return `7`.
+
+Do this in `O(N)` time
+
+<hr>
+
+problem 225 [Easy] [Bloomberg]
+
+There are `N` prisoners standing in a circle, waiting to be executed.
+
+The executions are carried out starting with the `k`th person, and removing every successive `k`th person going clockwise until there is no one left.
+
+Given `N` and `k`, write an algorithm to determine where a prisoner should stand in order to be the last survivor.
+
+For example, if `N = 5` and `k = 2`, the order of executions would be `[2, 4, 1, 5, 3]`, so you should return `3`.
+
+Bonus: Find an O(log N) solution if k = 2.
+
+<hr>
+
+problem 226 [Hard] [Airbnb]
+
+You come across a dictionary of sorted words in a language you've never seen before. Write a program that returns the correct order of letters in this language.
+
+For example, given ['xww', 'wxyz', 'wxyw', 'ywx', 'ywz'], you should return ['x', 'z', 'w', 'y']
+
+<hr>
+
+problem 227 [Easy] [Facebook]
+
+Boggle is a game played on a 4 x 4 grid of letters. 
+
+The goal is to find as many words as possible that can be formed by a sequence of adjacent letters in the grid, using each cell at most once.
+
+Given a game board and a dictionary of valid words, implement a Boggle solver.
+
+<hr>
