@@ -3287,3 +3287,71 @@ The goal is to find as many words as possible that can be formed by a sequence o
 Given a game board and a dictionary of valid words, implement a Boggle solver.
 
 <hr>
+
+problem 228 [Medium] [Twitter]
+
+Given a list of numbers, create an algorithm that arranges them in order to form the largest possible integer.
+
+For example, given `[10, 7, 76, 415]`, you should return `77641510`
+
+<hr>
+
+problem 229 [Medium] [Flipkart]
+
+Snakes and Ladders is a game played on a 10 x 10 board, the goal of which is get from square 1 to square 100.
+On each turn players will roll a six-sided die and move forward a number of spaces equal to the result.
+If they land on a square that represents a snake or ladder, they will be transported ahead or behind, respectively, to a new square.
+
+Find the smallest number of turns it takes to play snakes and ladders.
+
+For convenience, here are the squares representing snakes and ladders, and their outcomes:
+
+```
+snakes = {16: 6, 48: 26, 49: 11, 56: 53, 62: 19, 64: 60, 87: 24, 93: 73, 95: 75, 98: 78}
+ladders = {1: 38, 4: 14, 9: 31, 21: 42, 28: 84, 36: 44, 51: 67, 71: 91, 80: 100}
+```
+
+<hr>
+
+problem 230 [Medium] [Goldman_Sachs]
+
+You are given `N` identical eggs and access to a building with `k` floors.
+Your task is to find the lowest floor that will cause an egg to break, if dropped from that floor.
+Once an egg breaks, it cannot be dropped again. If an egg breaks when dropped from the `xth` floor, you can assume it will also break when dropped from any floor greater than `x`.
+
+Write an algorithm that finds the minimum number of trial drops it will take, in the worst case, to identify this floor.
+
+For example, if `N = 1` and `k = 5`, we will need to try dropping the egg at every floor, beginning with the first, until we reach the fifth floor, so our solution will be `5`.
+
+<hr>
+
+problem 231 [Easy] [IBM]
+
+Given a string with repeated characters, rearrange the string so that no two adjacent characters are the same. If this is not possible, return `None`.
+
+For example, given `"aaabbc"`, you could return `"ababac"`. Given `"aaab"`, return `None`
+
+<hr>
+
+problem 232 [Easy] [Google]
+
+Implement a PrefixMapSum class with the following methods:
+
+- `insert(key: str, value: int)`: Set a given key's value in the map. If the key already exists, overwrite the value.
+- `sum(prefix: str)`: Return the sum of all values of keys that begin with a given prefix.
+
+For example, you should be able to run the following code:
+
+```
+mapsum.insert("columnar", 3)
+assert mapsum.sum("col") == 3
+
+mapsum.insert("column", 2)
+assert mapsum.sum("col") == 5
+```
+
+<hr>
+
+problem 233 [Easy] [Apple]
+
+Implement the function `fib(n)`, which returns the `nth` number in the Fibonacci sequence, using only `O(1)` space.
