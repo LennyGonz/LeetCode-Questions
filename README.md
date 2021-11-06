@@ -3355,3 +3355,5 @@ assert mapsum.sum("col") == 5
 problem 233 [Easy] [Apple]
 
 Implement the function `fib(n)`, which returns the `nth` number in the Fibonacci sequence, using only `O(1)` space.
+
+<hr>
