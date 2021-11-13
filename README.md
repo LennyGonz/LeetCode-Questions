@@ -3357,3 +3357,57 @@ problem 233 [Easy] [Apple]
 Implement the function `fib(n)`, which returns the `nth` number in the Fibonacci sequence, using only `O(1)` space.
 
 <hr>
+
+problem 234 [Hard] [Microsoft]
+
+Recall that the minimum spanning tree is the subset of edges of a tree that connect all its vertices with the smallest possible total edge weight.
+
+Given an undirected graph with weighted edges, compute the maximum weight spanning tree.
+
+<hr>
+
+problem 235 [Hard] [Facebook]
+
+Given an array of numbers of length N, find both the minimum and maximum using less than 2 * (N - 2) comparisons
+
+<hr>
+
+problem 236 [Medium] [Nvidia]
+
+You are given a list of N points (x1, y1), (x2, y2), ..., (xN, yN) representing a polygon.
+
+You can assume these points are given in order; that is, you can construct the polygon by connecting point `1` to point `2`, point `2` to point `3`, and so on, finally looping around to connect point `N` to point `1`.
+
+Determine if a new point p lies inside this polygon. (If p is on the boundary of the polygon, you should return False).
+
+<hr>
+
+problem 237 [Easy] [Amazon]
+
+A tree is symmetric if its data and shape remain unchanged when it is reflected about the root node. The following tree is an example:
+
+```
+        4
+      / | \
+    3   5   3
+  /           \
+9              9
+```
+
+Given a k-ary tree, determine whether it is symmetric.
+
+<hr>
+
+problem 238 [Hard] [MIT]
+
+Blackjack is a two player card game whose rules are as follows:
+
+- The player and then the dealer are each given two cards.
+- The player can then "hit", or ask for arbitrarily many additional cards, so long as their total does not exceed 21.
+- The dealer must then hit if their total is 16 or lower, otherwise pass.
+- Finally, the two compare totals, and the one with the greatest sum not exceeding 21 is the winner.
+- For this problem, cards values are counted as follows: each card between 2 and 10 counts as their face value, face cards count as 10, and aces count as 1.
+
+Given perfect knowledge of the sequence of cards in the deck, implement a blackjack solver that maximizes the player's score (that is, wins minus losses).
+
+<hr>
