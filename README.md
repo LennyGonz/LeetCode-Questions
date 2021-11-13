@@ -2472,6 +2472,7 @@ For example, given the binary number
 
 `1111 0000 1111 0000 1111 0000 1111 0000`, return `0000 1111 0000 1111 0000 1111 0000 1111`
 
+[Solution](Daily-Coding-Problem/problem-161.py)
 
 <br>
 
@@ -2493,6 +2494,8 @@ Return the list:
 - apr
 - f
 
+[Solution](Daily-Coding-Problem/problem-162.py)
+
 <br>
 
 problem 163 [Hard] [Jane_Street]
@@ -2505,11 +2508,15 @@ For example:
 
 `[15, 7, 1, 1, '+', '-', '/', 3, '*', 2, 1, 1, '+', '+', '-']` should return `5`, since it is equivalent to `((15 / (7 - (1 + 1))) * 3) - (2 + (1 + 1)) = 5`.
 
+[Solution](Daily-Coding-Problem/problem-163.py)
+
 <hr>
 
 problem 164 [Medium] [Google]
 
 You are given an array of length `n + 1` whose elements belong to the set `{1, 2, ..., n}`. By the pigeonhole principle, there must be a duplicate. Find it in linear time and space.
+
+[Solution](Daily-Coding-Problem/problem-164.py)
 
 <hr>
 
@@ -2525,6 +2532,8 @@ For example, given the array `[3, 4, 9, 6, 1]`, return `[1, 1, 2, 1, 0]`, since:
 - There is 1 smaller element to the right of 6
 - There are no smaller elements to the right of 1
 
+[Solution](Daily-Coding-Problem/problem-165.py)
+
 <hr>
 
 problem 166 [Medium] [Uber]
@@ -2538,6 +2547,8 @@ For example, given the input `[[1, 2], [3], [], [4, 5, 6]]`, calling `next()` re
 
 Do not use `flatten` or otherwise clone the arrays. Some of the arrays can be empty.
 
+[Solution](Daily-Coding-Problem/problem-166.py)
+
 <hr>
 
 problem 167 [Hard] [Airbnb]
@@ -2545,6 +2556,8 @@ problem 167 [Hard] [Airbnb]
 Given a list of words, find all pairs of unique indices such that the concatenation of the two words is a palindrome.
 
 For example, given the list `["code", "edoc", "da", "d"]`, return `[(0, 1), (1, 0), (2, 3)]`.
+
+[Solution](Daily-Coding-Problem/problem-167.py)
 
 <hr>
 
@@ -2570,6 +2583,8 @@ you should return:
 
 Follow-up: What if you couldn't use any extra space?
 
+[Solution](Daily-Coding-Problem/problem-168.py)
+
 <hr>
 
 problem 169 [Medium] [Google]
@@ -2577,6 +2592,8 @@ problem 169 [Medium] [Google]
 Given a linked list, sort it in O(n log n) time and constant space.
 
 For example, the linked list `4 -> 1 -> -3 -> 99` should become `-3 -> 1 -> 4 -> 99`.
+
+[Solution](Daily-Coding-Problem/problem-169.py)
 
 <hr>
 
@@ -2588,6 +2605,8 @@ If there is no possible transformation, return null. Each word in the dictionary
 For example, given start = "dog", end = "cat", and dictionary = {"dot", "dop", "dat", "cat"}, return ["dog", "dot", "dat", "cat"].
 
 Given start = "dog", end = "cat", and dictionary = {"dot", "tod", "dat", "dar"}, return null as there is no possible transformation from dog to cat.
+
+[Solution](Daily-Coding-Problem/problem-170.py)
 
 <hr>
 
@@ -2605,6 +2624,8 @@ This means that 2 people exited the building. timestamp is in Unix time.
 
 Find the busiest period in the building, that is, the time with the most people in the building. Return it as a pair of (start, end) timestamps. You can assume the building always starts off and ends up empty, i.e. with 0 people inside.
 
+[Solution](Daily-Coding-Problem/problem-171.py)
+
 <hr>
 
 problem 172 [Medium] [Dropbox]
@@ -2616,6 +2637,8 @@ For example, given s = "dogcatcatcodecatdog" and words = ["cat", "dog"], return 
 Given s = "barfoobazbitbyte" and words = ["dog", "cat"], return [] since there are no substrings composed of "dog" and "cat" in s.
 
 The order of the indices does not matter.
+
+[Solution](Daily-Coding-Problem/problem-172.py)
 
 <hr>
 
@@ -2647,6 +2670,8 @@ it should become:
 }
 ```
 
+[Solution](Daily-Coding-Problem/problem-173.py)
+
 <hr>
 
 problem 174 [Medium] [Microsoft]
@@ -2656,6 +2681,8 @@ Describe and give an example of each of the following types of polymorphism:
 - Ad-hoc polymorphism
 - Parametric polymorphism
 - Subtype polymorphism
+
+[Solution](Daily-Coding-Problem/problem-174.py)
 
 <hr>
 
@@ -2682,6 +2709,8 @@ For example, given the starting state `a`, number of steps 5000, and the followi
 
 One instance of running this Markov chain might produce `{ 'a': 3012, 'b': 1656, 'c': 332 }`.
 
+[Solution](Daily-Coding-Problem/problem-175.py)
+
 <hr>
 
 problem 176 [Easy] [Bloomberg]
@@ -2692,6 +2721,8 @@ For example, given `s1 = abc` and `s2 = bcd`, return true since we can map `a` t
 
 Given `s1 = foo` and `s2 = bar`, return `false` since the `o` cannot map to two characters.
 
+[Solution](Daily-Coding-Problem/problem-176.py)
+
 <hr>
 
 problem 177 [Easy] [Airbnb]
@@ -2701,6 +2732,8 @@ Given a linked list and a positive integer `k`, rotate the list to the right by 
 For example, given the linked list `7 -> 7 -> 3 -> 5` and `k = 2`, it should become `3 -> 5 -> 7 -> 7`.
 
 Given the linked list `1 -> 2 -> 3 -> 4 -> 5` and `k = 3`, it should become `3 -> 4 -> 5 -> 1 -> 2`
+
+[Solution](Daily-Coding-Problem/problem-177.py)
 
 <hr>
 
@@ -2713,6 +2746,8 @@ The first game: roll a die repeatedly. Stop rolling once you get a five followed
 The second game: same, except that the stopping condition is a five followed by a five.
 
 Which of the two games should Alice elect to play? Does it even matter? Write a program to simulate the two games and calculate their expected value.
+
+[Solution](Daily-Coding-Problem/problem-178.py)
 
 <hr>
 
@@ -2730,6 +2765,8 @@ For example, given the sequence `2, 4, 3, 8, 7, 5`, you should construct the fol
 2   4   8
 ```
 
+[Solution](Daily-Coding-Problem/problem-179.py)
+
 <hr>
 
 problem 180 [Medium] [Google]
@@ -2741,6 +2778,8 @@ Recall that you can only push or pop from a stack, and enqueue or dequeue from a
 For example, if the stack is `[1, 2, 3, 4, 5]`, it should become `[1, 5, 2, 4, 3]`. If the stack is `[1, 2, 3, 4]`, it should become `[1, 4, 2, 3]`.
 
 Hint: Try working backwards from the end state.
+
+[Solution](Daily-Coding-Problem/problem-180.py)
 
 <hr>
 
