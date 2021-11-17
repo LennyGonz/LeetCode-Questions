@@ -337,3 +337,78 @@ The function returns a filter object which can be converted to a list using list
 
 just like map(), filter() returns a new object without changing the original list.
 '''
+
+#######################################################################################################################################################################
+################################################################# Recursion ###########################################################################################
+#######################################################################################################################################################################
+
+'''
+Recursion is the process in which a function calls itself during its execution. 
+Each recursive call takes the program one scope deeper into the function.
+
+The recursive calls stop at the base case. The base case is a check used to indicate that there should be no further recursion.
+
+Here's a simple example:
+'''
+def rec_count(number):
+  print(number)
+  # Base case
+  if number == 0:
+    return 0
+  rec_count(number - 1)  # A recursive call with a different argument
+  print(number)
+
+
+rec_count(5) # 5 -> 4 -> 3 -> 2 -> 1 -> 0 -> 1 -> 2 -> 3 -> 4 -> 5
+
+'''
+This is fairly easy to understand. In each call, the value of the number variable is printed. 
+We then check whether the base case has been fulfilled. If not, we make a recursive call to the function with the current value decremented.
+
+One thing to notice is that an outer call cannot move forward until all the inner recursive calls have finished. This is why we get a sequence of 5 to 0 to 5.
+
+Why Use Recursion?
+
+Recursion is a concept which many find difficult to grasp at first, but it has its advantages.
+For starters, it can significantly reduce the runtime of certain algorithms, which makes the code more efficient.
+
+Recursion also allows us to easily solve many problems related to graphs and trees, things you may study in the future. It is also important in search algorithms.
+
+However, we need to be careful when using recursion.
+
+If we don’t specify an appropriate base case or update our arguments as we recurse, the program will reach infinite recursion and crash.
+
+The arguments passed to our recursive function are updated in each recursive call so that the base case can eventually be reached.
+'''
+
+def fib(n):
+  # The base cases
+  if n <= 1:  # First number in the sequence
+    return 0
+  elif n == 2:  # Second number in the sequence
+    return 1
+  else:
+    # Recursive call
+    return fib(n - 1) + fib(n - 2)
+
+
+print(fib(6))
+
+'''
+First, we handle our base cases. We know that the first two values are always 0 and 1, so that is where we can stop our recursive calls.
+
+If n is larger than 2, then it will be the sum of the two values before it.
+'''
+
+def factorial(n):
+  # Base case
+  if n == 0 or n == 1:
+    return 1
+
+  if n < 0:
+    return -1
+  # Recursive call
+  return n * factorial(n - 1)
+
+
+print(factorial(5))
