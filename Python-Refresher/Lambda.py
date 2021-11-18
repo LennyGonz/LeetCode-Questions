@@ -15,7 +15,7 @@ objects are required
 are syntactically restricted to a single expression
 
 def cube(y):
-    return y*y*y
+	return y*y*y
 
 g = lambda x: x*x*x
 print(g(7))
@@ -29,7 +29,7 @@ This way is meant to filter out all the elements
 of a sequence, for which the function returns True.
 
 # filter() with lambda()
-# filtering out even numbers\
+# filtering out even numbers
 li = [5,7,22,97,54,62,77,23,73,61]
 final_list = list(filter(lambda x: (x%2 != 0), li ))
 print(final_list)
