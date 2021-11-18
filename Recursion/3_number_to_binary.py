@@ -12,3 +12,14 @@ def decimalToBinary(testVariable) :
 # Driver Code
 testVariable = 20
 print(decimalToBinary(testVariable))
+
+def decimalToBinary_2(testVariable):
+  if testVariable <= 1:
+    return str(testVariable)
+  
+  # Recursive case
+  else:
+    return decimalToBinary_2(testVariable // 2) + str(testVariable % 2)
+
+testVariable = 20
+print(decimalToBinary_2(testVariable))
