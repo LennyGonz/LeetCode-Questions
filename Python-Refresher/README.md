@@ -11,3 +11,5 @@ It must first be converted to **bytecode**, which is then converted to machine c
 Python is an **interpreted** language because, during execution, each line is interpreted to the machine language on-the-go.
 As opposed to languages like C++, the code needs to be compiled into an executable first, and then it can be executed.
 In python, we can skip this compilation step (Python does it behind the scenes) and directly runs the code
+
+**Empty Lists are Considered False**
