@@ -1,18 +1,24 @@
-from recursion.add_two_numbers import ListNode
-
-
-def addTwoNumbers(l1, l2):
-  res = l1.val + l2.val
-  digit = res % 10
-  carry = res // 10
-  answer = ListNode(digit)
-
-  if any((l1.next, l2.next, carry)):
-    l1 = l1.next if l1.next else ListNode(0)
-
-    l2 = l2.next if l2.next else ListNode(0)
-
-    answer.next = addTwoNumbers(l1, l2)
+def isValid(s):
+  opening_brackets = []
+  open_to_close = {'(':')', '[':']', '{':'}'}
   
-  return answer
+  for char in s:
+    # If we encounter an opening character append it to the stack
+    if char in open_to_close:
+      opening_brackets.append(char)
+    
+    # if our stack is NOT empty -> we don't have valid pairs
+    elif not opening_brackets:
+      return False
+    
+    else:
+      opening = opening_brackets.pop()
+      closing = open_to_close[opening]
+      
+      if char != closing:
+        return False
+    
+  return not opening_brackets
 
+example = "({[]})()"
+print(isValid(example))
