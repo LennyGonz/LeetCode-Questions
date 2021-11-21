@@ -3465,3 +3465,64 @@ For example, `4 - 2 - 1 - 7` is a valid pattern, whereas `2 - 1 - 7` is not.
 Find the total number of valid unlock patterns of length `N`, where `1 <= N <= 9`.
 
 <hr>
+
+problem 240 [Hard] [Spotify]
+
+There are `N` couples sitting in a row of length `2 * N`. They are currently ordered randomly, but would like to rearrange themselves so that each couple's partners can sit side by side.
+
+What is the minimum number of swaps necessary for this to happen?
+
+<hr>
+
+problem 242 [Hard] [Twitter]
+
+You are given an array of length 24, where each element represents the number of new subscribers during the corresponding hour.
+
+Implement a data structure that efficiently supports the following:
+
+- `update(hour: int, value: int)`: Increment the element at index `hour` by `value`.
+- `query(start: int, end: int)`: Retrieve the number of subscribers that have signed up between `start` and `end` (inclusive).
+
+You can assume that all values get cleared at the end of the day, and that you will not be asked for start and end values that wrap around midnight.
+
+<hr>
+
+problem 243 [Medium] [Etsy]
+
+Given an array of numbers `N` and an integer `k`, your task is to split `N` into `k` partitions such that the maximum sum of any partition is minimized. Return this sum.
+
+For example, given `N = [5, 1, 2, 7, 3, 4]` and `k = 3`, you should return `8`, since the optimal partition is `[5, 1, 2], [7], [3, 4]`.
+
+<hr>
+
+problem 244 [Easy] [Square]
+
+The Sieve of Eratosthenes is an algorithm used to generate all prime numbers smaller than `N`. The method is to take increasingly larger prime numbers, and mark their multiples as composite.
+
+For example, to find all primes less than `100`, we would first mark `[4, 6, 8, ...]` (multiples of two), then `[6, 9, 12, ...]` (multiples of three), and so on. Once we have done this for all primes less than `N`, the unmarked numbers that remain will be prime.
+
+Implement this algorithm.
+
+Bonus: Create a generator that produces primes indefinitely (that is, without taking `N` as an input).
+
+<hr>
+
+problem 245 [Medium] [Yelp]
+
+You are given an array of integers, where each element represents the maximum number of steps that can be jumped going forward from that element.
+
+Write a function to return the minimum number of jumps you must take in order to get from the start to the end of the array.
+
+For example, given `[6, 2, 4, 0, 5, 1, 1, 4, 2, 9]`, you should return `2`, as the optimal solution involves jumping from `6` to `5`, and then from `5` to `9`.
+
+<hr>
+
+problem 246 [Medium] [Dropbox]
+
+Given a list of words, determine whether the words can be chained to form a circle.
+
+A word `X` can be placed in front of another word `Y` in a circle if the last character of `X` is same as the first character of `Y`.
+
+For example, the words `['chair', 'height', 'racket', touch', 'tunic']` can form the following circle: `chair -> racket -> touch -> height -> tunic -> chair`
+
+<hr>
