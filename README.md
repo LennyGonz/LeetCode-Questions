@@ -1,13 +1,11 @@
-# LeetCode-Questions
-
-* Code
-* Code walkthroughs
-
-Also contains a python refresher
+# Daily Coding Challenge
 
 <hr>
 
-# Daily Coding Challenge
+* [Python_Refresher](Python_Refresher/../README.md)
+* [LeetCode_Questions](Code/README.md)
+
+<hr>
 
 Problem 1 [Easy] [Google]
 
