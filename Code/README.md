@@ -5,7 +5,7 @@
 
 | Problem Number | Problem Name | Solution | Difficulty |
 | :--: | :--: | :--: | :--: |
-| 1 | Two Sums | [Code](lists/two_sum.py) & [Walk-Through](PDFs/Two%20Sums.pdf) | Easy
+| 1 | Two Sums | [Code](/lists/two_sum.py) & [Walk-Through](PDFs/Two%20Sums.pdf) | Easy
 | 2 | Add Two Numbers | [Code](linked_lists/add_two_numbers.py) & [Walk-Through](PDFs/Add%20Two%20Numbers.pdf) | Medium
 | 3 | Longest Substring Without Repeating Characters | [Code](strings/longest_substring_2.py) & [Walk-Through](PDFs/Longest%20Substring%20without%20Repeating%20Characters%20V2.pdf) | Medium
 | 3 | Longest Substring Without Repeating Characters | Alternate Solution <br> [Code](strings/longest_substring.py) & [Walk-Through](PDFs/Longest%20Substring%20without%20Repeating%20Characters.pdf) | Medium
