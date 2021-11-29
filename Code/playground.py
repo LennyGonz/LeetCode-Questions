@@ -1,14 +1,3 @@
-# l1 = [5, 6, 4]
-# l2 = [1]
-
-# while l1:
-#   print("hello world")
-#   break
-
-# while l2:
-#   print("never reaches")
-#   break
-
 def median(input1, input2):
   length_of_input1, length_of_input2 = len(input1), len(input2)
   print("length_of_input1:",length_of_input1,"|","length_of_input2:",length_of_input2)
