@@ -2,7 +2,7 @@
 
 <hr>
 
-* [Python_Refresher](Python_Refresher/README.md)
+* [Python_Refresher](Python-Refresher/README.md)
 * [LeetCode_Questions](Code/README.md)
 
 <hr>
