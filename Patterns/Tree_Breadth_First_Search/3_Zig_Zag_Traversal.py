@@ -24,6 +24,10 @@ class TreeNode:
     self.right = right
 
 def zigZagTraversal(root):
+  # If the input is an empty tree - Added b/c without it this solution fails
+  if not root: 
+    return []
+  
   result = []
   queue = deque()
   queue.append(root)
