@@ -54,4 +54,34 @@ def median(input1, input2):
 
 input1 = [1,3]
 input2 = [2]
-print(median(input1, input2))
+#print(median(input1, input2))
+
+'''
+Validate Binary Search Tree
+'''
+class TreeNode:
+  def __init__(self, val=0, left=None, right=None):
+    self.val = val
+    self.left = left
+    self.right = right
+
+def validateBinarySearchTree(root):
+  def validate(currentNode, lowerBound, upperBound):
+    if not currentNode:
+      return True
+    
+    if not (currentNode.val > lowerBound and currentNode.val < upperBound):
+      return False
+    
+    return (validate(currentNode.left, lowerBound, currentNode.val) and validate(currentNode.right, currentNode.val, upperBound))
+  
+  return validate(root, float("-inf"), float("inf"))
+
+def main():
+  root = TreeNode(2)
+  root.left = TreeNode(1)
+  root.right = TreeNode(3)
+
+  print(validateBinarySearchTree(root))
+
+main()
