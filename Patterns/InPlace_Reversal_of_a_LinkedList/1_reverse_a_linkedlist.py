@@ -4,7 +4,7 @@ Reverse a Linked List (easy)
 Given the head of a Singly LinkedList, reverse the LinkedList
 Write a function to return the new head of the reversed LinkedList
 
-Time = O(N) -> where N represents every node in the LinkedList & we visit each node in the LinkedList once
+Time = O(N) -> where N represents the total number of nodes in the LinkedList
 Space = O(1) -> No extra memory is used
 '''
 class Node:
