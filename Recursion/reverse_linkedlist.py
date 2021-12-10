@@ -20,8 +20,8 @@ def reverseLinkedList(head):
   
   return newHead
 
-# Recursive Python3 program to reverse
-# a linked list
+#################################################################################################################################################
+
 import math
 
 # Link list node
@@ -79,4 +79,3 @@ if __name__=='__main__':
 	printList()
 	
 # This code is contributed by AbhiThakur
-
