@@ -1,4 +1,6 @@
+# LeetCode 977 - https://leetcode.com/problems/squares-of-a-sorted-array/
 from collections import deque
+
 def sortedSquares(nums):
   result = deque()
   
@@ -24,3 +26,8 @@ def main():
   print(sortedSquares(nums))
 
 main()
+
+'''
+Time: O(N) - N number of elements & and we traverse each element
+Space: O(N) - We used a deque that holds all N elements of the input array
+'''
