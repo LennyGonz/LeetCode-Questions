@@ -3549,3 +3549,58 @@ may have the solution:
 Given a three-word puzzle like the one above, create an algorithm that finds a solution.
 
 <hr>
+
+problem 252 [Easy] [Palantir]
+
+The ancient Egyptians used to express fractions as a sum of several terms where each numerator is one.
+For example, `4 / 13` can be represented as `1 / 4 + 1 / 18 + 1 / 468`.
+
+Create an algorithm to turn an ordinary fraction `a / b`, where `a < b`, into an Egyptian fraction.
+
+<br>
+
+problem 253 [Medium] [Paypal]
+
+Given a string and a number of lines `k`, print the string in zigzag form.
+In zigzag, characters are printed out diagonally from top left to bottom right until reaching the `kth` line, then back up to top right, and so on.
+
+For example, given the sentence `"thisisazigzag"` and `k = 4`, you should print:
+
+```
+t     a     g
+ h   s z   a
+  i i   i z
+   s     g
+```
+
+<br>
+
+problem 254 [Medium] [Yahoo]
+
+Recall that a full binary tree is one in which each node is either a leaf node, or has two children.
+
+Given a binary tree, convert it to a full one by removing nodes with only one child.
+
+For example, given the following tree:
+
+```
+         0
+      /     \
+    1         2
+  /            \
+3                 4
+  \             /   \
+    5          6     7
+```
+
+You should convert it to:
+
+```
+     0
+  /     \
+5         4
+        /   \
+       6     7
+```
+
+<br>
