@@ -3604,3 +3604,91 @@ You should convert it to:
 ```
 
 <br>
+
+problem 255 [Easy] [Medium]
+
+The transitive closure of a graph is a measure of which vertices are reachable from other vertices. It can be represented as a matrix `M`,
+where `M[i][j] == 1` if there is a path between vertices `i` and `j`, and otherwise 0.
+
+For example, suppose we are given the following graph in adjacency list form:
+
+graph = 
+[
+  [0, 1, 3],
+  [1, 2],
+  [2],
+  [3]
+]
+
+The transitive closure of this graph would be:
+
+[1, 1, 1, 1]
+[0, 1, 1, 0]
+[0, 0, 1, 0]
+[0, 0, 0, 1]
+
+Given a graph, find its transitive closure.
+
+<br>
+
+problem 256 [Medium] [Fitbit]
+
+Given a linked list, rearrange the node values such that they appear in alternating low -> high -> low -> high ... form.
+
+For example, given `1 -> 2 -> 3 -> 4 -> 5`, you should return `1 -> 3 -> 2 -> 5 -> 4`
+
+<br>
+
+problem 257 [Easy] [WhatsApp]
+
+Given an array of integers out of order, determine the bounds of the smallest window that must be sorted in order for the entire array to be sorted.
+
+For example, given `[3, 7, 5, 6, 9]`, you should return `(1, 3)`
+
+<br>
+
+problem 258 [Easy] [Morgan Stanley]
+
+In Ancient Greece, it was common to write text with the first line going left to right, the second line going right to left, and continuing to go back and forth. This style was called "boustrophedon".
+
+Given a binary tree, write an algorithm to print the nodes in boustrophedon order.
+
+For example, given the following tree:
+
+```
+       1
+    /     \
+  2         3
+ / \       / \
+4   5     6   7
+```
+
+You should return [1, 3, 2, 4, 5, 6, 7]
+
+<br>
+
+problem 259 [Hard] [Two Sigma]
+
+Ghost is a two-person word game where players alternate appending letters to a word.
+
+The first person who spells out a word, or creates a prefix for which there is no possible continuation, loses. Here is a sample game:
+
+- Player 1: g
+- Player 2: h
+- Player 1: o
+- Player 2: s
+- Player 1: t [loses]
+
+Given a dictionary of words, determine the letters the first player should start with, such that with optimal play they cannot lose.
+
+For example, if the dictionary is `["cat", "calf", "dog", "bear"]`, the only winning start letter would be `b`.
+
+<br>
+
+problem 260 [Medium] [Pinterest]
+
+The sequence `[0, 1, ..., N]` has been jumbled, and the only clue you have for its order is an array representing whether each number is larger or smaller than the last.
+
+Given this information, reconstruct an array that is consistent with it. For example, given `[None, +, +, -, +]`, you could return `[1, 2, 3, 0, 4]`.
+
+<br>
