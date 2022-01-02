@@ -1396,9 +1396,11 @@ We will be sending the solution tomorrow, along with tomorrow's question. As alw
 
 problem 89 [Medium] [Linkedin]
 
-A binary search tree is a tree with two children, left and right
+Determine whether a tree is a valid binary search tree.
 
-And satisfies the constraint that the key in the left child must be less than or equal to the root and the key in the right child must be greater than or equal to the root.
+A binary search tree is a tree with two children, left and right, and satisfies the constraint:
+
+that the key in the left child must be less than or equal to the root and the key in the right child must be greater than or equal to the root.
 
 [Solution](Daily-Coding-Problem/problem-89.py)
 
