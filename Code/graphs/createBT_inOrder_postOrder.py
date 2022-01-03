@@ -9,15 +9,15 @@ class TreeNode:
     self.left = left
     self.right = right
 
-def buildTree(inorder, postOrder):
-  if not inorder or not postOrder:
+def buildTree(inOrder, postOrder):
+  if not inOrder or not postOrder:
     return None
   
   root = TreeNode(postOrder[-1])
-  mid = inorder.index(postOrder[-1])
+  mid = inOrder.index(postOrder[-1])
   
-  root.left = buildTree(inorder[:mid], inorder[:mid])
-  root.right = buildTree(inorder[mid+1:], postOrder[mid:-1])
+  root.left = buildTree(inOrder[:mid], postOrder[:mid])
+  root.right = buildTree(inOrder[mid+1:], postOrder[mid:-1])
 
   return root
 
