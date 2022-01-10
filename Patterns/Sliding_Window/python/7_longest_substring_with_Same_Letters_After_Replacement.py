@@ -50,5 +50,9 @@ def main():
   str3 = "abccde"
   k3 = 1
   print(length_of_longest_substring(str3, k3)) # 3 -> bc "abccde" -> "ccc" (by replacing the b "acccde" or the d "abccce")
+  
+  str4 = "ABAB"
+  k4 = 2
+  print(length_of_longest_substring(str4, k4))
 
 main()
