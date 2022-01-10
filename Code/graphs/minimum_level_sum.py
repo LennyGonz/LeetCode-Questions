@@ -28,7 +28,13 @@ def minimum_level_sum(root):
   lookup = {}
   minimum_level_sum_impl(root, lookup, 0)
   print(lookup)
-  return None
+  res = float("inf")
+  for key in lookup:
+
+    if lookup[key] < res:
+      res = lookup[key]
+
+  return res
 
 
 root = Node(
