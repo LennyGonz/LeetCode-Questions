@@ -51,6 +51,7 @@ def lowestCommonAncestor(self, root, p, q):
   # both p and q found so parent is LCA
   if left and right:
     return root
+
   else:
   # either one of the chidren returned a node, meaning either p or q found on left or right branch.
   # Example: assuming 'p' found in left child, right child returned 'None'. This means 'q' is
