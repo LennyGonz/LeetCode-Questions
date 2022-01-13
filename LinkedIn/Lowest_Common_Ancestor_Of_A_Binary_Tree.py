@@ -33,11 +33,17 @@ def lowestCommonAncestor(root, p, q):
   if root.right:
     right = lowestCommonAncestor(root.right, p, q)
   
-  # we if recursively search the left and right subtree
-  # and only found 1 of 2 - we have scenario #2 or #3
+  # if both children returned a node, means both p and q are found so parent is LCA
+  if left and right:
+    return root
+
   else:
+  # either one of the chidren returned a node, meaning either p or q found on left or right branch.
+  # Example: assuming 'p' found in left child, right child returned 'None'. This means 'q' is
+  # somewhere below node where 'p' was found we dont need to search all the way, 
+  # because in such scenarios, node where 'p' found is LCA
     return left or right
-  
+
 '''
 Time: O(N) - we traverse all the nodes
 Space: O(N) - the call stack holds n recursive calls
