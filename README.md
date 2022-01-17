@@ -4156,3 +4156,289 @@ For example, given the input `['R', 'G', 'B', 'G', 'B']`, it is possible to end 
 ```
 
 <br>
+
+problem 291 [Medium] [Glassdoor]
+
+An imminent hurricane threatens the coastal town of Codeville.
+
+If at most two people can fit in a rescue boat, and the maximum weight limit for a given boat is k, determine how many boats will be needed to save everyone.
+
+For example, given a population with weights `[100, 200, 150, 80]` and a boat limit of `200`, the smallest number of boats required will be three.
+
+<br>
+
+problem 292 [Hard] [Twitter]
+
+A teacher must divide a class of students into two teams to play dodgeball.
+
+Unfortunately, not all the kids get along, and several refuse to be put on the same team as that of their enemies.
+
+Given an adjacency list of students and their enemies, write an algorithm that finds a satisfactory pair of teams, or returns `False` if none exists.
+
+For example, given the following enemy graph you should return the teams `{0, 1, 4, 5}` and `{2, 3}`.
+
+```
+students = {
+  0: [3],
+  1: [2],
+  2: [1, 4],
+  3: [0, 4, 5],
+  4: [2, 3],
+  5: [3]
+}
+```
+
+On the other hand, given the input below, you should return False.
+
+```
+students = {
+  0: [3],
+  1: [2],
+  2: [1, 3, 4],
+  3: [0, 2, 4, 5],
+  4: [2, 3],
+  5: [3]
+}
+```
+
+<br>
+
+problem 293 [Hard] [Ubder]
+
+You have `N` stones in a row, and would like to create from them a pyramid.
+
+This pyramid should be constructed such that the height of each stone increases by one until reaching the tallest stone, after which the heights decrease by one.
+
+In addition, the start and end stones of the pyramid should each be one stone high.
+
+You can change the height of any stone by paying a cost of 1 unit to lower its height by 1, as many times as necessary. 
+
+Given this information, determine the lowest cost method to produce this pyramid.
+
+For example, given the stones `[1, 1, 3, 3, 2, 1]`, the optimal solution is to pay `2` to create `[0, 1, 2, 3, 2, 1]`.
+
+<br>
+
+problem 294 [Medium] [Square]
+
+A competitive runner would like to create a route that starts and ends at his house, with the condition that the route goes entirely uphill at first, and then entirely downhill.
+
+Given a dictionary of places of the form `{location: elevation}`, and a dictionary mapping paths between some of these locations to their corresponding distances, find the length of the shortest route satisfying the condition above.
+
+Assume the runner's home is location `0`.
+
+For example, suppose you are given the following input:
+
+```
+`elevations = {0: 5, 1: 25, 2: 15, 3: 20, 4: 10}`
+paths = {
+  (0, 1): 10,
+  (0, 2): 8,
+  (0, 3): 15,
+  (1, 3): 12,
+  (2, 4): 10,
+  (3, 4): 5,
+  (3, 0): 17,
+  (4, 0): 10
+}
+```
+
+In this case, the shortest valid path would be `0 -> 2 -> 4 -> 0`, with a distance of `28`.
+
+<br>
+
+problem 295 [Medium] [Stitch-Fix]
+
+Pascal's triangle is a triangular array of integers constructed with the following formula:
+
+The first row consists of the number 1.
+For each subsequent row, each element is the sum of the numbers directly above it, on either side.
+For example, here are the first few rows:
+
+```
+    1
+   1 1
+  1 2 1
+ 1 3 3 1
+1 4 6 4 1
+```
+
+Given an input `k`, return the `k`th row of Pascal's triangle.
+
+Bonus: Can you do this using only O(k) space?
+
+<br>
+
+problem 296 [Hard] [Etsy]
+
+Given a sorted array, convert it into a height-balanced binary search tree.
+
+<br>
+
+problem 297 [Medium] [Amazon]
+
+At a popular bar, each customer has a set of favorite drinks, and will happily accept any drink among this set.
+
+For example, in the following situation, customer `0` will be satisfied with drinks `0`, `1`, `3`, or `6`.
+
+```
+preferences = {
+  0: [0, 1, 3, 6],
+  1: [1, 4, 7],
+  2: [2, 4, 7, 5],
+  3: [3, 2, 5],
+  4: [5, 8]
+}
+```
+
+A lazy bartender working at this bar is trying to reduce his effort by limiting the drink recipes he must memorize.
+
+Given a dictionary input such as the one above, return the fewest number of drinks he must learn in order to satisfy all customers.
+
+For the input above, the answer would be `2`, as drinks `1` and `5` will satisfy everyone.
+
+<br>
+
+problem 298 [Easy] [Google]
+
+A girl is walking along an apple orchard with a bag in each hand.
+
+She likes to pick apples from each tree as she goes along, but is meticulous about not putting different kinds of apples in the same bag.
+
+Given an input describing the types of apples she will pass on her path, in order, determine the length of the longest portion of her path that consists of just two types of apple trees.
+
+For example, given the input `[2, 1, 2, 3, 3, 1, 3, 5]`, the longest portion will involve types `1` and `3`, with a length of four.
+
+<br>
+
+problem 299 [Medium] [Samsung]
+
+A group of houses is connected to the main water plant by means of a set of pipes.
+
+A house can either be connected by a set of pipes extending directly to the plant, or indirectly by a pipe to a nearby house which is otherwise connected.
+
+For example, here is a possible configuration, where `A`, `B`, and `C` are houses, and arrows represent pipes:
+
+```
+A <--> B <--> C <--> plant
+```
+
+Each pipe has an associated cost, which the utility company would like to minimize.
+
+Given an undirected graph of pipe connections, return the lowest cost configuration of pipes such that each house has access to water.
+
+In the following setup, for example, we can remove all but the pipes from plant to `A`, plant to `B`, and `B` to `C`, for a total cost of `16`.
+
+pipes = {
+  'plant': {'A': 1, 'B': 5, 'C': 20},
+  'A': {'C': 15},
+  'B': {'C': 10},
+  'C': {}
+}
+
+<br>
+
+problem 300 [Easy] [Uber]
+
+On election day, a voting machine writes data in the form `(voter_id, candidate_id)` to a text file.
+
+Write a program that reads this file as a stream and returns the top `3` candidates at any given time.
+
+If you find a voter voting more than once, report this as fraud.
+
+<br>
+
+problem 301 [Medium] [TripleByte]
+
+Implement a data structure which carries out the following operations without resizing the underlying array:
+
+- `add(value)`: Add a value to the set of values.
+- `check(value)`: Check whether a value is in the set.
+
+The `check` method may return occasional false positives (in other words, incorrectly identifying an element as part of the set), but should always correctly identify a true element.
+
+<br>
+
+problem 302 [Medium] [Uber]
+
+You are given a 2-d matrix where each cell consists of either `/`, `\`, or an empty space.
+
+Write an algorithm that determines into how many regions the slashes divide the space.
+
+For example, suppose the input for a three-by-six grid is the following:
+
+```
+\    /
+ \  /
+  \/
+```
+
+Considering the edges of the matrix as boundaries, this divides the grid into three triangles, so you should return `3`.
+
+<br>
+
+problem 303 [Easy] [Microsoft]
+
+Given a clock time in `hh:mm` format, determine, to the nearest degree, the angle between the hour and the minute hands.
+
+Bonus: When, during the course of a day, will the angle be zero?
+
+<br>
+
+problem 304 [Hard] [Two-Sigma]
+
+A knight is placed on a given square on an 8 x 8 chessboard.
+
+It is then moved randomly several times, where each move is a standard knight move.
+
+If the knight jumps off the board at any point, however, it is not allowed to jump back on.
+
+After k moves, what is the probability that the knight remains on the board?
+
+<br>
+
+problem 305 [Easy] [Amazon]
+
+Given a linked list, remove all consecutive nodes that sum to zero. Print out the remaining nodes.
+
+For example, suppose you are given the input `3 -> 4 -> -7 -> 5 -> -6 -> 6`.
+
+In this case, you should first remove `3 -> 4 -> -7`, then `-6 -> 6`, leaving only `5`.
+
+<br>
+
+problem 306 [Medium] [Palantir]
+
+You are given a list of `N` numbers, in which each number is located at most k places away from its sorted position.
+
+For example, if `k = 1`, a given element at index `4` might end up at indices `3`, `4`, or `5`.
+
+Come up with an algorithm that sorts this list in `O(N log k)` time.
+
+<br>
+
+problem 307 [Easy] [Oracle]
+
+Given a binary search tree, find the floor and ceiling of a given integer.
+
+The floor is the highest element in the tree less than or equal to an integer, while the ceiling is the lowest element in the tree greater than or equal to an integer.
+
+If either value does not exist, return `None`.
+
+<br>
+
+problem 308 [Hard] [Quantcast]
+
+You are presented with an array representing a Boolean expression. The elements are of two kinds:
+
+- `T` and `F`, representing the values `True` and `False`.
+- `&`, `|`, and `^`, representing the bitwise operators for `AND`, `OR`, and `XOR`.
+
+
+Determine the number of ways to group the array elements using parentheses so that the entire expression evaluates to `True`.
+
+For example, suppose the input is `['F', '|', 'T', '&', 'T']`.
+
+In this case, there are two acceptable groupings: `(F | T)` & `T` and `F` | `(T & T)`.
+
+<br>
