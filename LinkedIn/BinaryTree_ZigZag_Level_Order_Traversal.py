@@ -12,7 +12,7 @@ to do this we use a boolean flag, to trigger the reverse level order traversal
 we flip the boolean value at the end of every level traversal
 '''
 
-from collection import deque
+from collections import deque
 
 class TreeNode:
   def __init__(self, val=0, left=None, right=None):
