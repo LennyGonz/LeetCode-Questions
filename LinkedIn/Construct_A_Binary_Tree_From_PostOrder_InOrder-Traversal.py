@@ -19,16 +19,16 @@ class TreeNode:
 
 # inOrder and postOrder are lists of TreeNodes
 def buildTree(inorder, postorder):
-    if not postorder or not inorder:
-      return None
-    
-    root = TreeNode(postorder[-1])
-    mid = inorder.index(postorder[-1])
-    
-    root.left = self.buildTree(inorder[:mid], postorder[:mid])
-    root.right = self.buildTree(inorder[mid+1:], postorder[mid:-1])
-    
-    return root
+  if not postorder or not inorder:
+    return None
+  
+  root = TreeNode(postorder[-1])
+  mid = inorder.index(postorder[-1])
+  
+  root.left = buildTree(inorder[:mid], postorder[:mid])
+  root.right = buildTree(inorder[mid+1:], postorder[mid:-1])
+  
+  return root
 
 '''
 Time: O(N)
