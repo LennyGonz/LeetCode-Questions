@@ -1,4 +1,6 @@
 '''
+LeetCode #113 - Path Sum II
+
 Given a binary tree and a number ‘S’, find all paths from root-to-leaf such that the sum of all the node values of each path equals ‘S’.
 
 This problem follows the Binary Tree Path Sum pattern. We can follow the same DFS approach. There will be two differences:
@@ -145,3 +147,25 @@ def main3():
   print("Max Sum: " + str(maxSum(root)))
 
 main3()
+
+
+def pathSum(self, root, sum):
+  if not root: return []
+  
+  result = []
+  
+  stack = [(root, sum, [])]
+  #print("stack: ", stack)
+  
+  while stack:
+    curr, val, ls = stack.pop()
+
+    if not curr.left and not curr.right and val == curr.val:
+        result.append(ls + [curr.val])
+
+    if curr.left:
+        stack.append((curr.left, val - curr.val, ls + [curr.val]))
+    if curr.right:
+        stack.append((curr.right, val - curr.val, ls + [curr.val]))
+
+  return result
