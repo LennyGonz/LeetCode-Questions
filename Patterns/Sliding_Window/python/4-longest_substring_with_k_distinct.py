@@ -1,13 +1,7 @@
 '''
+LeetCode #340
+
 Given a string, find the length of the longest substring in it with no more than K distinct characters.
-
-Input: String="araaci", K=2
-Output: 4
-Explanation: The longest substring with no more than '2' distinct characters is "araa".
-
-Input: String="araaci", K=1
-Output: 2
-Explanation: The longest substring with no more than '1' distinct characters is "aa".
 
 Input: String="cbbebi", K=3
 Output: 5
@@ -17,58 +11,91 @@ Input: String="cbbebi", K=10
 Output: 6
 Explanation: The longest substring with no more than '10' distinct characters is "cbbebi".
 
-Here we can continue following our sliding window pattern
+1. First we begin with creating a frequency_map -> this controls our window size
 
-But first we begin with creating a frequency_map -> this controls our window size
+2. When then length of the frequency map is greater than k 
+    that means there is k+1 distinct characters, and we need to slide our window and we
+    adjust the characters within it so there are only k distinct characters in the window/subarray
 
-When then length of the frequency map is greater than k 
-that means there is k+1 distinct characters, and we need to slide our window and adjust the characters within it so there are only k distinct characters in the window/subarray
+3. However, our char_map can have multiple instances of a character so we NEED to use a while loop 
+    to iteratively reduce the number of instances of a character until there are 0 instances and we can therefore remove it from the frequency_map
+    * IN OTHER WORDS -> we stay in the while loop till our window contains a substring with exactly K distinct characters
+    * IF our window contains a substring with more than K distinct characters, we stay in the while loop shrinking the substring, till the condition
+      of having a substring with k distinct characters is met again
 
-However, our char_map can have multiple instances of a character so we NEED to use a while loop to iteratively reduce the number of instances of a character until there are 0 instances and we can therefore remove it from the frequency_map
+3. If we remove a character from the frequency_map that means there are only k distinct characters left, because prior there were K+1 characters
+    So now we can proceed to adding the characters and their frequency to our map, until the condition (len(char_frequency) > k) is met again.
 
-If we remove a character from the frequency_map that means there are only k distinct characters left, because prior there were K+1 characters
-So now we can proceed to adding the characters and their frequency to our map, until the condition (len(char_frequency) > k) is met again.
-
-For example: "araaci", 2
+For example: "araaci", k=2
 
 our frequency map will look like: {a:3, r:1, c:1} & window_end = 4, when we finally enter the while loop
-First iteration we'll reduce a:3 -> a:2 BUT then we slide our window bc we need to reach a point in the window where there are only k distinct characters
-Second iteration we'll reduce r:1 -> r:0 NOW b/c there will no longer be any more instances of 'r' we delete it from our frequency_map, this breaks us from the while-loop bc now the frequency array is {a:2, c:1}
+1. First iteration we'll reduce a:3 -> a:2 BUT then we slide our window bc we need to reach a point in the window where there are only k distinct characters
 
-And the very last step is to constantly record the max_length - even when there are no duplicates to account for, we need to update the max_length, once we hit a duplicate we can calculate the window_size by doing (window_end-window_start+1)
+2. Second iteration we'll reduce r:1 -> r:0
+    NOW b/c there will no longer be any more instances of 'r' we delete it from our frequency_map,
+      this breaks us from the while-loop bc now the frequency array is {a:2, c:1}
+
+3. And the very last step is to constantly record the max_length - even when there are no duplicates to account for, we need to update the max_length,
+    once we hit a duplicate we can calculate the window_size by doing (window_end-window_start+1)
 
 So need to realize that:
 
 (1): the frequency map controls our window_size - b/c once there are more than k distinct keys we trigger the while-loop
-(2): While creating the frequency map, we're also expanding the window. Example:"araaci" -> when we add "araa" the max length is 4, once we reach the "c" we have encountered a new character and need to make adjustments to properly calculate the length of a subarray with k distinct arrays. Which is why we move the window_start pointer until we reach a character that no longer breaks the condition: len(char_frequency) > k:
-(3): the while loop begins removing characters from left to right, causing the frequency map to reduce values for each key respectively, once we reach a character whose number of instances is 0 we can stop adjusting our window, because now there are only k distinct characters in it. We delete it from the map.
 
+(2): While creating the frequency map, we're also expanding the window. Example:"araaci" -> when we add "araa" the max length is 4, once we reach the "c" we have encountered a new character and need to make adjustments to properly calculate the length of a subarray with k distinct arrays. Which is why we move the window_start pointer until we reach a character that no longer breaks the condition: len(char_frequency) > k:
+
+(3): the while loop begins removing characters from left to right, causing the frequency map to reduce values for each key respectively, once we reach a character whose number of instances is 0 we can stop adjusting our window, because now there are only k distinct characters in it. We delete it from the map.
 '''
 
-def longest_substring_with_k_distinct(str1, k):
-  window_start = 0
-  max_length = 0
+def lengthOfLongestSubstringKDistinct(s, k):
+  windowStart = 0
   char_frequency = {}
+  max_length = 0
+  
+  for windowEnd in range(len(s)):
+    rightChar = s[windowEnd]
+    
+    if rightChar not in char_frequency:
+      # our character is the key and the frequency is the value
+      char_frequency[rightChar] = 0
+    char_frequency[rightChar] += 1
 
-  for window_end in range(len(str1)):
-    right_char = str1[window_end]
-
-    # create a frequency map
-    if right_char not in char_frequency:
-      char_frequency[right_char] = 0
-    char_frequency[right_char] += 1
-
-    # shrink the sliding window, until we are left with 'k' distinct characters in the char_frequency
+    # we need to be able to detect when our current substring has more than K distinct characters
+    # if we take the length of the dictionary - it tells us how many keys we have aka - how many characters we have
+    # REMEMBER the question says at most k distinct characters, doesnt mean we cant have more than 1 of the same character
     while len(char_frequency) > k:
-      left_char = str1[window_start]
-      char_frequency[left_char] -= 1
-      if char_frequency[left_char] == 0:
-        del char_frequency[left_char]
-      window_start += 1  # shrink the window
+      # if we entered the while-loop it's because the substring in our window has k+1 distinct characters
 
-    # remember the maximum length so far
-    max_length = max(max_length, window_end-window_start + 1)
+      # starting from the very first character in the substring (left-side) - we identify this character
+      leftChar = s[windowStart]
+        
+      # we decrement the number of instances of this character
+      char_frequency[leftChar] -= 1
+        
+      # if decrementing the number of instances of this character goes to 0
+      if char_frequency[leftChar] == 0:
+        # we delete it from our char_frequency map
+        del char_frequency[leftChar]
+
+      # we must also increment our windowStart because the beginning of this substring has changed (because we're shrinking our sliding window)
+      # throughout the process of restoring the condition of having a substring with at most k distinct characters
+      windowStart += 1
+    
+    # After we're done finding and calculating the valid substring, we must update the max_length, IF there is a new max length, else it'll stay the same
+    max_length = max(max_length, windowEnd-windowStart+1)
+  
+  # if they ask to return the actual substring it should look something like
+  # return s[windowStart:windowEnd+1]
   return max_length
+
+'''
+Time: O(N) - Where N is the number of characters in the input string
+
+The outer for loop runs for all characters, and the inner while loop processes each character only once
+therefore, the time complexity of the algorithm will be O(N+N), which is asymptotically equivalent to O(N).
+
+Space: O(K) - as we will be storing a maximum of K+1 characters in the HashMap.
+'''
 
 '''
 Input: "araaci", 2
@@ -213,6 +240,46 @@ Input: "araaci", 2
 We break out of the for-loop & return max_length = 4
 '''
 
-print(longest_substring_with_k_distinct("araaci", 2))
-print(longest_substring_with_k_distinct("araaci", 1))
-print(longest_substring_with_k_distinct("cbbebi", 3))
+print(lengthOfLongestSubstringKDistinct("araaci", 2))
+print(lengthOfLongestSubstringKDistinct("araaci", 1))
+print(lengthOfLongestSubstringKDistinct("cbbebi", 3))
+
+
+def lengthOfLongestSubstringKDistinct(s, k):
+  windowStart = 0
+  char_frequency = {}
+  max_length = 0
+    
+  for windowEnd in range(len(s)):
+    rightChar = s[windowEnd]
+    
+    if rightChar not in char_frequency:
+      # our character is the key and the frequency is the value
+      char_frequency[rightChar] = 0
+    char_frequency[rightChar] += 1
+  
+    # we need to be able to detect when our current substring has more than K distinct characters
+    # if we take the length of the dictionary - it tells us how many keys we have aka - how many characters we have
+    # REMEMBER the question says at most 2 distinct characters, doesnt mean we cant have more than 1 of the same character
+    while len(char_frequency) > k:
+      # if we entered the while-loop it's because the substring in our window has k+1 distinct characters
+      
+      # starting from the very first character in the substring (left-side) - we identify this character
+      leftChar = s[windowStart]
+      
+      # we decrement the number of instances of this character
+      char_frequency[leftChar] -= 1
+      
+      # if decrementing the number of instances of this character goes to 0
+      if char_frequency[leftChar] == 0:
+        # we delete it from our char_frequency map
+        del char_frequency[leftChar]
+
+      # we must also increment our windowStart because the beginning of this substring has changed
+      # throughout the process of restoring the condition of having a substring with at most k distinct characters
+      windowStart += 1
+    
+    # After we're done finding and calculating the valid substring, we must update the max_length, IF there is a new max length, else it'll stay the same
+    max_length = max(max_length, windowEnd-windowStart+1)
+  
+  return max_length
