@@ -1,5 +1,8 @@
 '''
-Given an array of positive numbers and a positive number ‘S,’ find the length of the smallest contiguous subarray whose sum is greater than or equal to ‘S’. Return 0 if no such subarray exists.
+LeetCode #209 https://leetcode.com/problems/minimum-size-subarray-sum/
+
+Given an array of positive numbers and a positive number ‘S,’ find the length of the smallest contiguous subarray whose sum is greater than or equal to ‘S’. 
+Return 0 if no such subarray exists.
 
 Input: [2, 1, 5, 2, 3, 2], S=7 
 Output: 2
@@ -30,19 +33,31 @@ And finally after all that, if no subarray is found we return 0
 '''
 
 def smallest_subarray_with_given_sum(arr, s):
+  # this variable will be the running sum -> holds the summation of all the nums in the current window
   window_sum = 0
+  
+  # we initialize this to an extremely large value
   min_length = float('inf')
+  
+  # our starting pointer - will point to the start of our sliding window
   window_start = 0
 
   for window_end in range(0, len(arr)):
+    # we're keeping track of the sum everytime an element enters our sliding window
     window_sum += arr[window_end]# add the next element
 
     # shrink the window as small as possible until the 'window_sum' is smaller than 's'
     while window_sum >= s:
+      # take the length of the sliding window
+      # and minLength will be the smallest of the 2 values
       min_length = min(min_length, window_end-window_start+1)
+      #we're adjusting the window (sliding it) - so we need to subtract the value windowStart is pointing at
       window_sum -= arr[window_start]
+      # move the window start pointer
       window_start += 1
   
+  # if we iterated through the entire window and didn't find a min
+  # return 0
   if min_length == float('inf'):
     return 0
   
