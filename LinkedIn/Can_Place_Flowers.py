@@ -1,4 +1,6 @@
 '''
+LeetCode #605
+
 [1,0,1]
 1 empty spot won't allow us to plant 1 flower
 
