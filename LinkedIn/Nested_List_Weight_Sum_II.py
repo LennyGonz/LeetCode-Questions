@@ -1,4 +1,6 @@
 '''
+LeetCode #364
+
 weight = maxDepth - (depth of the integer) + 1
 
 If we have: [[2,3],4,[1,[3,2,[5]]],1] - maxDepth here would be 4
