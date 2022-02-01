@@ -1,4 +1,6 @@
 '''
+LeetCode #339
+
 The input is a list of nested integers and lists
 
 so what we do is iterate over the input list
