@@ -24,9 +24,9 @@ def threeSum(nums):
         # make sure with the adjustments of the pointers dont cause us to use duplicate elements in the next iteration
         # if they did, adjust the appropriate pointer
         while left < right and nums[left] == nums[left-1]:
-          left += 1
+          left += 1 # skip same element to avoid duplicate triplets
         while left < right and nums[right] == nums[right+1]:
-          right -= 1
+          right -= 1 # skip same element to avoid duplicate triplets
       
       # we need a bigger pair with a bigger sum
       elif target_sum > current_sum:
@@ -39,7 +39,8 @@ def threeSum(nums):
   for i in range(len(nums)):
     # check that -X (-nums[i]) is not the same element as the element prior (nums[i-1])
     # if we have the same element, we skip the current iteration to avoid duplicate triplets
-    if i > 0 and nums[i] == nums[i-1]:
+
+    if i > 0 and nums[i] == nums[i-1]: # skip same element to avoid duplicate triplets
       continue
     
     # if we skipped the if-statement - we're working with unique triplets
