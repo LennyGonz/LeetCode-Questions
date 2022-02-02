@@ -4464,3 +4464,203 @@ problem 310 [Easy] [Pivotal]
 Write an algorithm that finds the total number of set bits in all integers between `1` and `N`.
 
 <br>
+
+problem 311 [Easy] [Sumo-Logic]
+
+Given a array that's sorted but rotated at some unknown pivot, in which all elements are distinct, find a "peak" element in O(log N) time.
+
+An element is considered a peak if it is greater than both its left and right neighbors.
+
+It is guaranteed that the first and last elements are lower than all others.
+
+<br>
+
+problem 312 [Easy] [WayFair]
+
+You are given a `2 x N` board, and instructed to completely cover the board with the following shapes:
+
+- Dominoes, or `2 x 1` rectangles.
+- Trominoes, or L-shapes.
+
+For example, if `N = 4`, here is one possible configuration, where `A` is a domino, and `B` and `C` are trominoes.
+
+```
+A B B C
+A B C C
+```
+
+Given an integer `N`, determine in how many ways this task is possible.
+
+<br>
+
+problem 313 [Hard] [Citrix]
+
+You are given a circular lock with three wheels, each of which display the numbers `0` through `9` in order.
+Each of these wheels rotate clockwise and counterclockwise.
+
+In addition, the lock has a certain number of "dead ends", meaning that if you turn the wheels to one of these combinations,
+the lock becomes stuck in that state and cannot be opened.
+
+Let us consider a "move" to be a rotation of a single wheel by one digit, in either direction.
+Given a lock initially set to 000, a target combination, and a list of dead ends,
+write a function that returns the minimum number of moves required to reach the target state, or None if this is impossible.
+
+<br>
+
+problem 314 [Medium] [Spotify]
+
+You are the technical director of WSPT radio, serving listeners nationwide.
+For simplicity's sake we can consider each listener to live along a horizontal line stretching from `0` (west) to `1000` (east).
+
+Given a list of `N` listeners, and a list of `M` radio towers, each placed at various locations along this line,
+determine what the minimum broadcast range would have to be in order for each listener's home to be covered.
+
+For example, suppose `listeners = [1, 5, 11, 20]`, and `towers = [4, 8, 15]`.
+In this case the minimum range would be `5`, since that would be required for the tower at position `15` to reach the listener at position `20`.
+
+<br>
+
+problem 315 [Easy] [Google]
+
+In linear algebra, a Toeplitz matrix is one in which the elements on any given diagonal from top left to bottom right are identical.
+
+Here is an example:
+
+```
+1 2 3 4 8
+5 1 2 3 4
+4 5 1 2 3
+7 4 5 1 2
+```
+
+Write a program to determine whether a given input is a Toeplitz matrix.
+
+<br>
+
+problem 316 [Medium] [Snapchat]
+
+You are given an array of length `N`, where each element i represents the number of ways we can produce `i` units of change.
+
+For example, `[1, 0, 1, 1, 2]` would indicate that there is only one way to make `0`, `2`, or `3` units, and two ways of making `4` units.
+
+Given such an array, determine the denominations that must be in use. In the case above, for example, there must be coins with value `2`, `3`, and `4`.
+
+<br>
+
+problem 317 [Medium] [Yahoo]
+
+Write a function that returns the bitwise AND of all integers between `M` and `N`, inclusive.
+
+<br>
+
+problem 318 [Hard] [Apple]
+
+You are going on a road trip, and would like to create a suitable music playlist.
+
+The trip will require `N` songs, though you only have `M` songs downloaded, where `M` < `N`.
+
+A valid playlist should select each song at least once, and guarantee a buffer of `B` songs between repeats.
+
+Given `N`, `M`, and `B`, determine the number of valid playlists
+
+<br>
+
+problem 319 [Hard] [Airbnb]
+
+An 8-puzzle is a game played on a 3 x 3 board of tiles, with the ninth tile missing.
+
+The remaining tiles are labeled 1 through 8 but shuffled randomly.
+
+Tiles may slide horizontally or vertically into an empty space, but may not be removed from the board.
+
+Design a class to represent the board, and find a series of steps to bring the board to the state `[[1, 2, 3], [4, 5, 6], [7, 8, None]]`.
+
+<br>
+
+problem 320 [Medium] [Amazon]
+
+Given a string, find the length of the smallest window that contains every distinct character. Characters may appear more than once in the window.
+
+For example, given `"jiujitsu"`, you should return `5`, corresponding to the final five letters.
+
+<br>
+
+problem 321 [Easy] [Pager-Duty]
+
+Given a positive integer `N`, find the smallest number of steps it will take to reach `1`.
+
+There are two kinds of permitted steps:
+
+You may decrement `N` to `N - 1`.
+If `a * b = N`, you may decrement `N` to the larger of `a` and `b`.
+
+For example, given `100`, you can reach `1` in five steps with the following route: `100 -> 10 -> 9 -> 3 -> 2 -> 1`.
+
+<br>
+
+problem 322 [Medium] [Flipkart]
+
+Starting from 0 on a number line, you would like to make a series of jumps that lead to the integer N.
+
+On the `ith` jump, you may move exactly i places to the left or right.
+
+Find a path with the fewest number of jumps required to get from `0` to `N`.
+
+<br>
+
+problem 323 [Medium] [Dropbox]
+
+Create an algorithm to efficiently compute the approximate median of a list of numbers.
+
+More precisely, given an unordered list of `N` numbers, find an element whose rank is between `N / 4` and `3 * N / 4`,
+with a high level of certainty, in less than `O(N)` time.
+
+<br>
+
+problem 324 [Easy] [Amazon]
+
+Consider the following scenario: there are `N` mice and `N` holes placed at integer points along a line.
+
+Given this, find a method that maps mice to holes such that the largest number of steps any mouse takes is minimized.
+
+Each move consists of moving one mouse one unit to the left or right, and only one mouse can fit inside each hole.
+
+For example, suppose the mice are positioned at `[1, 4, 9, 15]`, and the holes are located at `[10, -5, 0, 16]`. 
+
+In this case, the best pairing would require us to send the mouse at `1` to the hole at `-5`, so our function should return `6`.
+
+<br>
+
+problem 325 [Easy] [Jane-Street]
+
+The United States uses the imperial system of weights and measures,
+
+which means that there are many different, seemingly arbitrary units to measure distance.
+
+There are `12 inches in a foot`, `3 feet in a yard`, `22 yards in a chain`, and so on.
+
+Create a data structure that can efficiently convert a certain quantity of one unit to the correct amount of any other unit.
+You should also allow for additional units to be added to the system.
+
+<br>
+
+problem 326 [Hard] [Netflix]
+
+A Cartesian tree with sequence `S` is a binary tree defined by the following two properties:
+
+- It is heap-ordered, so that each parent value is strictly less than that of its children.
+- An in-order traversal of the tree produces nodes with values that correspond exactly to S.
+
+For example, given the sequence `[3, 2, 6, 1, 9]`, the resulting Cartesian tree would be:
+
+```
+      1
+    /   \   
+  2       9
+ / \
+3   6
+```
+
+Given a sequence `S`, construct the corresponding Cartesian tree.
+
+<br>
