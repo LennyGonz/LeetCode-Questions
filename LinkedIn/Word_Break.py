@@ -1,4 +1,6 @@
 '''
+LeetCode #139
+
 Brute-Force: we traverse the string, char by char, constantly checking the dictionary to see if the word we have is in the string
 i.e) string = leetcode & wordDict = [leet,code]
 "l" is "l" in wordDict ? NO
