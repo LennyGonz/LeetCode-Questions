@@ -1,31 +1,17 @@
 '''
-lowest common ancestor
+LeetCode #236
 
-Time Complexity: O(n)
-Space Complexity: O(n)
-'''
+For Lowest Common Ancestors we have 3 scenarios:
 
+1. 1 of the given nodes is in the left subtree and 1 of the given nodes is in the right subtree
+  - In which case the the LCA is a root/parents node
+
+2. Both p and q are in the left subtree, but one of them is the root node and the other is the child (return whichever is the root)
+3. Both p and q are in the right subtree, but one of them is the root node and the other is the child (return whichever is the root)
+
+We don't have a BST to direct our traversal, so we will search the tree completely till we find p and q
+We will do a Post Order Traversal
 '''
-iterative solution
-'''
-def lowestCommonAncestor(root, p, q):
-  stack = [root]
-  parent = {root: None}
-  while p not in parent or q not in parent:
-    node = stack.pop()
-    if node.left:
-      parent[node.left] = node
-      stack.append(node.left)
-    if node.right:
-      parent[node.right] = node
-      stack.append(node.right)
-  ancestors = set()
-  while p:
-    ancestors.add(p)
-    p = parent[p]
-  while q not in ancestors:
-    q = parent[q]
-  return q
 
 # recursive solution
 def lowestCommonAncestor(self, root, p, q):
@@ -58,3 +44,32 @@ def lowestCommonAncestor(self, root, p, q):
   # somewhere below node where 'p' was found we dont need to search all the way, 
   # because in such scenarios, node where 'p' found is LCA
     return left or right
+
+'''
+lowest common ancestor
+
+Time Complexity: O(n)
+Space Complexity: O(n)
+'''
+
+'''
+iterative solution
+'''
+def lowestCommonAncestor(root, p, q):
+  stack = [root]
+  parent = {root: None}
+  while p not in parent or q not in parent:
+    node = stack.pop()
+    if node.left:
+      parent[node.left] = node
+      stack.append(node.left)
+    if node.right:
+      parent[node.right] = node
+      stack.append(node.right)
+  ancestors = set()
+  while p:
+    ancestors.add(p)
+    p = parent[p]
+  while q not in ancestors:
+    q = parent[q]
+  return q
