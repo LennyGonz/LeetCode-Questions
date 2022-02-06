@@ -1,4 +1,6 @@
 '''
+LeetCode #103
+
 Given a binary tree, populate an array to represent its zigzag level order traversal.
 
 You should populate the values of all nodes of the first level from left to right, then right to left for the next level and keep alternating in the same manner for the following levels.
@@ -13,8 +15,19 @@ Zig Zag Traversal: [  [1],
                       [3,2],
                       [4,5,6,7]
                     ]
-'''
 
+This problem follows the Binary Tree Level Order Traversal pattern.
+
+We can follow the same BFS approach.
+
+The only additional step we have to keep in mind is to alternate the level order traversal,
+
+which means that for every other level, we will traverse similar to Reverse Level Order Traversal.
+
+to do this we use a boolean flag, to trigger the reverse level order traversal
+
+we flip the boolean value at the end of every level traversal
+'''
 from collections import deque
 
 class TreeNode:
