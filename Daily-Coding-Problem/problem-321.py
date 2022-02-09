@@ -1,35 +1,16 @@
-def make_path(nums, is_negative):
-  path = [nums[0]]
+def steps(n):
+  distance = [i - 1 for i in range(n + 1)]
 
-  for i in nums[1:]:
-    path.append(path[-1] + i)
+  for i in range(1, n + 1):
+    for j in range(int(i ** 0.5), 1, -1):
+      if i % j == 0:
+        distance[i] = min(distance[i], distance[i // j] + 1)
+    distance[i] = min(distance[i], distance[i - 1] + 1)
 
-  if is_negative:
-    return [-1 * i for i in path]
-  else:
-    return path
-
-def jump_path(n):
-  is_negative = False
-
-  if n < 0:
-    n = -n
-    is_negative = True
-
-  k = total = 0
-  while total < n or (total > n and (total - n) % 2 != 0):
-    k += 1
-    total += k
-
-  if total == n:
-    return make_path(range(k + 1), is_negative)
-
-  nums = list(range(k + 1))
-  index = (total - n) // 2
-
-  return make_path(nums[:index] + [-index] + nums[index + 1:], is_negative)
+  return distance[-1]
 
 '''
-The sum of 1 + 2 + ... + k evaluates to k * (k + 1) // 2, so the length of our path will be roughly the square root of N.
-We must run our while loop for this many iterations, and store a solution path of this length, so the time and space complexity will be O(√N).
+The time complexity of this algorithm is worse, but mercifully simpler to calculate.
+Our outer loop iterates through values 1 to N, while our inner loop goes up to the square root of the element being looked at.
+Therefore, this algorithm will run in O(N^(3/2)) time and O(N) space.
 '''
