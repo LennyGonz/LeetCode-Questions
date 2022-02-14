@@ -37,7 +37,8 @@ def find_substring(string, pattern):
   # start pointer
   windowStart = 0
   
-  # 
+  # this variable will help is keep track that we're matching the correct number
+  # of characters in the given pattern
   matched = 0
   
   # marks the beginning of the substring in the current minimal window
@@ -67,19 +68,33 @@ def find_substring(string, pattern):
       if char_frequency[rightChar] >= 0:
         matched += 1
     
+    # if we have the matching amount of characters in our current substring as the pattern string
+    # that means we have a valid substring - and now we want to try and shrink it as much as possible
+    # while still containing all the characters in the pattern
     while matched == len(pattern):
+      # if the current minLength is greater than the current minLength
+      # then we can update the size
       if minLength > windowEnd - windowStart + 1:
+        # update the new minLength
         minLength = windowEnd - windowStart + 1
+        # identify the start of the substring
         substr_start = windowStart
       
       leftChar = string[windowStart]
       windowStart += 1
       
+      # if while shrinking the substring we remove a chacater thats part of the pattern
+      # we need to add 1 back to its frequency
+      # and redue matched IF the frequency of that character is 0
+      # bc then we no longer have a valid substring
       if leftChar in char_frequency:
         if char_frequency[leftChar] == 0:
           matched -= 1
         char_frequency[leftChar] += 1
   
+  # if we iterated through the entire string
+  # and didnt find a VALID substring
+  # we return an empty string
   if minLength > len(string):
     return ''
 
