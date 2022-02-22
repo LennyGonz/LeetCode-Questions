@@ -16,14 +16,13 @@ A DAG:
 
 So the ordering of the alien language is different from the ordering in the english alphabet
 The goal is to figure out the ordering of the alien language
-
 '''
 def alienOrder(words):
   '''
   We want to create an adjacency list based on the ordering of the characters
   For every character in our entire list of words
   what we want to do is map it to a set -> set makes sure there are no duplicates
-  so
+  SO
   for every word in our list of words
   and then
   for every character in each word
