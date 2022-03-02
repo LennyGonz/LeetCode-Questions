@@ -1,4 +1,10 @@
 '''
+LeetCode #98 - Validate A Binary search tree
+
+    2
+   / \
+  1   3 // valid tree!
+
 A valid BST is:
 
 1. The left subtree of a node contains only nodes with values LESS THAN the current node's value
@@ -25,18 +31,61 @@ root.val is the right bound
 when traversing the right subtree: root.val < currentNode.val < infinity
 infinity is the right bound
 root.val is the left bound
-'''
 
-def isValid(root):
-  def valid(node, left, right):
-    if not node:
+def isValidBST(self, root):
+    return check_bst(root, float("-inf"), float("inf"))
+
+    2 
+   / \
+  1   3 
+	
+1 // -inf < 1 < 2, so it's still valid
+3 //  2 < 3 < inf, so it's still a valid tree
+2 // -inf < 2 < inf, so it's a valid tree!
+
+And what about an invalid tree?
+
+    5 
+   / \
+  1   4 
+	
+1 // -inf < 1 < 5, so it's still a valid tree
+4 // 5 > 4 < inf, this tree is not a valid binary tree!	
+
+So here's one way we could implement this logic!
+'''
+class TreeNode:
+  def __init__(self, val=0, left=None, right=None):
+    self.val = val
+    self.left = left
+    self.right = right
+
+def validateBinarySearchTree(root):
+  def validate(currentNode, lowerBound, upperBound):
+    if not currentNode:
       return True
     
     # by doing it this way, we skip nodes that follow BST rules
     # and catch nodes that violate the rules
-    if not (node.val < right and node.val > left):
+    if not (currentNode.val > lowerBound and currentNode.val < upperBound):
       return False
 
-    return (valid(node.left,left,node.val) and valid(node.right, node.val, right))
+    return (validate(currentNode.left, lowerBound, currentNode.val) and validate(currentNode.right, currentNode.val, upperBound))
   
-  return valid(root, float("-inf"), float("inf"))
+  return validate(root, float("-inf"), float("inf"))
+
+'''
+-----------------------
+Time: O(n)            |
+Space: O(n)           |
+-----------------------
+'''
+
+def main():
+  root = TreeNode(2)
+  root.left = TreeNode(1)
+  root.right = TreeNode(3)
+
+  print(validateBinarySearchTree(root))
+
+main()
