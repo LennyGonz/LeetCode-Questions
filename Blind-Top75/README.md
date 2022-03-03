@@ -8,8 +8,8 @@
 - [Maximum Subarray]
 - [Maximum Product Subarray]
 - [Find Minimum in Rotated Sorted Array]
-- [Search in Rotated Sorted Array]
-- [3Sum]
+- [Search in Rotated Sorted Array](Search_In_Rotated_Sorted_Array.py)
+- [3Sum](3Sum.py)
 - [Container With Most Water]
 
 ## Binary
@@ -24,7 +24,7 @@
 - [Coin Change]
 - [Longest Increasing Subsequence]
 - [Longest Common Subsequence]
-- [Word Break]
+- [Word Break](Word_Break.py)
 - [Combination Sum] - https://leetcode.com/problems/combination-sum-iv/
 - [House Robber]
 - [House Robber II]
@@ -34,9 +34,9 @@
 
 ## Graph
 - [Clone Graph]
-- [Course Schedule]
+- [Course Schedule](Course_Schedule.py)
 - [Pacific Atlantic Water Flow]
-- [Number of Islands]
+- [Number of Islands](Number_Of_Islands.py)
 - [Longest Consecutive Sequence]
 - [Alien Dictionary] (Leetcode Premium)
 - [Graph Valid Tree] (Leetcode Premium)
@@ -67,7 +67,7 @@
 - [Longest Substring Without Repeating Characters]
 - [Longest Repeating Character Replacement]
 - [Minimum Window Substring]
-- [Valid Anagram]
+- [Valid Anagram](Valid_Anagram.py)
 - [Group Anagrams]
 - [Valid Parentheses]
 - [Valid Palindrome]
