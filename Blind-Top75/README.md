@@ -7,7 +7,7 @@
 - [Product of Array Except Self]
 - [Maximum Subarray]
 - [Maximum Product Subarray]
-- [Find Minimum in Rotated Sorted Array]
+- [Find Minimum in Rotated Sorted Array](Find_Minimum_in_Sorted_Rotated_Array.py)
 - [Search in Rotated Sorted Array](Search_In_Rotated_Sorted_Array.py)
 - [3Sum](3Sum.py)
 - [Container With Most Water]
