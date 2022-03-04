@@ -1,4 +1,6 @@
 '''
+LeetCode #243
+
 The distance between any two positions: i1 and i2 in an array is |i1 - i2|
 
 So to find the shortest distance between word1 and word2, we need to traverse the input array and find all occurrences of word1 and word2 and store the indices of where you can find those 2 words in respective lists

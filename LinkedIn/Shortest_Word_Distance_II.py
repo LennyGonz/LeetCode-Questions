@@ -1,5 +1,8 @@
 '''
-Here they ask you design a data structure, and 1 method that comes with the data structure returns the shortest distance between 2 words, we literally just solved that
+LeetCode #244
+
+Here they ask you design a data structure, and 1 method that comes with the data structure 
+- the method -> returns the shortest distance between 2 words, we literally just solved that (shortest word distance I)
 
 So all thats left is creating the data structure
 
@@ -18,7 +21,7 @@ class WordDistance:
         self.wordMap[word] = []
       self.wordMap[word].append(index)
 
-  def shortestDistance(wordsDict, word1, word2):
+  def shortestDistance(self, word1, word2):
     list1 = self.wordMap[word1]
     list2 = self.wordMap[word2]
     
