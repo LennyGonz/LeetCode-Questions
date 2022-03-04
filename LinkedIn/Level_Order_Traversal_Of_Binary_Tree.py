@@ -1,4 +1,6 @@
 '''
+LeetCode #102 - Level Order Traversal
+
 Since we need to traverse all nodes of each level before moving onto the next level,
 
 we can use the Breadth First Search (BFS) technique to solve this problem.
@@ -56,3 +58,25 @@ def traverse(root):
 
   # return the list of lists
   return result
+
+def main():
+  root = TreeNode(1)
+
+  root.left = TreeNode(2)
+  root.right = TreeNode(3)
+
+  root.left.left = TreeNode(4)
+  root.left.right = TreeNode(5)
+
+  root.right.left = TreeNode(6)
+  root.right.right = TreeNode(7)
+
+  print("BFS Level Order Traversal: ", bfs(root))
+
+main()
+
+'''
+Time Complexity: O(n) -> where 'n' is the total number of nodes in the tree
+Space Complexity: O(n) -> With the use of the queue, we can have a max of n/2 nodes at any level (this only happens at the lowest level),
+                          therefore O(n) space is needed to store them in the queue
+'''

@@ -5,6 +5,12 @@ class TreeNode:
     self.right = right
 
 '''
+LeetCode #114
+
+Every linked list has a head node and in this case, we also need the tail node.
+Once recursion does the hard work for us and flattens out the subtrees, we will essentially get two linked lists and we need the tail end of the left one to attach it to the right one.
+Let's see what all information we will need in our recursive function at a given node.
+
 The linked list should be in the same order as a preorder traversal of the binary tree
 so we dont have to worry about the root, but then we just do a recursive definition
 - visit the root
