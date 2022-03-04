@@ -11,7 +11,8 @@ Assume the following rules are for the tic-tac-toe game on an n x n board betwee
 Implement the TicTacToe class:
 
 1. TicTacToe(int n) Initializes the object the size of the board n.
-2. int move(int row, int col, int player): Indicates that the player with id player plays at the cell (row, col) of the board. The move is guaranteed to be a valid move.
+2. int move(int row, int col, int player): Indicates that the player with id player plays at the cell (row, col) of the board.
+    The move is guaranteed to be a valid move.
 
 example:
 
@@ -64,10 +65,14 @@ ticTacToe.move(2, 1, 1); // return 1 (player 1 wins)
 Strategy: 
 
 Let's only look at rows first:
+
 row[] represents the move count of a row
 If player1 move on a cell in row[1], then row[1]+=1
 If player2 move on a cell in row[1], then row[1]-=1
-If both player1 and player2 move on some cells in row[1], then row[1] will never become "n" because it is guaranteed that all moves are valid and will only moves on empty cells.
+
+If both player1 and player2 move on some cells in row[1], then 
+  row[1] will never become "n" because it is guaranteed that all moves are valid and will only moves on empty cells.
+
 If row[1] becomes "n", if it is currently player1's move, then player1 wins, else player2 wins.
 For each move, only check rows of current move, no need to check all rows.
 
@@ -76,6 +81,7 @@ Do the same for columns to check winning condition on column.
 For diagnal, if rowIdx-colIdx==0, that means the move is on top-left to right-bottom diagnal. If rowIdx+colIdx==n, that means the move is on top-right to bottom-left diagnal.
 
 So total space is "rows array + columns array + two diagnals": O(n+n+1+1)==O(n)
+
 For each move, time checking current row, column, and two diagnals takes O(1+1+1+1)==O(1)
 '''
 
