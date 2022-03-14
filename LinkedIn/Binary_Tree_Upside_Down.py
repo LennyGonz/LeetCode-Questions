@@ -29,9 +29,13 @@ def upsideDownBinaryTree(root):
     # our new root is the left most node in the input tree
     newRoot = dfs(currentNode.left)
     
+    # we use currentnode to highjack the child's pointer value
+    # in order to correctly rotate the pointer values per level
     currentNode.left.left = currentNode.right
     currentNode.left.right = currentNode
     
+    # once we're done flipping the childs pointer values
+    # we chop off the link to the child node, because now the child has pointers to currentNode
     currentNode.left = None
     currentNode.right = None
     
