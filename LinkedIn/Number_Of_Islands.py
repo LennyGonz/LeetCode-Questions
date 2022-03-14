@@ -1,4 +1,6 @@
 '''
+LeetCode #200
+
 How do we determine if we're at an island or how do we know if it's the same island ?
 
 * draw out a diagram - starting at the first index [0][0] and visiting the 4 possible neighbors (left, right, up, and down)
