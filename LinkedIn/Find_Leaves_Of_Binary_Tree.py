@@ -34,8 +34,10 @@ def findLeaves(root):
     
     return height
   
+  # result array will hold the sublist of leaves with the same height
   result = []
   
+  # evoke our getHeight function - once the function finishes result, will be a list of lists
   getHeight(root)
   
   return result
