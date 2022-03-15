@@ -1,5 +1,5 @@
 '''
-This problem follows the Sliding Window pattern, 
+LeetCode #159
 
 We can use a HashMap to remember the frequency of each character we have processed
 
