@@ -6,7 +6,7 @@ But instead of using N/2 as our upper bound -> we can make it tighter with a sqr
 
 So to reduce work and avoid duplicates we search for factors from 2 to sqrt(N)
 
-When we pick a facotr from this range
+When we pick a factor from this range
 We take that factor and call another subproblem using that factor
 
 we'll only call another subproblem using that selected factor, IF it actually is a factor, which we determine with: target % i == 0 - if its divisible!
