@@ -1,5 +1,5 @@
 '''
-Expand Around Center
+The Strategy is: Expand Around Center
 
 b a b 
 
@@ -14,10 +14,10 @@ b a a b
 * logic stays the same, however our pointers can both start at the same character
 one needs to start at i and the other at i + 1
 
-We want to go through every position in the input string, and consider the character at each position to be the center of the palindrome
-Once we're at that character we expand in both directions
-if the character on the left and right are the same we expand
-else we keep iterating through the string
+1. We want to go through every position in the input string, and consider the character at each position to be the center of the palindrome
+2. Once we're at that character we expand in both directions
+3. if the character on the left and right are the same we expand
+4. else we keep iterating through the string
 '''
 
 def longestPalindrome(s):
