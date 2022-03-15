@@ -1,4 +1,6 @@
 '''
+LeetCode #973
+
 The Euclidean distance of a point P(x,y) from the origin can be calculated through the following formula:
 
 √{x^2 + y^2}
