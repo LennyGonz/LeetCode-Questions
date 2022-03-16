@@ -1,4 +1,6 @@
 '''
+LeetCode #340
+
 This problem follows the Sliding Window pattern, 
 
 We can use a HashMap to remember the frequency of each character we have processed
@@ -31,6 +33,7 @@ def lengthOfLongestSubstringKDistinct(s, k):
   for windowEnd in range(len(s)):
     rightChar = s[windowEnd]
     
+    # build the character frequency map
     if rightChar not in char_frequency:
       # our character is the key and the frequency is the value
       char_frequency[rightChar] = 0
