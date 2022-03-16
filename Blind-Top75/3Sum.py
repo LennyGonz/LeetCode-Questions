@@ -12,6 +12,34 @@ Output: [[-1,-1,2],[-1,0,1]]
 
 ----------------------------------------------------------------------------------
 
+Immediate thoughts go to using a triple for-loop
+And while that MIGHT get me the solution, it's is extremely inefficient
+AND it could cause duplicates if additional storage isn't used
+
+So instead we could sort the input array
+ex) [-3,4,3,2,1,-3] -> [-3,-3,1,2,3,4]
+
+So when we begin we'll find [-3,1,2] -> this is fine but on the 2nd iteration we'll see it's the same STARTING NUMBER (-3) as before
+  - so we skip this iteration
+
+We eliminate duplicates by not revisiting the same element twice -> this is the gain from sorting the input
+
+So once we find our first element we're only missing 2 numbers from the triplet
+  - (-3) + b + c = 0
+    - AND to find b+c
+      - it's like solving the TwoSum problem
+    - But instead of using a hashmap like we did in TwoSum
+    - We use 2 pointers
+
+If we have: [-3,-3,1,2,3,4]  -> [-3, -3,  1,2,3,4]
+where a = -3 ->              ->  ^a  ^left      ^right
+
+We use this process to find the triplets
+
+If -> -3 + L + R > 0 -> we want to decrease the total sum, by decreasing the right pointer (bc it's pointing to the largest number)
+If -> -3 + L + R < 0 -> we want to increase our total sum, by increasing our left pointer (bc it's pointing to the smallest number)
+
+* and even with Left and Right pointers, we want to make sure they're not pointing at duplicates
 '''
 
 def threeSum(nums):
@@ -70,6 +98,10 @@ def main():
 main()
 
 '''
+- This strategy already costs: O(nlogn) bc of the sorting
+  + the first loop tells us the 1st value
+  + the second loop to find the 2nd and 3rd value
+
 Time: O(N^2) - We use a nested loop to find the triplets & N^2 is greater than O(nlogn) which is the time it takes for sorting
 Space: O(1) - our algorithm runs in constant space
 '''
