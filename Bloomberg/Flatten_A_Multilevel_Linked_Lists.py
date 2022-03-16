@@ -48,7 +48,7 @@ class Node:
     self.next = next
     self.child = child
 
-def flatten(self, head):
+def flatten(head):
   # base case - given an empty list
   if not head:
     return head
