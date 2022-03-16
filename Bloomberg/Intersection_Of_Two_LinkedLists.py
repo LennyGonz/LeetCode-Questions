@@ -28,14 +28,11 @@ Optimal:
   I see this problem similar to detecting a loop...
   
   We can use 2 pointers (but not fast and slow pointers)
-
-  1. Calculate lengths of both lists and evaluate difference.
-  2. Make this number of steps for the longest list, pointer p1 and pointer p2 put to start of short list.
-  3. Move pointers p1 and p2 one by one until we have the same value: it will be either common element or it will be None element.
+  We have 2 lists
   
-  First list has a elements before intersection and b elements after intersection.
+  First list has 'a' elements before intersection and 'b' elements after intersection.
   
-  Second list has c elements before intersection and b elements after intersection, and c > a.
+  Second list has 'c' elements before intersection and 'b' elements after intersection, and c > a.
 
   1. On the first step we will reach end of first list and for the second list we will be c-a elements before end.
   
@@ -62,8 +59,14 @@ Optimal:
 
 4. return the value pointed to by pA (or by pB; they're the same now).
 '''
+# Definition for a MultiLevel-Doubly-LinkedList Node.
+class Node:
+  def __init__(self, val, prev, next):
+    self.val = val
+    self.prev = prev
+    self.next = next
 
-def getIntersectionNode(self, headA, headB):
+def getIntersectionNode(headA, headB):
   # initialize our pointers
   currA = headA
   currB = headB
