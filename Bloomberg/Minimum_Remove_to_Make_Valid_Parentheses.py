@@ -16,7 +16,7 @@ Output: "lee(t(c)o)de"
 Explanation: "lee(t(co)de)" , "lee(t(c)ode)" would also be accepted.
 -------------------------------------------------------------------------------------------
 
-Before removing any parenthesis, we need to make create a balanced/valid string,
+Before removing any parenthesis, we need to create a balanced/valid string,
   in Balance Parenthesis we keep track of a variable balance, we add 1 for every '(' and subtract 1 for every ')'
     at the end Balance should be 0, any other value -> we have an unbalanced string
 
@@ -41,6 +41,7 @@ So in code:
 5. After iteration, we replace all indices we have in the stack with empty strings, because we don't have close parentheses for them.
 6. Convert list to string and return
 '''
+
 def minRemoveToMakeValid(s):
   s = list(s)
   stack = []
