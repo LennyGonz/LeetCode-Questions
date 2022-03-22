@@ -180,3 +180,31 @@ freq Counter({5: 1, 7: 1, 4: 1})
 map of stack:  defaultdict(<class 'list'>, {1: [5, 7], 2: [], 3: []})
 freq Counter({5: 1, 7: 1, 4: 0})
 '''
+
+class FreqStack:
+  # 1. Track the frequencies of each value in a hashmap. Track the largest frequency found so far in a variable.
+  # 2. Track the order in which elements were pushed based on their frequency using a list of lists.
+  def __init__(self):
+    self.frequencies = {}
+    self.mostFreq = 0
+    self.stackofstacks = {}
+
+  def push(self, val: int) -> None:
+    value = 1 + self.frequencies.get(val, 0) # Get either the existing element from our hashmap, or a default value of zero
+    self.frequencies[val] = value # Update hashmap
+    if (value > self.mostFreq):
+      self.mostFreq = value # Update highest frequency
+      self.stackofstacks[value] = [] # Create new empty stack as needed
+    self.stackofstacks[value].append(val) # Add to the stack at given frequency
+
+  def pop(self) -> int:
+    result = self.stackofstacks[self.mostFreq].pop()
+    self.frequencies[result] -= 1
+    if not self.stackofstacks[self.mostFreq]: #If the most frequent stack index is empty (i.e. there are no longer any numbers with the greatest frequency)...
+      self.mostFreq -= 1
+    return result
+
+# Your FreqStack object will be instantiated and called as such:
+# obj = FreqStack()
+# obj.push(val)
+# param_2 = obj.pop()
