@@ -21,6 +21,7 @@ the second element (index) will be considered while doing pop operation.
 Also, the count map, is useful when the new occurence of the exisiting element is pushed.
 
 * Since python doesn't natively do max-heaps I am negating the count and index while pushing in the heap in order to implement the max-heap
+* more optimal solution at the bottom
 '''
 from collections import defaultdict, Counter
 from heapq import *
