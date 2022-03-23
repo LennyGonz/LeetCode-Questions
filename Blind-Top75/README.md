@@ -54,7 +54,7 @@
 - [Detect Cycle in a Linked List]
 - [Merge Two Sorted Lists]
 - [Merge K Sorted Lists]
-- [Remove Nth Node From End Of List]
+- [Remove Nth Node From End Of List](Remove_Nth_Node_From_End_of_List.py)
 - [Reorder List]
 
 ## Matrix
