@@ -1,6 +1,12 @@
 '''
 LeetCode #105
 
+Given two integer arrays preorder and inorder where preorder is the preorder traversal of a binary tree and inorder is the inorder traversal of the same tree, construct and return the binary tree.
+
+Input: preorder = [3,9,20,15,7], inorder = [9,3,15,20,7]
+Output: [3,9,20,null,null,15,7]
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 PreOrder is : root leftChild rightChild
 InOrder is : leftChild root rightChild
 
@@ -22,7 +28,19 @@ every value to the right of 3 is going to the right subtree
 Once we're done building the left subtree
 We move onto the right subtree
 
-InOrder = [15,20,7]
+InOrder = [15,20,7]  if not head:
+      return None
+  
+  newHead = head
+  
+  if head.next:
+      newHead = self.reverseList(head.next)
+  
+      head.next.next = head
+  
+  head.next = None
+  
+  return newHead
 We move to the middle element 20, because using the PreOrder traversal, we can determine that's the root of the right subtree
 to the left of 20 is 15 (leftChild)
 to the right of 20 is 7 (rightChild)

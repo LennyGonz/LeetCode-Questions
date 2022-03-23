@@ -21,7 +21,7 @@
 
 ## Dynamic Programming
 - [Climbing Stairs]
-- [Coin Change]
+- [Coin Change](Coin_Change.py)
 - [Longest Increasing Subsequence]
 - [Longest Common Subsequence]
 - [Word Break](Word_Break.py)
@@ -29,7 +29,7 @@
 - [House Robber]
 - [House Robber II]
 - [Decode Ways]
-- [Unique Paths]
+- [Unique Paths](Unique_Paths.py)
 - [Jump Game]
 
 ## Graph
@@ -40,17 +40,17 @@
 - [Longest Consecutive Sequence]
 - [Alien Dictionary] (Leetcode Premium)
 - [Graph Valid Tree] (Leetcode Premium)
-- [Number of Connected Components in an Undirected Graph] (Leetcode Premium)
+- [Number of Connected Components in an Undirected Graph](Number_of_Connected_Components_in_an_Undirected_Graph.py)
 
 ## Interval
 - [Insert Interval]
 - [Merge Intervals]
 - [Non-overlapping Intervals]
-- [Meeting Rooms] (Leetcode Premium)
-- [Meeting Rooms II] (Leetcode Premium)
+- [Meeting Rooms](Meeting_Room_I.py)
+- [Meeting Rooms II](Meeting_RoomsII.py)
 
 ## Linked List
-- [Reverse a Linked List]
+- [Reverse a Linked List](Reverse_LinkedList.py)
 - [Detect Cycle in a Linked List]
 - [Merge Two Sorted Lists]
 - [Merge K Sorted Lists]
@@ -61,7 +61,7 @@
 - [Set Matrix Zeroes]
 - [Spiral Matrix]
 - [Rotate Image]
-- [Word Search]
+- [Word Search](Word_Search.py)
 
 ## String
 - [Longest Substring Without Repeating Characters]
@@ -73,18 +73,18 @@
 - [Valid Palindrome]
 - [Longest Palindromic Substring]
 - [Palindromic Substrings]
-- [Encode and Decode Strings] (Leetcode Premium)
+- [Encode and Decode Strings](Encode_and_Decode_Strings.py)
 
 ## Tree
 - [Maximum Depth of Binary Tree]
 - [Same Tree]
 - [Invert/Flip Binary Tree]
 - [Binary Tree Maximum Path Sum]
-- [Binary Tree Level Order Traversal]
-- [Serialize and Deserialize Binary Tree]
+- [Binary Tree Level Order Traversal](BinaryTree_Level_Order_Traversal.py)
+- [Serialize and Deserialize Binary Tree](Serialize_Deserialize_BinaryTree.py)
 - [Subtree of Another Tree]
-- [Construct Binary Tree from Preorder and Inorder Traversal]
-- [Validate Binary Search Tree]
+- [Construct Binary Tree from Preorder and Inorder Traversal](Construct_BinaryTree_from_PreOrderInorder_Traversal.py)
+- [Validate Binary Search Tree](Validate_Binary_Search_Tree.py)
 - [Kth Smallest Element in a BST]
 - [Lowest Common Ancestor of BST]
 - [Implement Trie (Prefix Tree)]

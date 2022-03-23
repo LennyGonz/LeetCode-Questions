@@ -19,7 +19,7 @@ Now remember the array is rotated, which means there are a certain amount of the
   that got moved to the very front of the list
   ex) Input: nums = [4,5,6,7,0,1,2] -> The original array was [0,1,2,4,5,6,7]
 
-So if our middle pointer is currently pointing at  vlaue that belong to the left sorted portion
+So if our middle pointer is currently pointing at value that belongs to the left sorted portion
   - we want to search the right sorted porition bc that's where the smaller values will be
 
 if our middle pointer is at a value that belongs to the right sorted portion
@@ -32,6 +32,26 @@ But then how do we determine which side middle belongs to ?
   
   - if nums[mid] !>= nums[left]
     - that means middle belongs to the right portion
+
+So if we have: [3, 4, 5, 1, 2]
+                ^     ^     ^
+              left   middle right
+            
+            middle(5) >= left (3) therefore we're in the left portion of the sorted rotated array
+            * remember wince the array is rotated, the smallest numbers were shifted to the right side
+
+* So if our middle pointer is currently pointing at a value that belongs to the left sorted portion
+  * we want to search the right sorted portion BECAUSE
+    * the right sorted portion has the smaller values
+
+* If our middle pointer is at a value that belongs to the right sorted portion (1)
+  * then we want to search to the left b/c everything to the right of Middle is going to be an element greater
+
+We need to do nums[mid] >= nums[left] - b/c both pointers can be pointing at the same element
+  * this is an edge case
+
+* this algorithm only works for rotated arrays
+* REMEMBER the objective is to find the MINIMUM element in the sorted rotated array
 '''
 def findMin(nums):
   res = nums[0]

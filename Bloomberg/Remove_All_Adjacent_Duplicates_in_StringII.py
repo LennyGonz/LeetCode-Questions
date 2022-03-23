@@ -28,7 +28,7 @@ Bruteforce:
 ----------------------------------------------------------------------------------------------------------------------------------------------
 Optimal:
 
-I can use a stack to keep track of all the characters and the number of occurances -> [(character, frequency)]
+I can use a stack to keep track of all the characters and the number of occurances -> tuples: [(character, frequency)]
 
 How I plan on doing this:
 
