@@ -5129,3 +5129,55 @@ Write an algorithm that finds an appropriate `Y` array with the following proper
 For example, suppose your input is `[1.3, 2.3, 4.4]`.
 In this case you cannot do better than `[1, 2, 5]`, which has an absolute difference of `|1.3 - 1| + |2.3 - 2| + |4.4 - 5| = 1`.
 
+<hr>
+
+problem 356 [Hard] [Netflix]
+
+Implement a queue using a set of fixed-length arrays.
+
+The queue should support enqueue, dequeue, and get_size operations.
+
+<hr>
+
+problem 357 [Hard] [LinkedIn]
+
+You are given a binary tree in a peculiar string representation.
+
+Each node is written in the form `(lr)`, where `l` corresponds to the left child and `r` corresponds to the right child.
+
+If either `l` or `r` is null, it will be represented as a zero. Otherwise, it will be represented by a new `(lr)` pair.
+
+If either `l` or `r` is null, it will be represented as a zero. Otherwise, it will be represented by a new `(lr)` pair.
+
+Here are a few examples:
+
+- A root node with no children: `(00)`
+- A root node with two children: `((00)(00))`
+- An unbalanced tree with three consecutive left children: `((((00)0)0)0)`
+
+Given this representation, determine the depth of the tree.
+
+<hr>
+
+problem 358 [Hard] [Dropbox]
+
+Create a data structure that performs all the following operations in `O(1)` time:
+
+- `plus`: Add a key with value 1. If the key already exists, increment its value by one.
+- `minus`: Decrement the value of a key. If the key's value is currently 1, remove it.
+- `get_max`: Return a key with the highest value.
+- `get_min`: Return a key with the lowest value.
+
+<hr>
+
+problem 359 [Easy] [Slack]
+
+You are given a string formed by concatenating several words corresponding to the integers zero through nine and then anagramming.
+
+For example, the input could be 'niesevehrtfeev', which is an anagram of 'threefiveseven'. Note that there can be multiple instances of each integer.
+
+Given this string, return the original integers in sorted order. In the example above, this would be `357`.
+
+<hr>
+
+problem 360 [Medium]
